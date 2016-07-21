@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:height="1.0dip" android:width="@dimen/msglib_message_list_image_attachment_bubble_border_width" android:color="@color/ad_white_solid" />
+    <corners android:radius="@dimen/msglib_message_list_image_attachment_bubble_border_radius" />
+</shape>

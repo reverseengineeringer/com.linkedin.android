@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:padding="@dimen/button_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/icon_padding" android:src="@drawable/shaky_bug" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/row_title_textsize" android:textColor="@color/dark_gray" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/row_textspacing" android:text="@string/row1_title" />
+        <TextView android:textColor="@color/gray" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/row3_subtitle" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

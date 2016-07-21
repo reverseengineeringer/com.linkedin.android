@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_typeahead_field_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_6" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+        <EditText android:id="@id/identity_profile_edit_typeahead_field" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityProfileEditTypeaheadFieldStyle" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <TextView android:layout_gravity="start" android:id="@id/identity_profile_edit_typeahead_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_education_school" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/infra_expandable_view_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/large_item_spacing" layout="@layout/entities_textview_header" />
+    <android.support.v7.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/infra_expandable_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/infra_expandable_button_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center" android:id="@id/infra_expandable_view_button" android:background="@color/ad_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7" android:contentDescription="@string/identity_guided_edit_suggested_skills_more_button_speakable" />
+        <TextView android:textColor="@drawable/ad_btn_blue_text_selector1" android:gravity="center" android:layout_gravity="center" android:id="@id/identity_guided_edit_suggested_skills_expand_button_text" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

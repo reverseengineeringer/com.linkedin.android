@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/infra_modal_toolbar" />
+    <ScrollView android:orientation="vertical" android:id="@id/identity_profile_edit_course_scroll_view" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_edit_course_layout" android:padding="@dimen/ad_item_spacing_4" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_course_name_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+                <EditText android:id="@id/identity_profile_edit_course_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/identity_profile_edit_course_name" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_course_number_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+                <EditText android:id="@id/identity_profile_edit_course_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/identity_profile_edit_course_number" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <include layout="@layout/profile_edit_associated_occupation" />
+            <Button android:gravity="end|center" android:layout_gravity="end" android:id="@id/identity_profile_delete_course" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_delete_course" style="@style/ArtDeco.FullButton.2.Tertiary" />
+            <TextView android:id="@id/identity_profile_edit_course_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_course_name" />
+            <TextView android:id="@id/identity_profile_edit_course_number_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_course_number" />
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

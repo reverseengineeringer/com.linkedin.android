@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/settings_auto_sync_contacts_secondary_title" android:key="@string/growth_settings_auto_sync" android:summary="@string/settings_auto_sync_contacts_subtitle" android:defaultValue="false" />
+    <ListPreference android:entries="@array/contact_sync_type_keys" android:title="@string/settings_sync_contacts_title" android:key="@string/growth_settings_contact_sync" android:summary="@string/settings_sync_contacts_subtitle" android:defaultValue="2" android:entryValues="@array/contact_sync_type_values" />
+</PreferenceScreen>

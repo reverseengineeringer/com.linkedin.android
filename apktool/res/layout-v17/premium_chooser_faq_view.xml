@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/premium_chooser_faq_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:gravity="start|center" android:id="@id/premium_chooser_faq_view_question" android:background="@color/ad_transparent" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:textAlignment="viewStart" />
+    <Button android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="start|center" android:id="@id/premium_chooser_faq_view_answer" android:background="@color/ad_transparent" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:textAlignment="viewStart" />
+    <com.linkedin.android.imageloader.LiImageView android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4_negative" android:layout_marginRight="@dimen/ad_item_spacing_4_negative" android:contentDescription="@string/premium_divider_content_description" />
+</LinearLayout>

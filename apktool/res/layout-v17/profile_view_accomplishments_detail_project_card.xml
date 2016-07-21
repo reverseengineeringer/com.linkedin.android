@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/identity_profile_view_project_card" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_item_spacing_4">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:gravity="start|center" android:layout_gravity="center" android:id="@id/identity_profile_view_project_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" />
+                <ImageButton android:id="@id/identity_profile_view_accomplishment_project_edit_btn" android:background="?selectableItemBackground" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:src="@drawable/ic_pencil_24dp" android:tint="@color/link_color" android:layout_weight="0.0" android:contentDescription="@string/identity_profile_background_edit" />
+            </LinearLayout>
+            <com.linkedin.android.infra.ui.ExpandableTextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:id="@id/identity_profile_view_project_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:maxLines="5" card_view:ellipsisText="@string/identity_profile_ellipsis_text" card_view:ellipsisTextColor="@color/ad_black_70" card_view:initialState="collapsed" card_view:isCollapsible="true" card_view:isExpandable="true" card_view:toggleStateOnClick="true" card_view:animateEllipsisTextClick="true" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:id="@id/identity_profile_view_projects_time_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.linkedin.android.imageloader.LiImageView android:id="@id/identity_profile_view_projects_company_image" android:layout_width="@dimen/ad_entity_photo_2" android:layout_height="@dimen/ad_entity_photo_2" style="@style/ArtDeco.EntityPhoto.2.Square" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:id="@id/identity_profile_view_projects_company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginStart="@dimen/ad_item_spacing_2" />
+            </LinearLayout>
+            <include layout="@layout/profile_view_contributor_section" />
+        </LinearLayout>
+        <ImageView android:id="@id/profile_view_skills_card_expandable_button_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" />
+        <include android:id="@id/identity_profile_view_project_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_accomplishments_project_view_link" layout="@layout/infra_new_page_expandable_button" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

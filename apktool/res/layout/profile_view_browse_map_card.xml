@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_view_browse_map_card" android:background="@color/ad_blue_9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body2.Inverse" android:layout_gravity="center_horizontal" android:id="@id/profile_view_browse_map_card_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:text="@string/identity_profile_browse_map_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_view_browse_map_card_entries" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_5" />
+</LinearLayout>

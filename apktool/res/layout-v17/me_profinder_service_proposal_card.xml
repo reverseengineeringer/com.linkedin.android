@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/me_profinder_service_proposal_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" app:cardUseCompatPadding="false" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/me_card_layout" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/me_card_heading" />
+        <com.linkedin.android.identity.shared.IdentityImageLineView android:id="@id/me_profinder_service_proposal_pros" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_entity_photo_4" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_entity_photo_4" app:areImageViewsOval="false" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

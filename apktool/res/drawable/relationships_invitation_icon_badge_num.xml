@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ad_red_6" />
+    <corners android:radius="@dimen/relationships_summary_num_badge_corner_radius" />
+</shape>

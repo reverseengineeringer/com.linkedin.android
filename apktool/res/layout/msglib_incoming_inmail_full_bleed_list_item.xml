@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_message_list_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:expandable_text="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/msglib_inmail_content" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4">
+        <LinearLayout android:id="@id/msglib_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="start" android:id="@id/msglib_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_conversation_recruiter_inmail" android:drawablePadding="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Caption1.Color" />
+            <TextView android:gravity="end" android:id="@id/header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Caption1.Color" />
+        </LinearLayout>
+        <TextView android:gravity="start" android:id="@id/subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" style="@style/TextAppearance.ArtDeco.Title2" />
+        <com.linkedin.messengerlib.utils.ExpandableTextView android:ellipsize="end" android:gravity="start" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" expandable_text:maxLinesWhenCollapsed="12" style="@style/MsgLib.MessageList.FullBleedBody" />
+        <com.linkedin.messengerlib.ui.messagelist.MessageListIncomingAttachmentsView android:gravity="start" android:orientation="vertical" android:id="@id/attachments" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="start" android:id="@id/footer" android:paddingTop="@dimen/msglib_message_list_timestamp_bottom_margin" android:paddingBottom="@dimen/msglib_message_list_timestamp_bottom_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.MessageList.Item.Footer" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/msglib_expandable_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" android:contentDescription="@null" />
+        <ImageButton android:gravity="center_horizontal" android:id="@id/msglib_expandable_button" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7" android:contentDescription="@string/messenger_conversation_expandable_button" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" android:contentDescription="@null" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/msglib_inmail_insight_container" android:background="@drawable/msglib_inmail_company_insight_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_item_spacing_5">
+        <include layout="@layout/msglib_inmail_insight" />
+    </FrameLayout>
+</LinearLayout>

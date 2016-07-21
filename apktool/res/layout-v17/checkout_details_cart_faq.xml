@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/checkout_details_cart_faq" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingTop="@dimen/ad_item_spacing_3" android:paddingRight="@dimen/ad_item_spacing_5" android:paddingBottom="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_5" android:paddingEnd="@dimen/ad_item_spacing_5">
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center" android:id="@id/checkout_details_cart_faq_icon" android:layout_width="@dimen/checkout_cart_faq_icon_dimen" android:layout_height="@dimen/checkout_cart_faq_icon_dimen" android:contentDescription="@string/premium_checkout_faq_icon_content_description" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:layout_gravity="start|center" android:id="@id/checkout_details_cart_faq_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:textAlignment="viewStart" android:layout_marginStart="@dimen/ad_item_spacing_4" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5" android:src="@drawable/ad_divider_horizontal" android:layout_marginStart="@dimen/ad_item_spacing_5" android:layout_marginEnd="@dimen/ad_item_spacing_5" />
+</LinearLayout>

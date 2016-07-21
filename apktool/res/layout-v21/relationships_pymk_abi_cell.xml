@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relationships_pymk_abi_cell" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/relationships_pymk_abi_subtitle" android:elevation="@dimen/cardview_default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_4" android:paddingEnd="@dimen/ad_item_spacing_3">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_addressbook_56dp" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_1" android:layout_weight="1.0" android:layout_marginStart="@dimen/ad_item_spacing_2" android:layout_marginEnd="@dimen/ad_item_spacing_1">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2.Color" android:ellipsize="end" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/relationships_pymk_abi_title" android:maxLines="1" android:textAlignment="viewStart" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:ellipsize="end" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/relationships_pymk_abi_subtitle" android:maxLines="2" android:textAlignment="viewStart" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/relationships_invitation_cell_divider_margin_start" android:layout_marginStart="@dimen/relationships_invitation_cell_divider_margin_start" />
+</LinearLayout>

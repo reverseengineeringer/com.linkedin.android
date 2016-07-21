@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/ad_entity_photo_1" android:width="@dimen/ad_entity_photo_1" />
+    <corners android:radius="@dimen/ad_button_corner_radius" />
+    <stroke android:width="1.0dip" android:color="@color/ad_black_55" />
+</shape>

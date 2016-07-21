@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_2" cardView:cardBackgroundColor="@color/ad_white_solid" cardView:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cardView="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/conversation_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_5">
+        <TextView android:textColor="@color/ad_blue_6" android:gravity="center_horizontal" android:id="@id/conversation_title_tooltips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messenger_edit_naming_conversation" style="@style/TextAppearance.ArtDeco.Caption1.Bold" />
+        <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/conversation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.ArtDeco.Headline2" />
+        <EditText android:gravity="center_horizontal" android:id="@id/conversation_title_edittext" android:paddingTop="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:singleLine="true" style="@style/TextAppearance.ArtDeco.Headline2" />
+        <TextView android:gravity="center_horizontal" android:id="@id/participants_count_text" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ad_item_spacing_2" style="@style/MsgLib.MessageList.Subheader" />
+        <Button android:id="@id/add_people_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_add_people" android:textAllCaps="false" style="@style/ArtDeco.Button.2.Secondary" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/edit_button" android:background="?selectableItemBackground" android:layout_width="@dimen/ad_min_width" android:layout_height="@dimen/ad_min_height" android:scaleType="center" />
+</android.support.v7.widget.CardView>

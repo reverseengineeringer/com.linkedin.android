@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/identity_guided_edit_company_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@id/identity_guided_edit_position_company_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1_negative" android:layout_marginRight="@dimen/ad_item_spacing_1_negative" android:minHeight="@dimen/ad_min_height" android:hint="@string/identity_profile_edit_position_company_typeahead_hint" style="@style/Body3" />
+    <TextView android:textAppearance="@style/ArtDeco.Form.Error.1" android:id="@id/identity_guided_edit_position_company_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1_negative" android:layout_marginRight="@dimen/ad_item_spacing_1_negative">
+        <android.support.v7.widget.SwitchCompat android:theme="@style/guided_edit" android:id="@id/identity_guided_edit_position_self_employed_toggle" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1.Color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:minHeight="@dimen/ad_min_height" android:text="@string/identity_guided_edit_position_self_employed" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/settings_toolbar" />
+    <android.support.design.widget.TabLayout android:id="@id/settings_tab_layout" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/ad_blue_6" app:tabTextColor="@color/black_55" app:tabSelectedTextColor="@color/ad_blue_6" style="@style/DefaultElevationStyle" />
+    <com.linkedin.android.infra.ui.ViewPager android:id="@id/settings_view_pager" android:background="@color/ad_gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

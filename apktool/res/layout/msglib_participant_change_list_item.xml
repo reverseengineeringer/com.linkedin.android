@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_message_list_item_bubble_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/msglib_message_list_item_header" />
+    <TextView android:gravity="center" android:id="@id/participant_change_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/msglib_message_list_participant_change_left_margin" android:layout_marginTop="@dimen/msglib_message_list_participant_change_top_margin" android:layout_marginRight="@dimen/msglib_message_list_participant_change_right_margin" android:layout_marginBottom="@dimen/msglib_message_list_participant_change_bottom_margin" style="@style/MsgLib.ParticipantChange" />
+    <include android:id="@id/read_receipts_container" layout="@layout/msglib_message_list_item_read_receipts" />
+</LinearLayout>

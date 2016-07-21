@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/feed_component_comment_loading_container" android:background="?selectableItemBackground" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="center" android:id="@id/feed_component_comment_loading_title" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_icon_button_3" android:text="@string/feed_comments_load_previous" />
+    <View android:layout_gravity="top" android:id="@id/feed_component_comment_loading_top_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/feed_divider_height" />
+    <View android:layout_gravity="bottom" android:id="@id/feed_component_comment_loading_bottom_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/feed_divider_height" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/feed_component_comment_loading_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_3" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/feed_component_comment_loading_spinner" android:visibility="gone" android:layout_width="@dimen/ad_icon_button_2" android:layout_height="@dimen/ad_icon_button_2" android:layout_margin="@dimen/ad_item_spacing_3" style="?android:attr/progressBarStyleLarge" />
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.infra.ui.TintableImageButton android:layout_gravity="center" android:id="@id/feed_component_ellipsis_rollup_item" android:background="@drawable/feed_likes_rollup_count_item_bg" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/ad_entity_photo_2" android:layout_height="@dimen/ad_entity_photo_2" android:src="@drawable/ic_ellipsis_horizontal_16dp" android:contentDescription="@string/feed_cd_likes_rollup_count" app:srcTint="@color/ad_black_55" style="@style/ArtDeco.IconButton.4.Tertiary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

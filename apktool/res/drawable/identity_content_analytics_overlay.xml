@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/content_analytics_header_overlay" />
+    </item>
+    <item android:gravity="top" android:drawable="@drawable/identity_content_analytics_overlay_gradient_top" />
+    <item android:gravity="bottom" android:drawable="@drawable/identity_content_analytics_overlay_gradient_bottom" />
+</layer-list>

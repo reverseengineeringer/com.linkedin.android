@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.messengerlib.ui.common.KeyboardAwareEditText android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="start" android:id="@id/msglib_keyboard_text_input_container" android:background="@color/ad_white_solid" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/write_your_message" android:maxLines="4" android:inputType="textCapSentences|textMultiLine" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/msglib_keyboard_text_button" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:src="@drawable/ic_cancel_24dp" />
+        <ImageView android:id="@id/msglib_keyboard_camera_button" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/msglib_keyboard_sticker_button" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_stickers_24dp" />
+        <ImageView android:id="@id/msglib_keyboard_insights_button" android:padding="@dimen/ad_item_spacing_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_24dp" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/msglib_keyboard_send_button" android:background="@color/ad_transparent" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="@dimen/msglib_message_list_compose_message_bar_button_height" android:layout_marginRight="@dimen/ad_item_spacing_2" android:src="@drawable/ic_send_android_24dp" android:tint="@color/ad_blue_6_40" android:contentDescription="@string/messenger_action_send" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:id="@id/msglib_keyboard_spacer" android:background="@color/ad_black_solid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/msglib_keyboard_content_container" android:background="@color/ad_gray_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/msglib_initial_sticker_keyboard_height" android:fillViewport="true">
+            <com.linkedin.messengerlib.ui.messagelist.StickerTrayView android:gravity="center" android:id="@id/message_sticker_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/msglib_stickers_coming_soon" />
+            <com.linkedin.messengerlib.ui.messagelist.InsightsKeyboard android:gravity="center" android:id="@id/message_insights_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

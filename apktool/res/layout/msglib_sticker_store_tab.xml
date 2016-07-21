@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/msglib_sticker_store_tab_container" android:background="@drawable/sticker_tray_tab_background" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/msglib_sticker_store_tab_separator" android:background="@color/ad_gray_2" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/msglib_sticker_store_tab_icon" android:layout_width="@dimen/msglib_sticker_tab_icon_size" android:layout_height="@dimen/msglib_sticker_tab_icon_size" android:layout_margin="@dimen/ad_item_spacing_1" android:src="@drawable/ic_plus_24dp" android:scaleType="center" android:tint="@color/ad_gray_4" />
+</LinearLayout>

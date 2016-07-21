@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ArtDeco.Form.Error" parent="@style/ArtDeco.Form">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/ad_alert_error</item>
+    </style>
+    <style name="ArtDeco.Form.Filled" parent="@style/ArtDeco.Form">
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="ArtDeco.Form.TextColorHighlight" parent="@style/ArtDeco.Form">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_white_solid</item>
+    </style>
+    <style name="ArtDeco.Form.TextColorHint" parent="@style/ArtDeco.Form">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_black_55</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/ad_black_70</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1.Bold" parent="@style/TextAppearance.ArtDeco.Body1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1.Color.Bold" parent="@style/TextAppearance.ArtDeco.Body1.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body1.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body1.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body1.Color.Italic" parent="@style/TextAppearance.ArtDeco.Body1.Color" />
+    <style name="TextAppearance.ArtDeco.Body1.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body1.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body1.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body1.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body1.Italic" parent="@style/TextAppearance.ArtDeco.Body1" />
+    <style name="TextAppearance.ArtDeco.Body2" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_black_70</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body2.Bold" parent="@style/TextAppearance.ArtDeco.Body2">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body2.Color.Bold" parent="@style/TextAppearance.ArtDeco.Body2.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body2.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body2.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body2.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body2.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body2.Color.Italic" parent="@style/TextAppearance.ArtDeco.Body2.Color" />
+    <style name="TextAppearance.ArtDeco.Body2.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body2.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body2.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body2.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body2.Italic" parent="@style/TextAppearance.ArtDeco.Body2" />
+    <style name="TextAppearance.ArtDeco.Body3" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_black_70</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body3.Bold" parent="@style/TextAppearance.ArtDeco.Body3">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body3.Color.Bold" parent="@style/TextAppearance.ArtDeco.Body3.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body3.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body3.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body3.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body3.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body3.Color.Italic" parent="@style/TextAppearance.ArtDeco.Body3.Color" />
+    <style name="TextAppearance.ArtDeco.Body3.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body3.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body3.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body3.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body3.Italic" parent="@style/TextAppearance.ArtDeco.Body3" />
+    <style name="TextAppearance.ArtDeco.Body4" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/ad_black_70</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body4.Bold" parent="@style/TextAppearance.ArtDeco.Body4">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body4.Color.Bold" parent="@style/TextAppearance.ArtDeco.Body4.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body4.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body4.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body4.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body4.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body4.Color.Italic" parent="@style/TextAppearance.ArtDeco.Body4.Color" />
+    <style name="TextAppearance.ArtDeco.Body4.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body4.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body4.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body4.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body4.Italic" parent="@style/TextAppearance.ArtDeco.Body4" />
+    <style name="TextAppearance.ArtDeco.Body5" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@color/ad_black_70</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body5.Bold" parent="@style/TextAppearance.ArtDeco.Body5">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body5.Color.Bold" parent="@style/TextAppearance.ArtDeco.Body5.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body5.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body5.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body5.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body5.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body5.Color.Italic" parent="@style/TextAppearance.ArtDeco.Body5.Color" />
+    <style name="TextAppearance.ArtDeco.Body5.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Body5.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Body5.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Body5.Inverse" />
+    <style name="TextAppearance.ArtDeco.Body5.Italic" parent="@style/TextAppearance.ArtDeco.Body5" />
+    <style name="TextAppearance.ArtDeco.ButtonText" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/ad_black_55</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1.Bold" parent="@style/TextAppearance.ArtDeco.Caption1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1.Color.Bold" parent="@style/TextAppearance.ArtDeco.Caption1.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Caption1.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Caption1.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Caption1.Color.Italic" parent="@style/TextAppearance.ArtDeco.Caption1.Color" />
+    <style name="TextAppearance.ArtDeco.Caption1.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Caption1.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption1.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Caption1.Inverse" />
+    <style name="TextAppearance.ArtDeco.Caption1.Italic" parent="@style/TextAppearance.ArtDeco.Caption1" />
+    <style name="TextAppearance.ArtDeco.Caption2" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/ad_black_55</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption2.Bold" parent="@style/TextAppearance.ArtDeco.Caption2">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption2.Color.Bold" parent="@style/TextAppearance.ArtDeco.Caption2.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption2.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Caption2.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption2.Color.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Caption2.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Caption2.Color.Italic" parent="@style/TextAppearance.ArtDeco.Caption2.Color" />
+    <style name="TextAppearance.ArtDeco.Caption2.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Caption2.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Caption2.Inverse.Italic" parent="@style/TextAppearance.ArtDeco.Caption2.Inverse" />
+    <style name="TextAppearance.ArtDeco.Caption2.Italic" parent="@style/TextAppearance.ArtDeco.Caption2" />
+    <style name="TextAppearance.ArtDeco.Display1" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">26.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display1.Bold" parent="@style/TextAppearance.ArtDeco.Display1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display1.Color.Bold" parent="@style/TextAppearance.ArtDeco.Display1.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display1.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display1.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display1.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display1.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display2" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">34.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display2.Bold" parent="@style/TextAppearance.ArtDeco.Display2">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display2.Color.Bold" parent="@style/TextAppearance.ArtDeco.Display2.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display2.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display2.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display2.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display2.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display3" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">42.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display3.Bold" parent="@style/TextAppearance.ArtDeco.Display3">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display3.Color.Bold" parent="@style/TextAppearance.ArtDeco.Display3.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display3.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display3.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display3.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display3.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display4" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">50.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display4.Bold" parent="@style/TextAppearance.ArtDeco.Display4">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display4.Color.Bold" parent="@style/TextAppearance.ArtDeco.Display4.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display4.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display4.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display4.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display4.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display5" parent="@android:style/TextAppearance">
+        <item name="android:textSize">66.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display5.Bold" parent="@style/TextAppearance.ArtDeco.Display5">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display5.Color.Bold" parent="@style/TextAppearance.ArtDeco.Display5.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display5.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display5.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Display5.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Display5.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline1" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline1.Bold" parent="@style/TextAppearance.ArtDeco.Headline1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline1.Color.Bold" parent="@style/TextAppearance.ArtDeco.Headline1.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline1.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Headline1.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline1.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Headline1.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2.Bold" parent="@style/TextAppearance.ArtDeco.Headline2">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2.Color.Bold" parent="@style/TextAppearance.ArtDeco.Headline2.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Headline2.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2.Color.Inverse.Medium" parent="@style/TextAppearance.ArtDeco.Headline2.Color.Inverse" />
+    <style name="TextAppearance.ArtDeco.Headline2.Color.Medium" parent="@style/TextAppearance.ArtDeco.Headline2.Color" />
+    <style name="TextAppearance.ArtDeco.Headline2.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Headline2.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Headline2.Inverse.Medium" parent="@style/TextAppearance.ArtDeco.Headline2.Inverse" />
+    <style name="TextAppearance.ArtDeco.Headline2.Medium" parent="@style/TextAppearance.ArtDeco.Headline2" />
+    <style name="TextAppearance.ArtDeco.NotificationBadge" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/ad_white_solid</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Subhead" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/ad_black_55</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Subhead.Bold" parent="@style/TextAppearance.ArtDeco.Subhead">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Subhead.Color.Bold" parent="@style/TextAppearance.ArtDeco.Subhead.Color">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Subhead.Color.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Subhead.Color.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Subhead.Inverse.Bold" parent="@style/TextAppearance.ArtDeco.Subhead.Inverse">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Title1" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+    <style name="TextAppearance.ArtDeco.Title2" parent="@style/TextAppearance.ArtDeco">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/ad_black_85</item>
+    </style>
+</resources>

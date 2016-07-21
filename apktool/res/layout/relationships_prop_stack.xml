@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.relationships.widgets.cardstack.CardContainer android:id="@id/relationships_card_stack_container" android:paddingLeft="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_2" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/relationships_ignore_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.linkedin.android.infra.ui.TintableImageView android:id="@id/relationships_icon_circle" android:background="@drawable/relationships_prop_ignore_icon_bg" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_24dp" android:tint="@color/ad_white_solid" />
+        <TextView android:textColor="@color/ad_blue_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relationships_prop_ignore_icon_text" style="@style/TextAppearance.ArtDeco.Title2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/relationships_dismiss_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.linkedin.android.infra.ui.TintableImageView android:id="@id/relationships_icon_circle" android:background="@drawable/relationships_prop_dismiss_icon_bg" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trash_24dp" android:tint="@color/ad_white_solid" />
+        <TextView android:textColor="@color/ad_red_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relationships_prop_dismiss_icon_text" style="@style/TextAppearance.ArtDeco.Title2" />
+    </LinearLayout>
+</merge>

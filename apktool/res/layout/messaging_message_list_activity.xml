@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/message_list_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Page">
+        <com.linkedin.messengerlib.ui.messagelist.LinearFacepileView android:layout_gravity="end" android:id="@id/message_list_toolbar_facepile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@id/message_list_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

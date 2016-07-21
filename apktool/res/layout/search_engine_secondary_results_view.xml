@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@id/secondary_results_scroll_view" android:scrollbars="none" android:clipToPadding="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/secondary_results_card_view_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/secondary_results_container_view" android:background="@drawable/search_engine_all_border_base" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_engine_left_right_margin">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:text="@string/search_more_results" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:divider="@drawable/search_secondary_cluster_divider" android:showDividers="middle" android:dividerPadding="@dimen/ad_item_spacing_1">
+                <include android:id="@id/secondary_result_1" layout="@layout/search_engine_secondary_result_item" />
+                <include android:id="@id/secondary_result_2" layout="@layout/search_engine_secondary_result_item" />
+                <include android:id="@id/secondary_result_3" layout="@layout/search_engine_secondary_result_item" />
+                <include android:id="@id/secondary_result_4" layout="@layout/search_engine_secondary_result_item" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="@dimen/ad_item_spacing_2" android:layout_height="fill_parent" />
+    </LinearLayout>
+</HorizontalScrollView>

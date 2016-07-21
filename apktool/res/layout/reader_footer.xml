@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reader_footer" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="@dimen/publishing_reading_view_footer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/footer_separator" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@color/ad_gray_5" android:id="@id/social_stats" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/publishing_title" style="@style/TextAppearance.ArtDeco.Caption2" />
+    <include layout="@layout/feed_component_social_actions_bar" />
+</LinearLayout>

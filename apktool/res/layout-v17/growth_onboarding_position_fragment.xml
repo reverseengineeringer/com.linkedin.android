@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ad_gray_lighter" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/growth_onboarding_position_fragment_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/growth_onboarding_position_fragment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_8" android:text="@string/growth_onboarding_position_title" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Display2" />
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:text="@string/growth_onboarding_position_subtitle" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Body2" />
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_position_fragment_job_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+                <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_position_fragment_job_title_input" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_position_job_title_hint" android:textAlignment="viewStart" />
+                <TextView android:id="@id/growth_onboarding_position_fragment_job_title_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_position_job_title_hint" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_position_fragment_company_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_position_fragment_company_input" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_position_company_hint" android:textAlignment="viewStart" />
+                <TextView android:id="@id/growth_onboarding_position_fragment_company_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_position_company_hint" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/growth_onboarding_position_fragment_industry_group_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_onboarding_position_industry" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Body2" />
+                <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_position_fragment_industry_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:isDropDown="true">
+                    <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_position_fragment_industry_input" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_position_industry_hint" android:textAlignment="viewStart" />
+                    <TextView android:id="@id/growth_onboarding_position_fragment_industry_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_position_industry_hint" />
+                </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" layout="@layout/growth_onboarding_navigation_button_container" />
+</LinearLayout>

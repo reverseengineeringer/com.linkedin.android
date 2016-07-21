@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/feed_component_header_container" android:background="?selectableItemBackground" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:ellipsize="end" android:gravity="start|center" android:id="@id/feed_component_header_body" android:paddingTop="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" android:minHeight="@dimen/ad_min_height" android:maxLines="3" android:layout_toLeftOf="@id/feed_component_header_control_dropdown_container" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" />
+        <FrameLayout android:id="@id/feed_component_header_control_dropdown_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <com.linkedin.android.infra.ui.TintableImageView android:layout_gravity="end|center|top" android:id="@id/feed_component_header_control_dropdown" android:layout_width="@dimen/ad_icon_button_3" android:layout_height="@dimen/ad_icon_button_3" android:src="@drawable/ic_ellipsis_vertical_16dp" android:minHeight="@dimen/ad_icon_4" android:contentDescription="@string/feed_cd_update_header_dropdown" app:tint="@color/ad_icon_btn_secondary_muted_icon_selector" app:tintMode="src_in" style="@style/ArtDeco.IconButton.3.Tertiary.Muted" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

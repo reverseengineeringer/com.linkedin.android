@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_edit_treasury_details" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.infra.ui.AspectRatioImageView android:id="@id/profile_edit_treasury_image" android:padding="@dimen/ad_button_stroke_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:cropToPadding="true" app:fixedDimension="fixedWidth" app:aspectRatioWidth="@integer/post_image_aspect_ratio_width" app:aspectRatioHeight="@integer/post_image_aspect_ratio_height" />
+        <ImageView android:layout_gravity="center" android:id="@id/profile_edit_treasury_placeholder_image" android:visibility="gone" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" android:src="@drawable/ic_image_24dp" android:scaleType="fitCenter" android:tint="@color/ad_gray_8" android:contentDescription="@string/profile_treasury_placeholder_description" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/profile_edit_treasury_loading_spinner" android:visibility="gone" android:layout_width="@dimen/ad_icon_button_4" android:layout_height="@dimen/ad_icon_button_4" style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/profile_edit_treasury_title_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_6" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+            <EditText android:id="@id/profile_edit_treasury_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/identity_profile_edit_position_title" style="@style/IdentityProfileEditFieldStyle" />
+        </com.linkedin.android.infra.ui.CustomTextInputLayout>
+        <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/profile_edit_treasury_description_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+            <EditText android:id="@id/profile_edit_treasury_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/identity_profile_edit_position_description" android:maxLines="@integer/identity_profile_description_lines" android:inputType="textMultiLine" style="@style/IdentityProfileEditFieldStyle" />
+        </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <item type="dimen" name="growth_join_fragment_account_exists_padding">@dimen/small_item_spacing</item>
+    <dimen name="growth_login_join_input_credential_height">40.0dip</dimen>
+    <item type="dimen" name="growth_rbmf_carousel_top_margin">@dimen/ad_item_spacing_1</item>
+</resources>

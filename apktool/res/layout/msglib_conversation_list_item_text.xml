@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/msglib_conversation_list_timestamp_left_margin" android:layout_marginRight="@dimen/msglib_conversation_list_timestamp_right_margin" android:layout_alignBaseline="@id/title" android:layout_alignParentRight="true" style="@style/MsgLib.Timestamp" />
+    <TextView android:id="@id/timestamp_bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/msglib_conversation_list_timestamp_left_margin" android:layout_marginRight="@dimen/msglib_conversation_list_timestamp_right_margin" android:layout_alignBaseline="@id/title" android:layout_alignParentRight="true" style="@style/MsgLib.Timestamp.Bold" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/conversation_icon_container" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_below="@id/timestamp" android:layout_alignParentRight="true">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mute_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/ad_gray_5" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/conversation_unread_count" android:background="@drawable/msglib_unread_circle" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/msglib_conversation_list_timestamp_left_margin" style="@style/TextAppearance.ArtDeco.Caption1.Inverse.Bold" />
+    </LinearLayout>
+    <TextView android:gravity="start" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/timestamp" style="@style/MsgLib.Headline" />
+    <TextView android:gravity="start" android:id="@id/title_bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/timestamp" style="@style/MsgLib.Title" />
+    <RelativeLayout android:id="@id/summary_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/conversation_icon_container" android:layout_below="@id/title">
+        <TextView android:gravity="start" android:id="@id/summary_bold" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.ConversationList.SummaryBold" />
+        <TextView android:gravity="start" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.ConversationList.Summary" />
+    </RelativeLayout>
+    <View android:background="@color/msglib_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/msglib_conversation_list_item_bottom_margin" android:layout_below="@id/summary_container" />
+</RelativeLayout>

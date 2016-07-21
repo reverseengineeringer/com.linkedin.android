@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/ad_blue_6" android:endColor="@color/ad_teal_6" android:angle="0.0" android:type="linear" />
+    <corners android:radius="@dimen/identity_wvmp_analytics_card_radius" />
+</shape>

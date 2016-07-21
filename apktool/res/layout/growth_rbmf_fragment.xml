@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/growth_rbmf_flipper" android:background="@drawable/growth_new_to_voyager_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/growth_rbmf_intro_view" />
+    <include layout="@layout/growth_rbmf_loading_view" />
+    <include layout="@layout/growth_rbmf_carousel_view" />
+</ViewFlipper>

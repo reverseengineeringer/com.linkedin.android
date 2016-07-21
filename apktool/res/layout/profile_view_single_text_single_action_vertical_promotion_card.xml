@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/identity_profile_view_single_text_single_action_promotion_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@drawable/profile_promotion_accent_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_item_spacing_9">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_6" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_6" android:layout_marginBottom="@dimen/ad_item_spacing_4">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/identity_profile_view_single_text_single_action_promotion_card_icon" android:layout_width="@dimen/ad_icon_3" android:layout_height="@dimen/ad_icon_3" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:contentDescription="@string/profile_promotions_icon_content_description" />
+                    <TextView android:gravity="center" android:id="@id/identity_profile_view_single_text_single_action_promotion_card_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.ArtDeco.Body3" />
+                    <include android:id="@id/identity_profile_view_single_text_single_action_promotion_primary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" layout="@layout/profile_view_promotion_centered_button" />
+                </LinearLayout>
+                <com.linkedin.android.infra.ui.TintableImageButton android:layout_gravity="end" android:id="@id/identity_profile_view_single_text_single_action_promotion_dismiss_button" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_16dp" android:tint="@color/ad_gray_4" android:contentDescription="@string/profile_promotions_dismiss_content_description" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/rounded_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.ParticipantChange.Header">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/messenger_participant_add_switch_text" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Body1.Color" />
+        <Switch android:id="@id/message_add_participant_show_history_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/messenger_participant_add_switch_description" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" android:text="@string/messenger_participant_add_switch_tips" style="@style/TextAppearance.ArtDeco.Caption1" />
+</LinearLayout>

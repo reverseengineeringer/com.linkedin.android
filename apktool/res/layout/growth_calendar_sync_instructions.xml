@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_6" android:paddingTop="@dimen/ad_item_spacing_6" android:paddingRight="@dimen/ad_item_spacing_6" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/growth_calendar_instruction_screen_display_text" style="@style/TextAppearance.ArtDeco.Display1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/relationships_calendar_icon" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5" android:src="@drawable/ic_refresh_24dp" />
+            <com.linkedin.android.infra.ui.TintableImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_linkedin_bug_black_48dp" app:tint="@color/ad_blue_7" />
+        </LinearLayout>
+        <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_6" android:text="@string/growth_calendar_instruction_screen_title_text" style="@style/TextAppearance.ArtDeco.Body1.Bold" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_calendar_instruction_screen_bullet" style="@style/TextAppearance.ArtDeco.Body1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:text="@string/growth_calendar_instruction_screen_bullet_text1" style="@style/TextAppearance.ArtDeco.Body1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_calendar_instruction_screen_bullet" style="@style/TextAppearance.ArtDeco.Body1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:text="@string/growth_calendar_instruction_screen_bullet_text2" style="@style/TextAppearance.ArtDeco.Body1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_calendar_instruction_screen_bullet" style="@style/TextAppearance.ArtDeco.Body1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:text="@string/growth_calendar_instruction_screen_bullet_text3" style="@style/TextAppearance.ArtDeco.Body1" />
+        </LinearLayout>
+        <TextView android:id="@id/growth_calendar_learn_more_text_view" android:paddingTop="@dimen/ad_item_spacing_5" android:paddingBottom="@dimen/ad_item_spacing_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ad_icon_button_3" android:text="@string/growth_calendar_instruction_screen_learn_more_text" style="@style/TextAppearance.ArtDeco.Body1.Bold" />
+        <Button android:id="@id/growth_sync_your_calendar_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/growth_calendar_instruction_screen_sync_button_text" style="@style/ArtDeco.Button.4.Primary" />
+    </LinearLayout>
+</ScrollView>

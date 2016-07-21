@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/cookie_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/infra_cookie_fragment_container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/infra_cookie_toolbar" android:background="@drawable/common_linear_primary_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/infra_action_bar_default_height" android:layout_marginBottom="@dimen/activity_vertical_bottom_margin" android:title="@string/cookie_title" app:titleTextAppearance="@style/TextAppearance.ArtDeco.Headline2.Inverse.Bold" app:navigationIcon="@drawable/infra_back_icon" app:navigationContentDescription="@string/infra_toolbar_back_content_description" style="@style/ToolbarStyle">
+            <android.support.v7.widget.SearchView android:layout_gravity="end" android:id="@id/infra_cookie_fragment_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_right_margin" android:iconifiedByDefault="true" android:layout_marginEnd="@dimen/activity_horizontal_right_margin" />
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView android:id="@id/infra_cookie_fragment_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/infra_cookie_add_button" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:layout_margin="@dimen/ad_item_spacing_4" android:src="@drawable/ic_plus_24dp" android:scaleType="center" android:tint="@color/ad_white_solid" app:elevation="5.0sp" app:layout_anchor="@id/infra_cookie_fragment_container" app:layout_anchorGravity="end|bottom|center" app:fabSize="mini" app:backgroundTint="@color/ad_blue_6" />
+</android.support.design.widget.CoordinatorLayout>

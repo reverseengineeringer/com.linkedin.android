@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_report_participant_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:ellipsize="end" android:gravity="start" android:id="@id/msglib_declined_invitation" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_5" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messenger_declined_invitation_text" android:maxLines="1" android:paddingStart="@dimen/ad_item_spacing_5" android:paddingEnd="@dimen/ad_item_spacing_5" />
+    <View android:background="@color/msglib_compose_message_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:ellipsize="end" android:id="@id/msglib_report_spam_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messenger_declined_action_spam" android:lines="1" android:scrollHorizontally="true" android:textAllCaps="false" style="@style/ArtDeco.Button.1.Tertiary" />
+</LinearLayout>

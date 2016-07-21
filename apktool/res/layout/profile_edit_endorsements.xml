@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <include layout="@layout/profile_edit_endorsement_list_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/profile_edit_container_list" android:background="@color/solid_white" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="top" android:background="@drawable/identity_profile_edit_skill_list_header_bg" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    </FrameLayout>
+</LinearLayout>

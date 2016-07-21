@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/profile_view_member_id_resolver_spinner" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:indeterminate="true" style="?android:attr/progressBarStyleLarge" />
+    <ViewStub android:layout_gravity="center" android:id="@id/profile_view_member_id_resolver_error" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

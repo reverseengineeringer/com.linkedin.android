@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <ScrollView android:id="@id/identity_profile_edit_project_scroll_view" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_edit_project_layout" android:padding="@dimen/activity_horizontal_margin" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_project_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing">
+                <EditText android:id="@id/identity_profile_edit_project_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_project_name" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <include layout="@layout/profile_edit_date_range_switch" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:id="@id/identity_profile_edit_project_members_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_members" />
+            <com.linkedin.android.identity.shared.ui.ContributorsEditLayout android:orientation="vertical" android:id="@id/identity_profile_edit_project_members" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" style="@style/IdentityProfileEditFieldStyle" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="start|center" android:layout_gravity="start" android:id="@id/identity_profile_edit_project_members_count_label" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="@dimen/normal_item_spacing" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Caption1" />
+                <Button android:layout_gravity="end" android:id="@id/identity_profile_edit_project_add_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_add_member_button" style="@style/ArtDeco.FullButton.1.Tertiary" />
+            </LinearLayout>
+            <include layout="@layout/profile_edit_associated_occupation" />
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_project_url_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing">
+                <EditText android:id="@id/identity_profile_edit_project_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_project_url" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_project_description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_6">
+                <EditText android:gravity="top" android:id="@id/identity_profile_edit_project_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_project_description" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <include layout="@layout/profile_edit_text_limit" />
+            <Button android:gravity="end|center" android:layout_gravity="end" android:id="@id/identity_profile_delete_project" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_delete_project" style="@style/ArtDeco.FullButton.2.Tertiary" />
+            <TextView android:id="@id/identity_profile_edit_project_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_name" />
+            <TextView android:id="@id/identity_profile_edit_project_url_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_url" />
+            <TextView android:id="@id/identity_profile_edit_project_members_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_members" />
+            <TextView android:id="@id/identity_profile_edit_project_description_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_project_description" />
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

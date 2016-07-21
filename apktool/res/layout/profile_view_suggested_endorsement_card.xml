@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/profile_view_suggested_endorsements_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard">
+        <View android:id="@id/profile_view_guided_edit_entry_accent" android:background="@color/ad_accent_blue" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="horizontal" android:id="@id/me_suggested_action_card_headline" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:ellipsize="end" android:id="@id/suggested_endorsement_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_7" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:minHeight="@dimen/ad_item_spacing_5" android:maxLines="3" />
+                <com.linkedin.android.infra.ui.TintableImageButton android:layout_gravity="end" android:id="@id/suggested_endorsement_close_button" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_16dp" android:tint="@color/ad_gray_4" android:contentDescription="@string/identity_guided_edit_entry_dismiss_hint" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3">
+                <com.linkedin.android.imageloader.LiImageView android:id="@id/suggested_endorsement_image" android:layout_width="@dimen/ad_item_spacing_7" android:layout_height="@dimen/ad_item_spacing_7" />
+                <LinearLayout android:orientation="vertical" android:id="@id/suggested_endorsement_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_toRightOf="@id/suggested_endorsement_image" android:layout_centerInParent="true">
+                    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:id="@id/suggested_endorsement_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+                    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:id="@id/suggested_endorsement_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:src="@drawable/ad_divider_horizontal" android:contentDescription="@string/profile_suggested_endorsement_card_divider_horizontal" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.ButtonText.2" android:gravity="center" android:id="@id/suggested_endorsement_skip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/profile_suggested_endorsement_card_skip" android:layout_weight="1.0" style="@style/ArtDeco.FullButton.2.Tertiary" />
+                <View android:background="@drawable/ad_divider_horizontal" android:layout_width="@dimen/ad_button_stroke_1" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_2" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.ButtonText.2" android:gravity="center" android:id="@id/suggested_endorsement_endorse" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/profile_suggested_endorsement_card_endorse" android:layout_weight="1.0" style="@style/ArtDeco.FullButton.2.Tertiary" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

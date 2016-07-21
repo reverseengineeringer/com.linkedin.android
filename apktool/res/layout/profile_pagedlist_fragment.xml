@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_lightlist_fragment_view" android:background="@color/cardview_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/infra_page_toolbar" />
+        <include layout="@layout/profile_view_lightlist_section" />
+    </LinearLayout>
+</FrameLayout>

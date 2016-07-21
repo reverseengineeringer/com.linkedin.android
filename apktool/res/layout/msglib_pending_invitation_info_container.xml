@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/msglib_pending_invitation_info_container" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/msglib_pending_invitation_text" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/messenger_pending_invitation_text" android:maxLines="1" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/msglib_pending_invitation_delete_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:src="@drawable/ic_cancel_24dp" style="@style/ArtDeco.IconButton.2.Secondary.Muted" />
+    <ImageButton android:id="@id/msglib_pending_invitation_accept_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_24dp" style="@style/ArtDeco.IconButton.2.Secondary" />
+</LinearLayout>

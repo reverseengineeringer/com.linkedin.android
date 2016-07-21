@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/growth_abi_navbar" android:background="@color/ad_gray_1" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/growth_abi_nav_back" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <com.linkedin.android.imageloader.LiImageView android:layout_width="@dimen/ad_item_spacing_7" android:layout_height="@dimen/ad_item_spacing_7" android:src="@drawable/ic_chevron_left_16dp" android:scaleType="center" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_abi_back" style="@style/TextAppearance.ArtDeco.Subhead.Bold" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/growth_abi_nav_next" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:id="@id/growth_abi_nav_next_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_abi_skip" style="@style/TextAppearance.ArtDeco.Subhead.Bold" />
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/growth_abi_nav_next_arrow" android:layout_width="@dimen/ad_item_spacing_7" android:layout_height="@dimen/ad_item_spacing_7" android:src="@drawable/ic_chevron_right_16dp" android:scaleType="center" />
+    </LinearLayout>
+</RelativeLayout>

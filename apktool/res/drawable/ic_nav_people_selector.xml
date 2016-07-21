@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/ic_nav_people_filled_32dp" />
+    <item android:drawable="@drawable/ic_nav_people_outline_32dp" />
+</selector>

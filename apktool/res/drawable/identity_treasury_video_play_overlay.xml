@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/ad_black_55" />
+            <stroke android:width="@dimen/ad_button_stroke_2" android:color="@color/solid_white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/ad_item_spacing_3" android:top="@dimen/ad_item_spacing_3" android:right="@dimen/ad_item_spacing_3" android:bottom="@dimen/ad_item_spacing_3" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_play_24dp" android:tint="@color/solid_white" />
+    </item>
+</layer-list>

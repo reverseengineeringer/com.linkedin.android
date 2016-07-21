@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/entities_item_footer_root" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:weightSum="4.0">
+        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:id="@id/entities_item_footer_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

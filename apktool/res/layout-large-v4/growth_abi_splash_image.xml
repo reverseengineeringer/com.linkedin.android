@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.imageloader.LiImageView android:id="@id/abi_splash_image" android:layout_width="@dimen/ad_entity_photo_8" android:layout_height="@dimen/ad_entity_photo_8" style="@style/GrowthAbiSplashImage"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

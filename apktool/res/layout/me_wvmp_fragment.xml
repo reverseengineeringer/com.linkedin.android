@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/me_wvmp_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_page_toolbar" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/me_swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.RecyclerView android:id="@id/me_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/me_wvmp_free_anonymous_premium" />
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

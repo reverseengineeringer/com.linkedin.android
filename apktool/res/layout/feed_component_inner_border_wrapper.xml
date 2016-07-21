@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/feed_component_inner_border_wrapper_container" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/feed_component_inner_border_wrapper_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/feed_component_inner_border_width" />
+    <View android:layout_gravity="start" android:id="@id/feed_component_inner_border_left" android:background="@color/feed_line_color" android:layout_width="@dimen/feed_component_inner_border_width" android:layout_height="fill_parent" />
+    <View android:layout_gravity="end" android:id="@id/feed_component_inner_border_right" android:background="@color/feed_line_color" android:layout_width="@dimen/feed_component_inner_border_width" android:layout_height="fill_parent" />
+    <View android:layout_gravity="top" android:id="@id/feed_component_inner_border_top" android:background="@color/feed_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/feed_component_inner_border_width" />
+    <View android:layout_gravity="bottom" android:id="@id/feed_component_inner_border_bottom" android:background="@color/feed_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/feed_component_inner_border_width" />
+</FrameLayout>

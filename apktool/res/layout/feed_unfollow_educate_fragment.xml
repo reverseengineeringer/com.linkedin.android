@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/feed_unfollow_educate_container" android:background="@color/ad_black_85" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/feed_unfollow_educate_view_flipper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/feed_unfollow_educate_intro" />
+        <include layout="@layout/feed_unfollow_educate_action_list" />
+        <include layout="@layout/feed_unfollow_educate_unfollow_list" />
+    </ViewFlipper>
+    <Button android:layout_gravity="center" android:id="@id/feed_unfollow_educate_skip_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:text="@string/growth_rbmf_skip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ArtDeco.FullButton.2.Tertiary.Inverse" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/relationships_connections_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.relationships.widgets.fastScoller.RecyclerViewFastScrollerLayout android:id="@id/relationships_connections_list_fast_scroller" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/relationships_connections_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/relationships_fast_scroller_bar_touch_width" android:layout_marginEnd="@dimen/relationships_fast_scroller_bar_touch_width" />
+    </com.linkedin.android.relationships.widgets.fastScoller.RecyclerViewFastScrollerLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="@dimen/ad_icon_button_2" android:layout_height="@dimen/ad_icon_button_2" android:layout_margin="@dimen/ad_item_spacing_2" style="?android:attr/progressBarStyleLarge" />
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

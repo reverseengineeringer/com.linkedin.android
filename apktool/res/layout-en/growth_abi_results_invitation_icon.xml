@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/growth_abi_invitation_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/growth_abi_invite_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_abi_invite_text" android:contentDescription="@string/growth_abi_item_icon_content_description" style="@style/ArtDeco.Button.2.Tertiary" />
+    <com.linkedin.android.infra.ui.TintableButton android:textColor="@color/ad_green_7" android:id="@id/growth_abi_invited_icon" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_abi_invited_text" android:drawableLeft="@drawable/ic_check_16dp" android:drawableStart="@drawable/ic_check_16dp" app:drawableTint="@color/ad_green_7" style="@style/TextAppearance.ArtDeco.ButtonText.2" />
+</LinearLayout>

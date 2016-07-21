@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/identity_profile_view_top_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/profile_view_top_card_background_section" layout="@layout/profile_view_top_card_background_image_section" />
+    <FrameLayout android:id="@id/identity_profile_view_top_card_content_and_picture" android:paddingTop="@dimen/identity_profile_top_card_profile_picture_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/identity_profile_top_card_profile_picture_top_margin" layout="@layout/profile_view_top_card_content_section" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/profile_view_top_card_profile_picture_section" />
+    </FrameLayout>
+</FrameLayout>

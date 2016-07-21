@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/checkout_subscription_details_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/checkout_subscription_details_header" android:background="@drawable/checkout_toolbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7" style="@style/ToolbarStyle">
+        <ImageButton android:layout_gravity="end" android:id="@id/checkout_subscription_details_close" android:background="@color/ad_transparent" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_24dp" android:tint="@color/ad_white_solid" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" android:contentDescription="@string/infra_toolbar_close_content_description" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:id="@id/checkout_subscription_details_top_section" android:background="@color/ad_gray_light" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:gravity="start" android:id="@id/checkout_subscription_details_product" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_alignParentLeft="true" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:gravity="end" android:id="@id/checkout_subscription_details_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/checkout_subscription_details_cart_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/checkout_subscription_details_top_section_sub_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:contentDescription="@string/premium_divider_content_description" />
+        <RelativeLayout android:id="@id/checkout_subscription_details_price_due" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1.Bold" android:gravity="start" android:id="@id/checkout_subscription_details_price_due_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:gravity="end" android:id="@id/checkout_subscription_details_price_due_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/checkout_subscription_details_top_section_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/premium_divider_content_description" />
+    <ScrollView android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/checkout_details_faq" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="center" android:id="@id/checkout_details_tos" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5" android:layout_marginBottom="@dimen/ad_item_spacing_5" android:minWidth="@dimen/ad_item_spacing_7" android:minHeight="@dimen/ad_item_spacing_7" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

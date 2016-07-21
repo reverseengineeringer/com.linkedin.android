@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_6" android:paddingRight="@dimen/ad_item_spacing_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_6" android:paddingEnd="@dimen/ad_item_spacing_6">
+        <ImageView android:id="@id/empty_or_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:id="@id/empty_or_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" style="@style/TextAppearance.ArtDeco.Body4" />
+        <TextView android:gravity="center" android:id="@id/empty_or_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" style="@style/TextAppearance.ArtDeco.Body4" />
+        <Button android:id="@id/empty_or_error_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:textAllCaps="false" style="@style/ArtDeco.Button.2.Secondary.Muted" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/growth_onboarding_bg" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_phonetic_name_fragment_last_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" app:theme="@style/TextInput.Theme.Inverse">
+            <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_phonetic_name_fragment_last_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_phonetic_name_last_name" android:inputType="textPersonName|textCapWords" style="@style/ArtDeco.Form.Filled.2.Inverse" />
+            <TextView android:id="@id/growth_onboarding_phonetic_name_fragment_last_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_phonetic_name_last_name" />
+        </com.linkedin.android.infra.ui.CustomTextInputLayout>
+        <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_phonetic_name_fragment_first_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:theme="@style/TextInput.Theme.Inverse">
+            <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_phonetic_name_fragment_first_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_phonetic_name_first_name" android:inputType="textPersonName|textCapWords" style="@style/ArtDeco.Form.Filled.2.Inverse" />
+            <TextView android:id="@id/growth_onboarding_phonetic_name_fragment_first_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_phonetic_name_first_name" />
+        </com.linkedin.android.infra.ui.CustomTextInputLayout>
+        <Button android:gravity="center" android:id="@id/growth_onboarding_navigation_top_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:text="@string/growth_onboarding_continue" style="@style/ArtDeco.Button.4.Secondary.Inverse" />
+    </LinearLayout>
+</ScrollView>

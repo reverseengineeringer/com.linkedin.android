@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_2" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.WrapContentViewPager android:id="@id/guided_edit_view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.linkedin.android.artdeco.components.HorizontalViewPagerCarousel android:id="@id/guided_edit_paginator" android:paddingTop="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_below="@id/guided_edit_view_pager" android:layout_centerHorizontal="true" />
+</RelativeLayout>

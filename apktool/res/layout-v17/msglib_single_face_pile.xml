@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/image_container" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:layout_marginLeft="@dimen/msglib_conversation_list_image_left_margin" android:layout_marginRight="@dimen/msglib_conversation_list_image_right_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/msglib_conversation_list_image_left_margin" android:layout_marginEnd="@dimen/msglib_conversation_list_image_right_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:riv_oval="true" />
+</RelativeLayout>

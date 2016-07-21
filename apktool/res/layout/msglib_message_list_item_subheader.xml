@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center" android:id="@id/subheader" android:paddingLeft="@dimen/msglib_message_list_subheader_bottom_margin" android:paddingRight="@dimen/msglib_message_list_subheader_bottom_margin" android:paddingBottom="@dimen/msglib_message_list_subheader_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.MessageList.Subheader"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

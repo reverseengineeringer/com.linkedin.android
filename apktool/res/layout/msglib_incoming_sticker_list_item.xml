@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_message_list_item_container" android:paddingLeft="@dimen/msglib_message_list_horizontal_margin" android:paddingTop="@dimen/msglib_message_list_top_margin" android:paddingRight="@dimen/msglib_message_list_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/msglib_message_list_item_header" />
+    <include android:id="@id/subheader" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/msglib_message_list_item_subheader" />
+    <FrameLayout android:layout_gravity="start" android:id="@id/msglib_message_list_item_bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/image" android:layout_width="@dimen/ad_entity_photo_1" android:layout_height="@dimen/ad_entity_photo_1" android:layout_marginRight="@dimen/msglib_message_list_image_bubble_margin" android:scaleType="centerCrop" app:riv_oval="true" style="@style/MsgLib.Image" />
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/sticker_image" android:layout_width="@dimen/msglib_message_list_sticker_image_size" android:layout_height="@dimen/msglib_message_list_sticker_image_size" android:layout_toRightOf="@id/image" android:layout_alignTop="@id/image" />
+            <TextView android:gravity="start" android:id="@id/footer" android:paddingTop="@dimen/msglib_message_list_timestamp_bottom_margin" android:paddingBottom="@dimen/msglib_message_list_timestamp_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image" android:layout_below="@id/sticker_image" style="@style/MsgLib.MessageList.Item.Footer" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include android:id="@id/read_receipts_container" layout="@layout/msglib_message_list_item_read_receipts" />
+</LinearLayout>

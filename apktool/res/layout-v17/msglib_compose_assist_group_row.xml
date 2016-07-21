@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/msglib_compose_assist_container" android:background="@color/msglib_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/msglib_compose_assist_profile_picture" android:layout_width="@dimen/msglib_large_icon_size" android:layout_height="@dimen/msglib_large_icon_size" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_marginStart="@dimen/ad_item_spacing_4" android:layout_marginEnd="@dimen/ad_item_spacing_1" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/msglib_compose_assist_result_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_toLeftOf="@id/msglib_compose_assist_checkbox" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="@dimen/ad_item_spacing_4" android:layout_toStartOf="@id/msglib_compose_assist_checkbox">
+            <TextView android:ellipsize="end" android:gravity="start" android:id="@id/msglib_compose_assist_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/MsgLib.Title" />
+            <TextView android:ellipsize="end" android:gravity="start" android:id="@id/msglib_compose_assist_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/msglib_compose_assist_checkbox" android:visibility="gone" android:layout_width="@dimen/ad_icon_2" android:layout_height="@dimen/ad_icon_2" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/messenger_compose_assist_check_box_description" android:layout_marginEnd="@dimen/ad_item_spacing_4" android:layout_alignParentEnd="true" />
+        <View android:id="@id/msglib_compose_assist_divider" android:background="@color/msglib_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/msglib_compose_assist_result_wrapper" />
+    </RelativeLayout>
+</LinearLayout>

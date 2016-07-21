@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:dither="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/link_color" />
+            <corners android:bottomLeftRadius="@dimen/feed_control_panel_background_corner_radius" android:bottomRightRadius="@dimen/feed_control_panel_background_corner_radius" />
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

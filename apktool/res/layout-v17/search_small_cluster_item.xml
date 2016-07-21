@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/search_small_cluster_item_border" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/search_small_cluster_item_icon" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:layout_marginRight="@dimen/ad_item_spacing_2" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/ad_item_spacing_2" android:layout_alignParentStart="true" style="@style/ArtDeco.EntityPhoto.4.Circle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/guided_search_small_item_text_max_width" android:layout_height="wrap_content" android:layout_toRightOf="@id/search_small_cluster_item_icon" android:layout_toEndOf="@id/search_small_cluster_item_icon">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:ellipsize="end" android:id="@id/search_small_cluster_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:textColor="@color/black_55" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_small_cluster_item_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:maxLines="1" android:layout_marginStart="@dimen/ad_item_spacing_2" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:ellipsize="end" android:gravity="start" android:id="@id/search_small_cluster_item_occupation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="start" android:id="@id/search_small_cluster_item_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:minLines="1" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start" android:id="@id/search_large_cluster_item_snippets" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

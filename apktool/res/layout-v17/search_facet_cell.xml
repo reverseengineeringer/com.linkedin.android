@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:textColor="@color/ad_black_70" android:id="@id/search_facet_cell_name" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_item_spacing_4" />
+    <android.support.v7.widget.RecyclerView android:id="@id/search_facet_recycler_view" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/search_facet_cells_divider" android:background="@color/search_facet_bg_grey" android:layout_width="fill_parent" android:layout_height="@dimen/ad_button_stroke_1" />
+</LinearLayout>

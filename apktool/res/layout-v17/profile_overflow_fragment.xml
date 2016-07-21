@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_overflow_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/profile_overflow_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Page"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ad_item_spacing_2" android:weightSum="1.0" android:layout_marginEnd="@dimen/ad_item_spacing_2">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/profile_overflow_toolbar_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Headline1.Inverse.Bold" />
+            <com.linkedin.android.imageloader.LiImageView android:gravity="center_vertical" android:id="@id/profile_overflow_toolbar_image" android:layout_width="@dimen/ad_entity_photo_1" android:layout_height="@dimen/ad_entity_photo_1" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ad_item_spacing_2" app:riv_border_width="2.0dip" app:riv_border_color="@color/ad_white_solid" app:riv_oval="true" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView android:id="@id/profile_overflow_cards_holder" android:background="@color/ad_gray_light" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

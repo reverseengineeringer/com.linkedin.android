@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/promo2_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/promo2_picture_container" android:background="@drawable/promo_white_text_default_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/promo2_bg_height" android:scaleType="fitXY" android:contentDescription="@string/background" />
+    <ImageView android:id="@id/promo2_icon_logo" android:layout_width="@dimen/promo2_icon_size" android:layout_height="@dimen/promo2_icon_size" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/promo_default_icon" android:layout_centerVertical="true" android:contentDescription="@string/logo" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/promo2_text_container" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/promo2_icon_logo" android:layout_centerVertical="true">
+        <TextView android:id="@id/promo2_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/promo2_title" />
+        <ImageView android:id="@id/promo2_text_divider_line" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@drawable/solid_white_line" />
+        <TextView android:id="@id/promo2_text_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/promo2_text" />
+    </LinearLayout>
+</RelativeLayout>

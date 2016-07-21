@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/promo1_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/promo1_picture_container" android:background="@drawable/promo_white_text_default_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/promo1_bg_height" android:scaleType="fitXY" android:contentDescription="@string/background" />
+    <ImageView android:id="@id/promo1_icon_logo" android:layout_width="@dimen/promo1_icon_size" android:layout_height="@dimen/promo1_icon_size" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/promo_default_icon" android:contentDescription="@string/logo" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/promo1_text_container" android:paddingTop="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_centerInParent="true">
+        <TextView android:gravity="center" android:id="@id/promo1_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/promo1_title" />
+        <Button android:gravity="center" android:id="@id/promo1_prompt_btn" android:background="@color/btn_bg_blue_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:minHeight="@dimen/promo1_btn_height" style="@style/promo1_btn_text" />
+    </LinearLayout>
+</RelativeLayout>

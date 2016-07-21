@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/identity_guided_edit_education_date_range_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_guided_edit_education_date_range_sub_header_new" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1_negative" android:layout_marginRight="@dimen/ad_item_spacing_1_negative" android:weightSum="2.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:id="@id/identity_guided_edit_education_select_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/identity_profile_edit_education_from" android:cursorVisible="false" android:prompt="@string/identity_profile_edit_education_from" android:inputType="none" android:spinnerMode="dialog" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:id="@id/identity_guided_edit_education_select_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/identity_profile_edit_education_to" android:cursorVisible="false" android:prompt="@string/identity_profile_edit_education_to" android:inputType="none" android:spinnerMode="dialog" />
+            <TextView android:textAppearance="@style/ArtDeco.Form.TextColorHint" android:id="@id/identity_guided_edit_education_date_or_expected" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_education_or_expected" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/ArtDeco.Form.Error.1" android:id="@id/identity_guided_edit_education_date_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

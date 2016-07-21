@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xpromo_rta_first_card_layout" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" android:src="@drawable/axle_rta_top_border" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/xpromo_rta_first_card_text_and_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/xpromo_rta_first_card_icon" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:src="@drawable/star1" android:scaleType="fitCenter" android:layout_marginStart="@dimen/ad_item_spacing_4" android:layout_marginEnd="@dimen/ad_item_spacing_4" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Bold" android:gravity="start" android:id="@id/xpromo_rta_first_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/axle_rta_first_card_question" android:textAlignment="viewStart" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3">
+                <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="end" android:id="@id/xpromo_rta_first_card_button_left" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_2" android:text="@string/axle_rta_first_card_answer_negative" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ad_item_spacing_2" style="@style/ArtDeco.Button.2.Secondary" />
+                <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="end" android:id="@id/xpromo_rta_first_card_button_right" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/axle_rta_first_card_answer_positive" android:maxLines="1" android:layout_weight="1.0" style="@style/ArtDeco.Button.2.Secondary" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/xpromo_rta_first_card_cancel" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1_negative">
+            <ImageButton android:id="@id/xpromo_rta_first_card_cancel_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_16dp" android:contentDescription="@string/cancel" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_rbmf_carousel_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/growth_rbmf_carousel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_8" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_weight="1.0" />
+    <com.linkedin.android.artdeco.components.HorizontalViewPagerCarousel android:layout_gravity="center_horizontal" android:id="@id/growth_rbmf_carousel_page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_marginBottom="@dimen/ad_item_spacing_3" app:ad_invert_color="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/touch_target_minimum_size" android:layout_marginBottom="@dimen/ad_item_spacing_2">
+        <TextView android:textColor="@color/ad_white_70" android:gravity="center" android:layout_gravity="center" android:id="@id/growth_rbmf_swipe_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/growth_rbmf_swipe_for_more" />
+        <Button android:layout_gravity="center" android:id="@id/growth_rbmf_exit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/growth_rbmf_break_card_footer_title" style="@style/ArtDeco.FullButton.1.Tertiary.Inverse" />
+    </LinearLayout>
+</LinearLayout>

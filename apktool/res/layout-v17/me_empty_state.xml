@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/ad_item_spacing_6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/me_empty_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/identity_me_empty_header" android:textAlignment="center" />
+    <TextView android:gravity="center" android:id="@id/me_empty_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_6" android:text="@string/identity_me_empty_body" android:textAlignment="center" />
+    <Button android:id="@id/me_empty_button" android:background="@drawable/ad_btn_bg_black_stroke_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_me_empty_button" style="@style/ArtDeco.Button.2.Secondary.Muted" />
+</LinearLayout>

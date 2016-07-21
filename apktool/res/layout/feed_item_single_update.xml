@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/feed_item_single_update_container" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_1" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.feed.endor.ui.FeedComponentsView android:orientation="vertical" android:id="@id/feed_item_single_update_components_list" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>

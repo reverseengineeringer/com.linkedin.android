@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center" android:id="@id/highlighted_placeholder_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_success_inbug_230dp" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:layout_gravity="center" android:id="@id/highlighted_placeholder_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_7" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_7" android:layout_marginBottom="@dimen/ad_item_spacing_7" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

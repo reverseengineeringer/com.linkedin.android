@@ -1,0 +1,115 @@
+package com.linkedin.android.artdeco;
+
+public final class R$dimen
+{
+  public static final int abc_action_bar_content_inset_material = 2131492881;
+  public static final int abc_action_bar_default_height_material = 2131492865;
+  public static final int abc_action_bar_icon_vertical_padding_material = 2131492898;
+  public static final int abc_action_bar_overflow_padding_end_material = 2131492899;
+  public static final int abc_action_bar_overflow_padding_start_material = 2131492900;
+  public static final int abc_action_bar_progress_bar_size = 2131492866;
+  public static final int abc_action_bar_stacked_max_height = 2131492901;
+  public static final int abc_action_bar_stacked_tab_max_width = 2131492902;
+  public static final int abc_action_bar_subtitle_bottom_margin_material = 2131492903;
+  public static final int abc_action_bar_subtitle_top_margin_material = 2131492904;
+  public static final int abc_action_button_min_height_material = 2131492905;
+  public static final int abc_action_button_min_width_material = 2131492906;
+  public static final int abc_action_button_min_width_overflow_material = 2131492907;
+  public static final int abc_alert_dialog_button_bar_height = 2131492864;
+  public static final int abc_button_inset_horizontal_material = 2131492908;
+  public static final int abc_button_inset_vertical_material = 2131492909;
+  public static final int abc_button_padding_horizontal_material = 2131492910;
+  public static final int abc_button_padding_vertical_material = 2131492911;
+  public static final int abc_config_prefDialogWidth = 2131492872;
+  public static final int abc_control_corner_material = 2131492912;
+  public static final int abc_control_inset_material = 2131492913;
+  public static final int abc_control_padding_material = 2131492914;
+  public static final int abc_dialog_list_padding_vertical_material = 2131492915;
+  public static final int abc_dialog_min_width_major = 2131492877;
+  public static final int abc_dialog_min_width_minor = 2131492878;
+  public static final int abc_dialog_padding_material = 2131492916;
+  public static final int abc_dialog_padding_top_material = 2131492917;
+  public static final int abc_disabled_alpha_material_dark = 2131492918;
+  public static final int abc_disabled_alpha_material_light = 2131492919;
+  public static final int abc_dropdownitem_icon_width = 2131492920;
+  public static final int abc_dropdownitem_text_padding_left = 2131492921;
+  public static final int abc_dropdownitem_text_padding_right = 2131492922;
+  public static final int abc_edit_text_inset_bottom_material = 2131492923;
+  public static final int abc_edit_text_inset_horizontal_material = 2131492924;
+  public static final int abc_edit_text_inset_top_material = 2131492925;
+  public static final int abc_floating_window_z = 2131492926;
+  public static final int abc_list_item_padding_horizontal_material = 2131492927;
+  public static final int abc_panel_menu_list_width = 2131492928;
+  public static final int abc_search_view_preferred_width = 2131492929;
+  public static final int abc_search_view_text_min_width = 2131492879;
+  public static final int abc_switch_padding = 2131492895;
+  public static final int abc_text_size_body_1_material = 2131492933;
+  public static final int abc_text_size_body_2_material = 2131492934;
+  public static final int abc_text_size_button_material = 2131492935;
+  public static final int abc_text_size_caption_material = 2131492936;
+  public static final int abc_text_size_display_1_material = 2131492937;
+  public static final int abc_text_size_display_2_material = 2131492938;
+  public static final int abc_text_size_display_3_material = 2131492939;
+  public static final int abc_text_size_display_4_material = 2131492940;
+  public static final int abc_text_size_headline_material = 2131492941;
+  public static final int abc_text_size_large_material = 2131492942;
+  public static final int abc_text_size_medium_material = 2131492943;
+  public static final int abc_text_size_menu_material = 2131492944;
+  public static final int abc_text_size_small_material = 2131492945;
+  public static final int abc_text_size_subhead_material = 2131492946;
+  public static final int abc_text_size_subtitle_material_toolbar = 2131492867;
+  public static final int abc_text_size_title_material = 2131492947;
+  public static final int abc_text_size_title_material_toolbar = 2131492868;
+  public static final int ad_button_corner_radius = 2131492957;
+  public static final int ad_button_stroke_1 = 2131492958;
+  public static final int ad_button_stroke_2 = 2131492959;
+  public static final int ad_entity_photo_1 = 2131492960;
+  public static final int ad_entity_photo_2 = 2131492961;
+  public static final int ad_entity_photo_3 = 2131492962;
+  public static final int ad_entity_photo_4 = 2131492963;
+  public static final int ad_entity_photo_5 = 2131492964;
+  public static final int ad_entity_photo_6 = 2131492967;
+  public static final int ad_entity_photo_7 = 2131492968;
+  public static final int ad_entity_photo_8 = 2131492969;
+  public static final int ad_horizontal_view_pager_carousel_dot_selected_size = 2131492971;
+  public static final int ad_horizontal_view_pager_carousel_dot_unselected_size = 2131492972;
+  public static final int ad_icon_1 = 2131492973;
+  public static final int ad_icon_2 = 2131492974;
+  public static final int ad_icon_3 = 2131492975;
+  public static final int ad_icon_4 = 2131492976;
+  public static final int ad_icon_button_1 = 2131492977;
+  public static final int ad_icon_button_2 = 2131492978;
+  public static final int ad_icon_button_3 = 2131492979;
+  public static final int ad_icon_button_4 = 2131492980;
+  public static final int ad_item_spacing_1 = 2131492987;
+  public static final int ad_item_spacing_1_negative = 2131492988;
+  public static final int ad_item_spacing_2 = 2131492989;
+  public static final int ad_item_spacing_2_negative = 2131492990;
+  public static final int ad_item_spacing_3 = 2131492991;
+  public static final int ad_item_spacing_3_negative = 2131492992;
+  public static final int ad_item_spacing_4 = 2131492993;
+  public static final int ad_item_spacing_4_negative = 2131492994;
+  public static final int ad_item_spacing_5 = 2131492995;
+  public static final int ad_item_spacing_5_negative = 2131492996;
+  public static final int ad_item_spacing_6 = 2131492997;
+  public static final int ad_item_spacing_6_negative = 2131492998;
+  public static final int ad_item_spacing_7 = 2131492999;
+  public static final int ad_item_spacing_7_negative = 2131493000;
+  public static final int ad_item_spacing_8 = 2131493001;
+  public static final int ad_item_spacing_8_negative = 2131493002;
+  public static final int ad_item_spacing_9 = 2131493003;
+  public static final int ad_item_spacing_9_negative = 2131493004;
+  public static final int ad_min_height = 2131493005;
+  public static final int ad_min_width = 2131493006;
+  public static final int cardview_compat_inset_shadow = 2131493028;
+  public static final int cardview_default_elevation = 2131493029;
+  public static final int cardview_default_radius = 2131493030;
+  public static final int disabled_alpha_material_dark = 2131493067;
+  public static final int disabled_alpha_material_light = 2131493068;
+}
+
+/* Location:
+ * Qualified Name:     com.linkedin.android.artdeco.R.dimen
+ * Java Class Version: 6 (50.0)
+ * JD-Core Version:    0.7.1
+ */

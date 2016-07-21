@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/growth_phone_confirmation_fragment_text_country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/growth_phone_confirmation_fragment_text_country_dialing_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

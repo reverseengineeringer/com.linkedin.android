@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_edit_skills_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="@style/TextAppearance.ArtDeco.ButtonText.1" android:id="@id/profile_edit_skill_add_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_skill_add_btn" style="@style/ArtDeco.Button.4.Primary.Color.Inverse" />
+        <include layout="@layout/profile_edit_endorsed_skill_list_header" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/profile_edit_container_list" android:background="@color/ad_white_solid" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:layout_gravity="top" android:background="@drawable/identity_profile_edit_skill_list_header_bg" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_4" />
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

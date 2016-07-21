@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="@dimen/card_view_corner_radius" card_view:cardUseCompatPadding="false" card_view:contentPadding="@dimen/large_item_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/Body2" android:id="@id/entities_update_company_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/Body1" android:id="@id/entities_update_company_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xpromo_rta_dislike_card_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/xpromo_rta_dislike_card_dim_background" android:background="@color/black_50" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/xpromo_rta_dislike_card_toast" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" android:src="@drawable/axle_rta_top_border" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/xpromo_rta_dislike_card_icon" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:src="@drawable/frownface" android:layout_marginStart="@dimen/ad_item_spacing_4" android:layout_marginEnd="@dimen/ad_item_spacing_4" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Bold" android:gravity="start" android:id="@id/xpromo_rta_dislike_card_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:text="@string/axle_rta_dislike_card_question" android:layout_weight="1.0" android:textAlignment="viewStart" />
+            <RelativeLayout android:id="@id/xpromo_rta_dislike_card_cancel" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1_negative">
+                <ImageButton android:id="@id/xpromo_rta_dislike_card_button_dismiss" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_16dp" android:contentDescription="@string/cancel" />
+            </RelativeLayout>
+        </LinearLayout>
+        <EditText android:id="@id/xpromo_rta_dislike_card_edit_feedback" android:paddingTop="@dimen/ad_item_spacing_5" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:hint="@string/axle_rta_dislike_card_feedback_hint" android:maxLines="5" android:maxLength="1000" android:layout_marginStart="@dimen/ad_item_spacing_4" android:layout_marginEnd="@dimen/ad_item_spacing_4" />
+        <Button android:enabled="false" android:ellipsize="end" android:id="@id/xpromo_rta_dislike_card_button_send" android:padding="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/axle_rta_dislike_card_primary_action" android:maxLines="1" style="@style/ArtDeco.FullButton.2.Primary" />
+    </LinearLayout>
+</LinearLayout>

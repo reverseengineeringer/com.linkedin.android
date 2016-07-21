@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/feed_media_control_view_container" android:background="@color/black_85" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feed_media_control_view_header" android:paddingTop="@dimen/small_item_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/feed_media_control_view_rew" style="@android:style/MediaButton.Rew" />
+        <ImageButton android:id="@id/feed_media_control_view_pause" style="@android:style/MediaButton.Play" />
+        <ImageButton android:id="@id/feed_media_control_view_ffwd" style="@android:style/MediaButton.Ffwd" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/feed_media_control_view_footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/feed_normal_font_size" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/feed_media_control_view_current_time" android:paddingLeft="@dimen/small_item_spacing" android:paddingTop="@dimen/small_item_spacing" android:paddingRight="@dimen/small_item_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SeekBar android:id="@id/feed_media_control_view_progress" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" android:contentDescription="@string/feed_cd_video_control_progress" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/feed_normal_font_size" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/feed_media_control_view_end_time" android:paddingLeft="@dimen/small_item_spacing" android:paddingTop="@dimen/small_item_spacing" android:paddingRight="@dimen/small_item_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

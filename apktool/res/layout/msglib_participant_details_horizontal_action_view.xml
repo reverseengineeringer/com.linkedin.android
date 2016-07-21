@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/participant_details_actions" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/participant_details_mute" android:text="@string/messenger_participant_mute" style="@style/MsgLib.ParticipantDetailsHorizontalActionButton" />
+        <Button android:id="@id/participant_details_unmute" android:text="@string/messenger_participant_unmute" style="@style/MsgLib.ParticipantDetailsHorizontalActionButton" />
+        <View style="@style/MsgLib.ParticipantDetailsHorizontalActionDivider" />
+        <Button android:id="@id/participant_details_delete" android:text="@string/messenger_participant_delete" style="@style/MsgLib.ParticipantDetailsHorizontalActionButton" />
+        <View style="@style/MsgLib.ParticipantDetailsHorizontalActionDivider" />
+        <Button android:id="@id/participant_details_leave" android:text="@string/messenger_participant_leave" android:drawableTop="@drawable/ic_leave_24dp" style="@style/MsgLib.ParticipantDetailsHorizontalActionButton" />
+        <Button android:id="@id/participant_details_report" android:text="@string/messenger_participant_report" style="@style/MsgLib.ParticipantDetailsHorizontalActionButton" />
+    </LinearLayout>
+</merge>

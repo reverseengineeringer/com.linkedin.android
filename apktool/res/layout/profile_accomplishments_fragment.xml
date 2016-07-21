@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linkedin.android.infra.ui.lightbox.LightboxLayout android:orientation="vertical" android:id="@id/profile_accomplishment_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/infra_page_toolbar" />
+        <android.support.v7.widget.RecyclerView android:id="@id/profile_accomplishment_fragment" android:background="@color/ad_gray_light" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.linkedin.android.infra.ui.lightbox.LightboxLayout>
+</FrameLayout>

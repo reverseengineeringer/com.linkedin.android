@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <RelativeLayout android:background="@color/ad_black_solid" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/profile_edit_photo_crop_container" android:background="@color/ad_blue_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/ad_icon_1" android:textColor="@color/ad_white_solid" android:gravity="center" android:id="@id/profile_edit_photo_crop_retake_photo" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_5" android:text="@string/identity_profile_picture_button_text" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

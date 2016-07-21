@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/me_cta_button_v2_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/me_cta_button_v2_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/me_cta_button_v2_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" style="@style/ArtDeco.Button.2.Secondary" />
+        <com.linkedin.android.feed.shared.LikeButton android:layout_gravity="center_vertical" android:id="@id/me_cta_button_v2_like_button" android:visibility="gone" android:layout_width="@dimen/ad_icon_2" android:layout_height="@dimen/ad_icon_2" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:src="@drawable/ic_like_24dp" android:layout_marginStart="@dimen/ad_item_spacing_3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/me_cta_button_v2_icon_text_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_1">
+        <LinearLayout android:orientation="horizontal" android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:weightSum="4.0">
+            <View android:background="@drawable/ad_divider_horizontal" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/me_cta_button_v2_icon" android:layout_width="@dimen/ad_icon_1" android:layout_height="@dimen/ad_icon_1" android:src="@drawable/ic_check_16dp" android:tint="@color/ad_green_7" style="@style/ArtDeco.Icon.1" />
+            <TextView android:textColor="@color/ad_green_7" android:gravity="start" android:id="@id/me_cta_button_v2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:textAlignment="viewStart" android:layout_marginStart="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Caption1" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

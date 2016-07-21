@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="entities_image_top_card_top_scrim_weight">75.0%</fraction>
+    <fraction name="entities_solid_top_card_top_scrim_weight">50.0%</fraction>
+    <fraction name="feed_pending_view_alpha">39.999996%</fraction>
+    <fraction name="growth_abi_results_loading_messaging_icon_transparency">25.0%</fraction>
+    <fraction name="sharing_editing_rich_media_alpha">25.0%</fraction>
+</resources>

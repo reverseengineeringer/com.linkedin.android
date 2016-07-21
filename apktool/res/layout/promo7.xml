@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/promo7_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/promo7_text_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/promo7_margin" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/promo7_main_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/promo7_margin" android:layout_marginBottom="@dimen/promo7_margin">
+            <ImageView android:id="@id/promo7_icon_logo" android:layout_width="@dimen/promo7_icon_size" android:layout_height="@dimen/promo7_icon_size" android:layout_marginRight="@dimen/promo7_margin" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/promo7_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/promo7_text_margin" android:text="title text" style="@style/promo7_title" />
+                <TextView android:id="@id/promo7_headline_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="headline headline headline" style="@style/promo7_headline" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/promo7_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/promo7_prompt_btn" android:layout_width="fill_parent" android:layout_height="@dimen/promo7_btn_height" android:layout_marginRight="@dimen/promo7_lightbox_btn_margin_middle" android:layout_weight="1.0" android:textAllCaps="false" style="@style/button_prompt_text" />
+            <Button android:id="@id/promo7_dismiss_btn" android:layout_width="fill_parent" android:layout_height="@dimen/promo7_btn_height" android:layout_marginLeft="@dimen/promo7_lightbox_btn_margin_middle" android:layout_weight="1.0" android:textAllCaps="false" style="@style/promo7_button_dismiss_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

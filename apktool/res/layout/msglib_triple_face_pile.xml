@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/image_container" android:layout_width="@dimen/msglib_large_icon_size" android:layout_height="@dimen/msglib_large_icon_size" android:layout_marginLeft="@dimen/msglib_conversation_list_image_left_margin" android:layout_marginRight="@dimen/msglib_conversation_list_image_right_margin" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MsgLib.Image">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/image1" android:layout_width="@dimen/msglib_small_icon_size" android:layout_height="@dimen/msglib_small_icon_size" android:scaleType="centerCrop" app:riv_oval="true" />
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/image2" android:layout_width="@dimen/msglib_small_icon_size" android:layout_height="@dimen/msglib_small_icon_size" android:scaleType="centerCrop" app:riv_oval="true" />
+        </LinearLayout>
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center" android:id="@id/image3" android:layout_width="@dimen/msglib_small_icon_size" android:layout_height="@dimen/msglib_small_icon_size" android:scaleType="centerCrop" app:riv_oval="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/recs_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Page">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/profile_view_recommendations_tab_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize">
+            <com.linkedin.android.infra.ui.slidingtab.TabLayout android:id="@id/profile_view_recommendations_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <com.linkedin.android.infra.ui.ViewPager android:id="@id/profile_view_recommendations_details_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

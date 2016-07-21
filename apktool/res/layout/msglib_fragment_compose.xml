@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_compose_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.messengerlib.ui.common.ClearableEditText android:textAppearance="@style/TextAppearance.ArtDeco.Headline2" android:textColor="@color/ad_white_solid" android:textColorHint="@color/ad_white_70" android:gravity="center_vertical" android:id="@id/msglib_compose_naming_conversation" android:background="?colorPrimary" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/messenger_compose_naming_conversation" android:singleLine="true" android:imeActionLabel="Done" />
+    <com.linkedin.messengerlib.ui.PeopleSearchCompletionView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="start|center" android:id="@id/msglib_recipient_input" android:background="@color/ad_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_2" android:minHeight="@dimen/ad_min_height" android:hint="@string/to" android:inputType="textCapSentences|textMultiLine" />
+    <View android:id="@id/msglib_recipient_input_divider" android:background="@color/msglib_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/msglib_compose_message_content_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/insights_msg_view" />
+        <FrameLayout android:id="@id/msglib_compose_message_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.linkedin.messengerlib.shared.MessengerRecyclerView android:id="@id/msglib_compose_search_results" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/msglib_compose_message_fragment" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <View android:background="@color/msglib_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/msglib_message_list_keyboard_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/message_keyboard_old" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/msglib_compose_message_container" />
+            <com.linkedin.messengerlib.ui.messagelist.StickerTrayView android:gravity="center" android:id="@id/message_sticker_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/msglib_initial_sticker_keyboard_height" android:text="@string/msglib_stickers_coming_soon" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/message_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

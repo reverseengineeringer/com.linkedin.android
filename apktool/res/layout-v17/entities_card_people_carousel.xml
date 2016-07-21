@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/entities_card_people_carousel_root" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/card_view_corner_radius" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/xlarge_item_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/Title" android:gravity="start" android:id="@id/entities_card_people_carousel_title" android:paddingLeft="@dimen/xlarge_item_spacing" android:paddingRight="@dimen/xlarge_item_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <android.support.v7.widget.RecyclerView android:id="@id/entities_card_people_carousel_recycler_view" android:paddingLeft="@dimen/normal_item_spacing" android:paddingRight="@dimen/normal_item_spacing" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/entities_people_carousel_item_size" />
+        <LinearLayout android:orientation="vertical" android:id="@id/entities_card_people_carousel_info_container" android:background="?selectableItemBackground" android:paddingLeft="@dimen/xlarge_item_spacing" android:paddingTop="@dimen/normal_item_spacing" android:paddingRight="@dimen/xlarge_item_spacing" android:paddingBottom="@dimen/normal_item_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Title" android:gravity="start" android:id="@id/entities_card_people_carousel_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            <TextView android:textAppearance="@style/Subhead" android:gravity="start" android:id="@id/entities_card_people_carousel_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/entities_card_people_carousel_separator" android:paddingTop="@dimen/normal_item_spacing" android:paddingBottom="@dimen/normal_item_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/search_update_divider" />
+            <TextView android:textAppearance="@style/Subhead" android:gravity="start" android:id="@id/entities_card_people_carousel_caption" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            <Button android:textColor="@color/link_color" android:id="@id/entities_card_people_carousel_cta" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

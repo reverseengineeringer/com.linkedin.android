@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_marginStart="@dimen/ad_item_spacing_4">
+        <com.linkedin.android.infra.ui.TintableImageView android:layout_gravity="center_vertical" android:id="@id/growth_calendar_account_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_1" android:src="@drawable/ic_calendar_16dp" android:layout_marginEnd="@dimen/ad_item_spacing_1" app:tint="@color/ad_black_70" app:tintMode="src_in" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/growth_calendar_account_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.ArtDeco.Body2.Bold" />
+    </LinearLayout>
+    <View android:background="@color/ad_gray_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_item_spacing_4" />
+</LinearLayout>

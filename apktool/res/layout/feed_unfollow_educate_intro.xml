@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/feed_unfollow_educate_intro_container" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/feed_unfollow_educate_intro_card" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/feed_update_unfollow_educate" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2.Color.Inverse" android:id="@id/feed_unfollow_educate_intro_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:text="@string/feed_educate_unfollow_intro_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.linkedin.android.feed.shared.autoresize.AutoResizeTextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2.Inverse" android:id="@id/feed_unfollow_educate_intro_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_7" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_7" android:layout_marginBottom="@dimen/ad_item_spacing_5" android:text="@string/feed_educate_unfollow_intro_sub_title" android:layout_above="@id/feed_unfollow_educate_intro_card" android:layout_below="@id/feed_unfollow_educate_intro_title" android:layout_centerHorizontal="true" app:autoComputeMaxLines="true" />
+</RelativeLayout>

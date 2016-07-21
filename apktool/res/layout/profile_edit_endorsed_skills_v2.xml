@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_page_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_edit_skills_layout_v2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="horizontal" android:id="@id/profile_edit_endorsed_skill_list_header_v2" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:layout_gravity="start|center" android:id="@id/profile_edit_endorsed_skill_list_header_text" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageButton android:layout_gravity="end|center|top" android:id="@id/profile_edit_endorsed_skill_edit_mode_btn" android:background="?selectableItemBackground" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:src="@drawable/ic_pencil_24dp" android:tint="@color/link_color" android:contentDescription="@string/profile_skills_edit" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/profile_edit_container_list_v2" android:background="@color/ad_white_solid" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:layout_gravity="top" android:background="@drawable/identity_profile_edit_skill_list_header_bg" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_4" />
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id_v2" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

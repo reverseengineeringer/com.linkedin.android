@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageItemContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/msg_image" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:scaleType="centerCrop" app:riv_oval="true" style="@style/MessageItemImageStyle" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageItemTextContainerStyle">
+        <TextView android:gravity="start" android:id="@id/msg_sender" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageItemTitleStyle" />
+        <TextView android:gravity="start" android:id="@id/msg_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageItemSummaryStyle" />
+        <TextView android:gravity="start" android:id="@id/msg_timestamp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MessageItemTimestampStyle" />
+    </LinearLayout>
+</LinearLayout>

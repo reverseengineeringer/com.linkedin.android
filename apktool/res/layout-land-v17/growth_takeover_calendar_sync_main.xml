@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_takeover_calendar_sync_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/growth_splash_icon_background_circle" android:layout_width="@dimen/ad_entity_photo_6" android:layout_height="@dimen/ad_entity_photo_6">
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center" android:id="@id/growth_takeover_calendar_sync_icon" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:src="@drawable/img_profile_cards_56dp" android:scaleType="centerCrop" android:contentDescription="@string/growth_takeover_calendar_sync_icon_content_description" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/growth_takeover_calendar_sync_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:text="@string/growth_takeover_calendar_sync_heading" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Display1.Color.Inverse" />
+    <Button android:id="@id/growth_takeover_calendar_sync_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_6" android:layout_marginRight="@dimen/ad_item_spacing_6" android:text="@string/growth_takeover_calendar_sync_cta" android:layout_marginStart="@dimen/ad_item_spacing_6" android:layout_marginEnd="@dimen/ad_item_spacing_6" style="@style/ArtDeco.Button.3.Primary.Color.Inverse" />
+</LinearLayout>

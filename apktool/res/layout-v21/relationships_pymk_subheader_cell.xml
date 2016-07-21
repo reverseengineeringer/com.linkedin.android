@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relationships_pymk_subheader_cell" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/cardview_default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/relationships_pymk_subheader_cell_top_space_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_2" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead.Color" android:ellipsize="end" android:gravity="start" android:id="@id/relationships_pymk_subheader_cell_text" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" />
+    <View android:id="@id/relationship_pymk_cell_bottom_border" android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_item_spacing_4" />
+</LinearLayout>

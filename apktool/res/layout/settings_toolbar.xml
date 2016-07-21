@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:layout_gravity="fill" android:id="@id/settings_toolbar" android:background="@drawable/common_linear_primary_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/infra_action_bar_default_height" app:titleTextAppearance="@style/TextAppearance.ArtDeco.Headline2.Inverse.Bold" app:navigationIcon="@drawable/infra_back_icon" app:navigationContentDescription="@string/infra_toolbar_back_content_description" style="@style/ToolbarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

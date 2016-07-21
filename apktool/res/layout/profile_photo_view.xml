@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/infra_page_toolbar" />
+    <RelativeLayout android:orientation="vertical" android:background="@color/black_85" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_photo_view_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_oval="true" />
+    </RelativeLayout>
+</LinearLayout>

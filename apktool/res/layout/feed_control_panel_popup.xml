@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_gravity="center" android:id="@id/feed_item_single_update_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" app:cardBackgroundColor="@color/ad_white_solid" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/feed_control_menu_dialog" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_2" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/feed_control_panel_content_description"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</android.support.v7.widget.CardView>

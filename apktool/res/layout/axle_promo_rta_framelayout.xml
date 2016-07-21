@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/xpromo_rta_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/xpromo_rta_first_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/axle_promo_rta_first_card" />
+    <include android:id="@id/xpromo_rta_like_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/axle_promo_rta_like_card" />
+    <include android:id="@id/xpromo_rta_dislike_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" layout="@layout/axle_promo_rta_dislike_card" />
+    <include android:id="@id/xpromo_rta_dislike_confirm_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/axle_promo_rta_dislike_confirm_card" />
+</RelativeLayout>

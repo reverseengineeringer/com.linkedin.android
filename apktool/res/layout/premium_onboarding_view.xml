@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/premium_onboarding_view" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/premium_onboarding_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/premium_onboarding_dismiss" android:background="@drawable/chooser_dismiss_dark_48dp" android:visibility="invisible" android:layout_width="@dimen/touch_target_minimum_size" android:layout_height="@dimen/touch_target_minimum_size" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/dismiss_icon_content_description" />
+    <com.linkedin.android.artdeco.components.HorizontalViewPagerCarousel android:id="@id/premium_onboarding_horizontal_page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/premium_onboarding_premium_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:src="@drawable/img_premium_type_76x10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/premium_icon_content_description" />
+</RelativeLayout>

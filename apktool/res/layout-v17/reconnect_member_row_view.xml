@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginStart="@dimen/ad_item_spacing_4" android:layout_marginEnd="@dimen/ad_item_spacing_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/reconnect_member_profile_pic" android:layout_width="@dimen/ad_entity_photo_5" android:layout_height="@dimen/ad_entity_photo_5" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_3" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_alignParentLeft="true" android:layout_marginEnd="@dimen/ad_item_spacing_3" android:layout_alignParentStart="true" app:riv_oval="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/reconnect_member_profile_pic" android:layout_centerVertical="true" android:layout_toEndOf="@id/reconnect_member_profile_pic">
+        <TextView android:id="@id/reconnect_member_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.ArtDeco.Headline1" />
+        <TextView android:id="@id/reconnect_member_occupation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1" style="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+</RelativeLayout>

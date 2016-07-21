@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/entities_row_entity_tile_left" android:layout_width="0.0dip" android:layout_height="@dimen/entities_browse_map_card_height" android:layout_marginRight="@dimen/normal_item_spacing" android:layout_weight="1.0" layout="@layout/entities_card_tile_entity" />
+    <include android:id="@id/entities_row_entity_tile_right" android:layout_width="0.0dip" android:layout_height="@dimen/entities_browse_map_card_height" android:layout_weight="1.0" layout="@layout/entities_card_tile_entity" />
+</LinearLayout>

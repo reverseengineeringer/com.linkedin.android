@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/ad_gray_lighter" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginTop="@dimen/ad_item_spacing_6" android:layout_marginRight="@dimen/ad_item_spacing_5" android:text="@string/growth_onboarding_pymk_title" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Display2" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_5" android:text="@string/growth_onboarding_pymk_subtitle" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Body2" />
+    <FrameLayout android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_weight="1.0">
+        <include android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/growth_onboarding_list_content_container" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5" layout="@layout/growth_onboarding_navigation_button_container" />
+</LinearLayout>

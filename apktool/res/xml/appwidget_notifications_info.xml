@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/appwidget_row_col_4" android:minHeight="@dimen/appwidget_row_col_1" android:updatePeriodMillis="21600000" android:initialLayout="@layout/appwidget_notifications" android:resizeMode="horizontal|vertical" android:minResizeWidth="@dimen/appwidget_row_col_1" android:minResizeHeight="@dimen/appwidget_row_col_1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

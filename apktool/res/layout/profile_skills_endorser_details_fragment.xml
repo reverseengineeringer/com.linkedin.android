@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/profile_lightlist_fragment_view" android:background="@color/cardview_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/skill_endorse_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ad_icon_button_3" android:layout_alignParentBottom="true" style="@style/ArtDeco.Button" />
+        <include layout="@layout/infra_page_toolbar" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/skill_endorse_bar" android:layout_below="@id/infra_toolbar" layout="@layout/profile_view_lightlist_section" />
+    </RelativeLayout>
+</FrameLayout>

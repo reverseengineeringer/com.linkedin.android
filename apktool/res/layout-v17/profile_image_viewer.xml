@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/solid_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_page_toolbar" />
+    <ImageView android:id="@id/profile_image_viewer_image_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/identity_viewer_profile_picture_description" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/profile_edit_photo_panel" android:background="@color/black_55" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/profile_edit_photo_crop" android:clickable="true" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:src="@drawable/ic_crop_24dp" android:scaleType="center" android:layout_weight="0.0" android:contentDescription="@string/identity_profile_picture_crop" android:layout_marginStart="@dimen/ad_item_spacing_4" style="@style/ArtDeco.Icon.2.Color.Inverse" />
+        <View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/profile_edit_photo_camera" android:clickable="true" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:src="@drawable/ic_camera_24dp" android:scaleType="center" android:layout_weight="0.0" android:contentDescription="@string/identity_profile_picture_upload" style="@style/ArtDeco.Icon.2.Color.Inverse" />
+        <View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/profile_edit_photo_delete" android:clickable="true" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:src="@drawable/ic_trash_24dp" android:scaleType="center" android:layout_weight="0.0" android:contentDescription="@string/identity_profile_picture_delete" android:layout_marginEnd="@dimen/ad_item_spacing_4" style="@style/ArtDeco.Icon.2.Color.Inverse" />
+    </LinearLayout>
+</RelativeLayout>

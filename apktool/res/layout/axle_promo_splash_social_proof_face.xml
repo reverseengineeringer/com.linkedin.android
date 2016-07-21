@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.imageloader.LiImageView android:background="@drawable/axle_promo_bg_oval" android:padding="@dimen/zero" android:layout_width="@dimen/ad_entity_photo_5" android:layout_height="@dimen/ad_entity_photo_5" android:layout_marginLeft="@dimen/axle_promo_face_pile_margin" android:scaleType="centerCrop" android:contentDescription="@string/entities_content_description_profile_image" app:riv_border_width="@dimen/ad_entity_photo_padding" app:riv_border_color="@color/ad_white_solid" app:riv_oval="true" style="@style/ArtDeco.EntityPhoto.5.Circle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/width_1000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_back" android:padding="@dimen/padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left_16dp" android:contentDescription="@string/back" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2" android:gravity="center_horizontal" android:id="@id/report_content_header" android:paddingLeft="@dimen/item_spacing_32" android:paddingTop="@dimen/item_spacing_32" android:paddingRight="@dimen/item_spacing_32" android:paddingBottom="@dimen/item_spacing_24" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/report_list_item" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/report_content_header" />
+    </ScrollView>
+</LinearLayout>

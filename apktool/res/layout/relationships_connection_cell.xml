@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center_vertical" android:id="@id/relationships_connection_profile_image" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:layout_marginRight="@dimen/ad_item_spacing_2" android:scaleType="fitCenter" app:riv_oval="true" style="@style/ArtDeco.EntityPhoto.4.Circle" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_item_spacing_8">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:gravity="start" android:id="@id/relationships_connection_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:ellipsize="end" android:gravity="start" android:id="@id/relationships_connection_headline_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+            <com.linkedin.android.infra.ui.TintableImageView android:id="@id/relationships_connection_overflow_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ellipsis_vertical_16dp" android:contentDescription="@string/relationships_connection_overflow_button_description" app:tintMode="src_in" style="@style/ArtDeco.IconButton.3.Tertiary.Muted" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/ad_gray_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ad_item_spacing_8" android:layout_marginTop="@dimen/ad_item_spacing_1" />
+</LinearLayout>

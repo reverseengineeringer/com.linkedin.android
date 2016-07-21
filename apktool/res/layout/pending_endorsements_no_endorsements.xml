@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/no_endorsement_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/no_endorsement_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_success_award_230dp" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/no_endorsement_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:text="@string/pending_endorsements_endorser_no_endorsement_heading" android:layout_below="@id/no_endorsement_photo" android:layout_centerInParent="true" style="@style/Display1" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/no_endorsement_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/pending_endorsements_endorser_no_endorsement_description" android:layout_below="@id/no_endorsement_title" android:layout_centerInParent="true" style="@style/Body1" />
+        <Button android:id="@id/see_all_skills_and_endorsements_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pending_endorsements_see_all_skills_and_endorsement_button" android:layout_below="@id/no_endorsement_description" android:layout_centerInParent="true" style="@style/ArtDeco.Button.2.Secondary.Muted" />
+    </RelativeLayout>
+</FrameLayout>

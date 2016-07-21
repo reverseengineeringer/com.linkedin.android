@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.WrapContentViewPager android:id="@id/profile_view_treasury_viewpager" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.linkedin.android.artdeco.components.HorizontalViewPagerCarousel android:id="@id/treasury_paginator" android:paddingTop="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_below="@id/profile_view_treasury_viewpager" android:layout_centerHorizontal="true" />
+</RelativeLayout>

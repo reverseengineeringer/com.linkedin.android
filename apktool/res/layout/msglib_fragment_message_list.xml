@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/msglib_compose_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/ad_black_85" android:id="@id/message_list_error" android:padding="@dimen/ad_item_spacing_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msglib_message_list_error" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/message_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/msglib_invite_view_stub" android:layout="@layout/msglib_invitation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.linkedin.messengerlib.shared.MessengerRecyclerView android:id="@id/message_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MsgLib.MessageList" />
+            <com.linkedin.messengerlib.shared.MessengerRecyclerView android:layout_gravity="bottom" android:id="@id/mentions_list" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.MessageList" />
+        </FrameLayout>
+        <View android:background="@color/msglib_compose_message_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.linkedin.messengerlib.ui.messagelist.UpdateShareView android:id="@id/share_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" />
+        <FrameLayout android:id="@id/msglib_message_list_keyboard_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/message_keyboard_old" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/msglib_compose_message_container" />
+                <com.linkedin.messengerlib.ui.messagelist.StickerTrayView android:gravity="center" android:id="@id/message_sticker_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/msglib_initial_sticker_keyboard_height" android:text="@string/msglib_stickers_coming_soon" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/message_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:gravity="center" android:id="@id/inmail_warning_text" android:padding="@dimen/ad_item_spacing_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/inmail_no_reply_warning" style="@style/TextAppearance.ArtDeco.Caption2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/inmail_response_container" android:background="@color/ad_white_solid" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/inmail_quick_reply" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/quick_reply" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" style="@style/ArtDeco.Button.2.Secondary" />
+            <View android:layout_width="@dimen/ad_item_spacing_2" android:layout_height="1.0dip" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/inmail_reply" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reply" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" style="@style/ArtDeco.Button.2.Primary" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/message_list_forward_reply_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center" android:id="@id/message_list_forward_cancel_action" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Body1" />
+            <Button android:id="@id/message_list_forward_ok_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4" android:text="@string/messenger_action_forward" android:textAllCaps="false" style="@style/ArtDeco.Button.2.Secondary" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

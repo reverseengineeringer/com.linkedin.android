@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.imageloader.LiImageView android:id="@id/feed_easter_egg_image_head" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:scaleType="fitCenter" app:riv_border_width="@dimen/ad_button_stroke_1" app:riv_border_color="@color/solid_white" app:riv_oval="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

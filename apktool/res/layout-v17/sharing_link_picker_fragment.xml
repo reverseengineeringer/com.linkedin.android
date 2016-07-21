@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <EditText android:id="@id/sharing_link_picker_textbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/normal_item_spacing" android:layout_marginTop="@dimen/normal_item_spacing" android:layout_marginRight="@dimen/normal_item_spacing" android:hint="@string/sharing_compose_link_picker_hint" android:layout_marginStart="@dimen/normal_item_spacing" android:layout_marginEnd="@dimen/normal_item_spacing" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sharing_link_picker_clipboard_preview_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/sharing_link_picker_clipboard_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/normal_item_spacing" android:layout_marginTop="@dimen/normal_item_spacing" android:layout_marginRight="@dimen/normal_item_spacing" android:text="@string/sharing_compose_link_picker_clipboard_label" android:layout_marginStart="@dimen/normal_item_spacing" android:layout_marginEnd="@dimen/normal_item_spacing" style="@style/Body2" />
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/feed_divider_size" />
+        <include layout="@layout/sharing_link_picker_url_preview" />
+    </LinearLayout>
+</LinearLayout>

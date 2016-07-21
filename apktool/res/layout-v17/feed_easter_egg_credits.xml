@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/feed_easter_egg_image_head" android:layout_width="@dimen/ad_entity_photo_5" android:layout_height="@dimen/ad_entity_photo_5" android:src="@color/ad_gray_3" android:scaleType="fitCenter" app:riv_oval="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Inverse" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_easter_egg_credits" android:textAlignment="center" />
+</FrameLayout>

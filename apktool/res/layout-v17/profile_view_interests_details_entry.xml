@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_view_recent_activity_header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/profile_view_interests_details_section" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_view_interests_detail_entry_icon" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:contentDescription="@string/identity_profile_pic_description" app:riv_oval="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/recent_activity_header_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_toRightOf="@id/profile_view_interests_detail_entry_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ad_item_spacing_2" android:layout_toEndOf="@id/profile_view_interests_detail_entry_icon">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:gravity="start" android:id="@id/profile_view_interests_detail_entry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="start" android:id="@id/profile_view_interests_detail_entry_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start" android:id="@id/profile_view_interests_detail_entry_statistics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:id="@id/profile_view_interests_detail_entry_follow_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_channel_follow" style="@style/ArtDeco.Button.1.Tertiary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/profile_view_interests_detail_entry_divider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="1.0dip" />
+        <View android:layout_width="@dimen/ad_item_spacing_2" android:layout_height="1.0dip" />
+        <View android:layout_width="@dimen/ad_item_spacing_4" android:layout_height="1.0dip" />
+        <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

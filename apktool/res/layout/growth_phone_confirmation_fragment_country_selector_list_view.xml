@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/growth_phone_confirmation_fragment_country_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/growth_phone_confirmation_fragment_country_selector_cancel_button" />
+    <Button android:id="@id/growth_phone_confirmation_fragment_country_selector_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/growth_phone_confirmation_country_selector_cancel_button_text" android:layout_alignParentBottom="true" />
+</RelativeLayout>

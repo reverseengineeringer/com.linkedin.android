@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MsgLib.MessageList"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.MessageList">
+            <include layout="@layout/msglib_message_list_item_header" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/msglib_message_list_horizontal_margin" android:paddingTop="@dimen/msglib_message_list_top_margin" android:paddingRight="@dimen/msglib_message_list_horizontal_margin" android:paddingBottom="@dimen/msglib_message_list_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.linkedin.android.imageloader.LiImageView android:id="@id/sponsored_inmail_image" android:layout_width="@dimen/ad_entity_photo_1" android:layout_height="@dimen/ad_entity_photo_1" android:layout_marginRight="@dimen/msglib_message_list_image_bubble_margin" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/msglib_message_list_image_bubble_margin" app:riv_oval="true" style="@style/MsgLib.Image" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/msglib_message_list_horizontal_margin" android:layout_marginEnd="@dimen/msglib_message_list_horizontal_margin">
+                    <TextView android:id="@id/sponsored_tag" android:background="@color/ad_white_solid" android:paddingTop="@dimen/msglib_spinmail_tag_top_padding" android:paddingRight="@dimen/msglib_spinmail_body_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sinmail_sponsored_tag" android:paddingEnd="@dimen/msglib_spinmail_body_right_padding" style="@style/MsgLib.SpInMailSponsoredTag.CompatSpinMailBodyPadding" />
+                    <TextView android:id="@id/sponsored_inmail_subject" android:background="@color/ad_white_solid" android:paddingBottom="@dimen/msglib_spinmail_subject_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.MessageList.Subject.CompatSpinMailSubjectPadding" />
+                    <TextView android:linksClickable="true" android:id="@id/sponsored_inmail_message_text" android:background="@color/ad_white_solid" android:paddingRight="@dimen/msglib_spinmail_body_right_padding" android:paddingBottom="@dimen/msglib_spinmail_body_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/msglib_spinmail_body_right_padding" style="@style/MsgLib.SpInMail.Body.CompatSpinMailBodyPadding" />
+                    <TextView android:linksClickable="true" android:id="@id/message_static_legal_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/msglib_spinmail_legal_text_layout_margin_top" style="@style/MsgLib.SpInMailLegalTextCustom" />
+                    <TextView android:linksClickable="true" android:id="@id/message_custom_legal_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/msglib_spinmail_legal_text_layout_margin_top" style="@style/MsgLib.SpInMailLegalTextCustom" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textColor="@color/ad_white_solid" android:id="@id/sponsored_inmail_action_button" android:background="@drawable/msglib_blue_bg_flat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textColor="@color/ad_white_solid" android:id="@id/sponsored_inmail_after_action_button" android:background="@color/ad_green_7" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

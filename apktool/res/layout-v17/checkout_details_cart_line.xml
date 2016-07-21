@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/checkout_details_cart_line" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1.Color" android:id="@id/checkout_details_cart_line_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1.Color" android:id="@id/checkout_details_cart_line_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

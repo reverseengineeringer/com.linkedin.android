@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/content_area_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_cookie_max_age_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/infra_host_override" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/host_override" android:inputType="textNoSuggestions" />
+        <TextView android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/host_override" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <TextView android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/host_override_example" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/infra_host_override_action_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cookie_action_update" />
+        <Button android:id="@id/infra_host_override_action_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cookie_action_cancel" />
+    </LinearLayout>
+</LinearLayout>

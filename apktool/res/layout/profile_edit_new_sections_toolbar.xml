@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@id/hub_toolbar" android:background="@color/ad_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Modal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_new_section" style="@style/TextAppearance.ArtDeco.Headline1.Inverse" />
+</android.support.v7.widget.Toolbar>

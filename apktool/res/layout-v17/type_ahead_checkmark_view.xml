@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/type_ahead_checkmark_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/type_ahead_checkmark_icon" android:background="@drawable/ad_icon_btn_transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_4" android:src="@drawable/ic_check_24dp" android:tint="@color/ad_icon_btn_secondary_icon_selector" android:layout_marginEnd="@dimen/ad_item_spacing_4" />
+</FrameLayout>

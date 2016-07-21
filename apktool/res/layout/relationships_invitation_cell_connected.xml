@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_item_spacing_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:gravity="start" android:id="@id/relationships_invitation_title_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_1" android:maxLines="2" android:layout_weight="1.0" />
+    <com.linkedin.android.infra.ui.TintableImageButton android:id="@id/relationships_invitation_message_button" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_1" android:src="@drawable/ic_messages_24dp" android:contentDescription="@string/relationships_invitation_message_button_description" style="@style/ArtDeco.IconButton.2.Primary" />
+</LinearLayout>

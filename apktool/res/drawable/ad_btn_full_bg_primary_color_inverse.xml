@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ad_btn_bg_white_selector" />
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/ad_button_corner_radius" />
+            <solid android:color="@color/ad_transparent" />
+        </shape>
+    </item>
+</layer-list>

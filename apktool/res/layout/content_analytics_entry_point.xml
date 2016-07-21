@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:gravity="start|center" android:id="@id/ca_entry_point_text" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_analytics_24dp" android:drawablePadding="@dimen/ad_item_spacing_2" android:drawableStart="@drawable/ic_analytics_24dp" style="@style/TextAppearance.ArtDeco.Body1" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/relationships_prop_action_like_button_layout" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.linkedin.android.feed.shared.LikeButton android:layout_gravity="center_vertical" android:id="@id/relationships_prop_action_like_button" android:layout_width="@dimen/ad_icon_2" android:layout_height="@dimen/ad_icon_2" android:src="@drawable/ic_like_24dp" />
+    </FrameLayout>
+    <Button android:id="@id/relationships_prop_action_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/ArtDeco.FullButton.2.Tertiary" />
+    <Space android:layout_width="@dimen/ad_item_spacing_7" android:layout_height="fill_parent" />
+</LinearLayout>

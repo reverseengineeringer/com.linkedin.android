@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.EfficientCoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/infra_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:minHeight="@dimen/tab_bar_height" style="@style/ToolbarStyle.Modal.CompatPadding">
+            <com.linkedin.android.infra.ui.slidingtab.TabLayout android:id="@id/relationships_invitations_connections_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+        <com.linkedin.android.infra.ui.ViewPager android:id="@id/relationships_invitations_connections_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/relationships_add_contacts_floating_action_button" android:visibility="gone" android:layout_width="@dimen/ad_icon_button_4" android:layout_height="@dimen/ad_icon_button_4" android:layout_margin="@dimen/ad_item_spacing_4" android:src="@drawable/ic_connect_24dp" android:scaleType="center" android:tint="@color/ad_white_solid" android:contentDescription="@string/relationships_connections_floating_action_button_description" app:elevation="@dimen/fab_elevation" app:layout_anchorGravity="end|bottom|center" app:fabSize="normal" app:backgroundTint="@color/ad_blue_6" />
+</android.support.design.widget.EfficientCoordinatorLayout>

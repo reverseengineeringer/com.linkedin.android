@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/feed_easter_egg_container" android:background="@color/ad_black_85" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Color.Inverse" android:gravity="center" android:layout_gravity="bottom" android:id="@id/feed_easter_egg_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/feed_easter_egg_tap" android:textAlignment="center" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2.Color.Inverse" android:layout_gravity="center|top" android:id="@id/feed_easter_egg_score" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_6" android:layout_marginRight="@dimen/ad_item_spacing_2" android:text="@string/feed_easter_egg_score" android:textAlignment="center" android:layout_marginEnd="@dimen/ad_item_spacing_2" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="center_horizontal" android:id="@id/feed_component_end_of_feed_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/feed_cd_end_of_feed" android:textAlignment="center" />
+    <Button android:id="@id/feed_component_end_of_feed_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/feed_cd_end_of_feed_button" android:textAllCaps="true" style="@style/ArtDeco.Button.2.Secondary.Muted" />
+    <Button android:id="@id/feed_component_end_of_feed_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/feed_cd_end_of_feed_button" android:textAllCaps="true" style="@style/ArtDeco.Button.2.Tertiary" />
+</LinearLayout>

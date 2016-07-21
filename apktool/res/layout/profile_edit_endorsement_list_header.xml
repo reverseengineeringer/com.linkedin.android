@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/solid_white" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_3" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:id="@id/profile_edit_endorsement_list_header_endorser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_endorsement_list_header_endorser" android:layout_weight="1.0" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:id="@id/profile_edit_endorsement_list_header_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_endorsement_list_header_display" />
+</LinearLayout>

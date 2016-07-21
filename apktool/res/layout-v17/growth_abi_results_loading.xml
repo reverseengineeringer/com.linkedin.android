@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_abi_results_loading_layout" android:background="@color/ad_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/growth_abi_results_loading_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/infra_action_bar_default_height" style="@style/ToolbarStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textStyle="bold" android:layout_gravity="center" android:id="@id/abi_results_loading_toolbar_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/relationships_connect_flow_accept_toolbar_title" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Title2.Inverse" />
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/growth_abi_results_inviter_top_card" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/growth_abi_accept_invite_load_contacts_progress_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/growth_abi_accept_invite_load_contacts_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:text="@string/growth_abi_accept_invite_loading_banner" android:layout_marginStart="@dimen/ad_item_spacing_2" android:layout_marginEnd="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Title1" />
+    <include layout="@layout/growth_abi_result_loading_listview" />
+</LinearLayout>

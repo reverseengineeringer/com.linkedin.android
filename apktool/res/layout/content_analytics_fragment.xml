@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ad_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/ca_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ToolbarStyle.Modal" />
+    <com.linkedin.android.infra.ui.AspectRatioImageView android:id="@id/ca_header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/profile_default_background" android:scaleType="centerCrop" android:contentDescription="@string/identity_content_analytics_background_content_description" app:aspectRatioWidth="2" app:aspectRatioHeight="1" />
+    <View android:id="@id/ca_header_image_overlay" android:background="@drawable/identity_content_analytics_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/ca_header_image" android:layout_alignBottom="@id/ca_header_image" />
+    <android.support.v7.widget.RecyclerView android:id="@id/ca_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

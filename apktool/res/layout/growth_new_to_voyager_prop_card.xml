@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.growth.newtovoyager.banner.NewToVoyagerPropCardView android:id="@id/growth_new_to_voyager_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" app:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/growth_new_to_voyager_background" android:paddingTop="@dimen/ad_item_spacing_5" android:paddingBottom="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="@dimen/relationships_prop_height">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2.Color.Inverse" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/growth_new_to_voyager_cell_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead.Color.Inverse" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/growth_new_to_voyager_cell_subheading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/ad_item_spacing_5" android:maxLines="3" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/growth_new_to_voyager_swipe_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/growth_new_to_voyager_swipe_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/growth_new_to_voyager_swipe_end" android:contentDescription="@string/growth_new_to_voyager_swipe_right_description" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead.Color.Inverse" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:text="@string/relationships_new_to_voyager_props_next" />
+        </LinearLayout>
+    </LinearLayout>
+</com.linkedin.android.growth.newtovoyager.banner.NewToVoyagerPropCardView>

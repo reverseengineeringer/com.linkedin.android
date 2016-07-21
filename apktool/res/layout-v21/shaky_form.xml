@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" style="@style/ToolbarStyle" />
+    <ScrollView android:layout_gravity="center_horizontal" android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/root" android:paddingLeft="@dimen/content_area_padding" android:paddingTop="@dimen/content_top_padding" android:paddingRight="@dimen/content_area_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@color/dark_gray" android:id="@id/message" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/message_hint" android:inputType="textMultiLine" />
+            <TextView android:textSize="@dimen/content_textsize" android:textColor="@color/gray" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bug_example" />
+            <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_padding">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/attachment" android:background="@android:color/white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/screenshot_height" android:adjustViewBounds="true" android:contentDescription="@string/image_action" android:elevation="@dimen/soft_shadow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

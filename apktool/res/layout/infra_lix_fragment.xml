@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/lix_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/infra_lix_fragment_container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/infra_lix_fragment_legend" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Blue = Pre Auth Lix\nRed = Authenticated Lix\nGreen = Server Lix" android:layout_weight="1.0" />
+            <Button android:id="@id/infra_lix_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+            <android.support.v7.widget.SearchView android:id="@id/infra_lix_fragment_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:iconifiedByDefault="true" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/infra_lix_fragment_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/infra_lix_add_button" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:layout_margin="@dimen/ad_item_spacing_4" android:src="@drawable/ic_plus_24dp" android:scaleType="center" android:tint="@color/ad_white_solid" app:elevation="5.0sp" app:layout_anchor="@id/infra_lix_fragment_container" app:layout_anchorGravity="end|bottom|center" app:fabSize="mini" app:backgroundTint="@color/ad_blue_6" />
+</android.support.design.widget.CoordinatorLayout>

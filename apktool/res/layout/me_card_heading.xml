@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/me_card_activity_headline" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/me_card_actor_image" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:scaleType="fitCenter" android:contentDescription="@string/identity_profile_actor_pic_description" app:riv_oval="true" style="@style/ArtDeco.EntityPhoto.3.Circle" />
+    <include layout="@layout/label_unread_header" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/me_wvmp_list_premium_upsell_layout" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="@dimen/identity_wvmp_analytics_divider_spacing" android:layout_height="0.0dip" />
+        <View android:id="@id/wvmp_list_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <com.linkedin.android.imageloader.LiImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:src="@drawable/img_blurfaces" android:contentDescription="@string/face_pile_image_content_description" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:gravity="center" android:id="@id/wvmp_premium_upsell_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_3" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="center" android:id="@id/wvmp_premium_upsell_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" />
+    <Button android:id="@id/wvmp_premium_upsell_try_premium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_5" android:contentDescription="@string/try_premium_button_content_description" style="@style/ArtDeco.Button.3.Primary" />
+</LinearLayout>

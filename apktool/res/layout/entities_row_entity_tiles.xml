@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/entities_row_entity_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:divider="@drawable/ad_divider_vertical" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/entities_row_entity_tile_left" android:layout_width="0.0dip" android:layout_height="@dimen/entities_tile_with_insight_height" android:layout_weight="1.0" layout="@layout/entities_tile_entity" />
+    <include android:id="@id/entities_row_entity_tile_right" android:layout_width="0.0dip" android:layout_height="@dimen/entities_tile_with_insight_height" android:layout_weight="1.0" layout="@layout/entities_tile_entity" />
+</LinearLayout>

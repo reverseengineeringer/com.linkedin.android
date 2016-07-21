@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/identity_guided_edit_button_transparent_disabled" android:color="@color/gray_1" />
+    <item android:state_enabled="true" android:drawable="@drawable/identity_guided_edit_button_transparent_enabled" android:color="@color/white" />
+</selector>

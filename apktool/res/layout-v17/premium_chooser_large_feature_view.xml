@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/premium_chooser_large_feature_view" android:paddingTop="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/premium_chooser_large_feature_view_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:gravity="center_horizontal" android:id="@id/premium_chooser_large_feature_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="center_horizontal" android:id="@id/premium_chooser_large_feature_view_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+</LinearLayout>

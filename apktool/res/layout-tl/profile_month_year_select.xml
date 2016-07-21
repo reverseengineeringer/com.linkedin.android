@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_edit_month_year_chooser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size">
+        <NumberPicker android:id="@id/profile_edit_month_chooser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <NumberPicker android:id="@id/profile_edit_day_chooser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <NumberPicker android:id="@id/profile_edit_year_chooser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

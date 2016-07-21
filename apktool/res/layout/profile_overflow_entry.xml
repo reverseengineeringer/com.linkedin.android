@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/profile_overflow_entry_icon" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:src="@drawable/ic_star_24dp" style="@style/ArtDeco.Icon.2.Inverse" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2">
+            <TextView android:id="@id/profile_overflow_entry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.ArtDeco.Body3.Bold" />
+            <TextView android:id="@id/profile_overflow_entry_subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.ArtDeco.Caption2" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/profile_overflow_entry_divider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ad_item_spacing_7" android:src="@drawable/ad_divider_horizontal" />
+</LinearLayout>

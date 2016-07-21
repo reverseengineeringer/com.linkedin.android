@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SwitchCompat android:id="@id/growth_calendar_sync_switch" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_3" android:checked="false" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:gravity="start" android:id="@id/growth_calendar_toggle_text" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_toLeftOf="@id/growth_calendar_sync_switch" style="@style/TextAppearance.ArtDeco.Headline1.Bold" />
+    <View android:background="@color/ad_gray_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/growth_calendar_toggle_text" />
+</RelativeLayout>

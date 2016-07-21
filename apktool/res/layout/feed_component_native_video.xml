@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/feed_component_native_video_frame" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/feed_component_native_video_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_default_share_object" android:scaleType="centerCrop" android:contentDescription="@string/feed_cd_video_control_play" app:fixedDimension="fixedWidth" />
+    <com.linkedin.android.infra.ui.TintableImageButton android:layout_gravity="center" android:id="@id/feed_component_native_video_play_button" android:background="@drawable/feed_video_background" android:layout_width="@dimen/ad_icon_button_4" android:layout_height="@dimen/ad_icon_button_4" android:src="@drawable/ic_play_24dp" android:contentDescription="@string/feed_cd_update_play_button" app:srcTint="@color/ad_white_solid" style="@style/ArtDeco.IconButton.4.Tertiary" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/feed_component_native_video_spinner" android:layout_width="@dimen/feed_component_native_video_spinner_dimen" android:layout_height="@dimen/feed_component_native_video_spinner_dimen" android:indeterminate="true" />
+</FrameLayout>

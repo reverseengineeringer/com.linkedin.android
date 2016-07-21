@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/profile_view_guided_edit_entry_card" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/guided_edit_entry_card" layout="@layout/guided_edit_entry_card" />
+</android.support.v7.widget.CardView>

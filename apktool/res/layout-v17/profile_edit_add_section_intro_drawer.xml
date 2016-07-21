@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/profile_edit_new_sections_intro_drawer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.identity.edit.newSections.ProfileExpandableIntroView android:id="@id/profile_edit_new_sections_expandable_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/identity_profile_new_section_top_margin" />
+    <RelativeLayout android:id="@id/profile_edit_new_sections_photo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_hub_profile_pic" android:background="@drawable/identity_profile_top_card_pic_background" android:padding="1.0dip" android:layout_width="@dimen/identity_profile_new_section_photo_background_size" android:layout_height="@dimen/identity_profile_new_section_photo_background_size" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_1" android:src="@drawable/img_add_photo_56dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/identity_profile_edit_profile_pic" android:layout_marginStart="@dimen/ad_item_spacing_1" app:riv_oval="true" />
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_hub_profile_picture_border" android:layout_width="@dimen/ad_entity_photo_5" android:layout_height="@dimen/ad_entity_photo_5" android:src="@drawable/identity_profile_top_card_pic_border" android:layout_centerHorizontal="true" app:riv_oval="true" />
+    </RelativeLayout>
+</RelativeLayout>

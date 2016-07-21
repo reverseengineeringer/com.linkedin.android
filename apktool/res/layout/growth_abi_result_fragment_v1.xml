@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ad_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/infra_modal_toolbar" />
+    <include layout="@layout/growth_abi_results_inviter_top_card" />
+    <include layout="@layout/growth_abi_results_value_prop" />
+    <RelativeLayout android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/growth_abi_result_title" layout="@layout/growth_abi_result_title" />
+        <android.support.v7.widget.RecyclerView android:id="@id/growth_list_fragment_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/growth_abi_list_button_divider" android:layout_below="@id/growth_abi_result_title" android:contentDescription="@string/growth_abi_list_fragment_recycler_view_content_description" />
+        <View android:id="@id/growth_abi_list_button_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_above="@id/growth_abi_connect_to_all" />
+        <com.linkedin.android.infra.ui.TintableButton android:id="@id/growth_abi_connect_to_all" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_3" android:text="@string/growth_abi_m2g_invite_all" android:layout_above="@id/growth_abi_navbar" app:drawableTint="@color/ad_white_solid" style="@style/ArtDeco.Button.3.Primary" />
+        <View android:id="@id/growth_abi_search_overlay" android:background="@color/ad_white_85" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/growth_abi_navbar" />
+        <include android:id="@id/growth_abi_navbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/growth_abi_navbar" />
+    </RelativeLayout>
+</LinearLayout>

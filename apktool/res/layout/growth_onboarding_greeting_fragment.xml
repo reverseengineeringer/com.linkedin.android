@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/growth_onboarding_bg" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_linkedin_bug_black_40dp" android:tint="@color/ad_white_solid" android:layout_above="@id/growth_onboarding_greeting_fragment_greeting" android:layout_centerHorizontal="true" android:contentDescription="@string/growth_in_logo" />
+    <TextView android:gravity="center" android:id="@id/growth_onboarding_greeting_fragment_greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:minHeight="@dimen/ad_min_height" android:layout_above="@id/growth_onboarding_greeting_fragment_sub_greeting" android:layout_centerInParent="true" style="@style/TextAppearance.ArtDeco.Display2.Inverse" />
+    <TextView android:gravity="center" android:id="@id/growth_onboarding_greeting_fragment_sub_greeting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_centerInParent="true" style="@style/TextAppearance.ArtDeco.Body2.Inverse" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_takeover_calendar_sync" android:background="@drawable/growth_splash_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/growth_takeover_calendar_sync_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/growth_takeover_calendar_sync_toolbar_content_description" style="@style/ToolbarStyle.Modal"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/growth_takeover_calendar_sync_main" />
+            <include layout="@layout/growth_takeover_calendar_sync_disclaimer_and_learn_more" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

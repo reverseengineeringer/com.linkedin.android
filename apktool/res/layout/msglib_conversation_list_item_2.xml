@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/conversation_list_item_container" android:paddingTop="@dimen/msglib_conversation_list_item_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/msglib_double_face_pile" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image_container" layout="@layout/msglib_conversation_list_item_text" />
+</RelativeLayout>

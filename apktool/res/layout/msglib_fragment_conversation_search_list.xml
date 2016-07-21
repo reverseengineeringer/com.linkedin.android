@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MsgLib.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linkedin.messengerlib.shared.MessengerRecyclerView android:id="@id/conversation_search_list" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/conversation_search_list_overlay" android:background="@color/ad_black_solid" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.2" />
+        <RelativeLayout android:id="@id/conversation_search_list_loading" android:background="@color/ad_gray_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.linkedin.messengerlib.ui.conversationlist.EmptyOrErrorView android:id="@id/conversation_search_list_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/msglib_empty_or_blank_view" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

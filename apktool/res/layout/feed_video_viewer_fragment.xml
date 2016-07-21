@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/video_viewer_root_layout" android:background="@color/solid_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.feed.shared.videoviewer.VideoView android:layout_gravity="center" android:id="@id/video_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linkedin.android.feed.shared.videoviewer.VideoControl android:layout_gravity="bottom" android:id="@id/video_viewer_video_control" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_rollup_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_rollup_big0" android:background="@color/rollup_big0_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/image_rollup_big1" android:background="@color/rollup_big1_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image_rollup_med" android:background="@color/rollup_med_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image_rollup_small0" android:background="@color/rollup_small0_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/image_rollup_small1" android:background="@color/rollup_small1_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/overlay_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:expandable_text="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/entities_view_paragraph_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_3" layout="@layout/entities_textview_header" />
+    <com.linkedin.android.infra.ui.ExpandableTextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="start" android:id="@id/entities_view_paragraph_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:textAlignment="viewStart" expandable_text:ellipsisText="@string/entities_paragraph_card_ellipsis" expandable_text:initialState="collapsed" expandable_text:isCollapsible="true" expandable_text:isExpandable="true" expandable_text:toggleStateOnClick="false" expandable_text:animateEllipsisTextClick="false" />
+    <ImageView android:id="@id/entities_expandable_button_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" />
+    <include android:id="@id/entities_view_paragraph_button" android:visibility="gone" layout="@layout/infra_expandable_button" />
+    <include android:id="@id/entity_list_view_all_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/infra_new_page_expandable_button" />
+</LinearLayout>

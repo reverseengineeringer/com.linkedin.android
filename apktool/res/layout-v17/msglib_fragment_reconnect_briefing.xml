@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_reconnect_reconnection_briefing_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/msglib_reconnect_fragment_toolbar_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.linkedin.messengerlib.shared.MessengerRecyclerView android:id="@id/msglib_reconnect_reconnection_briefing_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MsgLib.MessageList" />
+    <RelativeLayout android:id="@id/msglib_reconnect_briefing_bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_1">
+        <com.linkedin.messengerlib.ui.reconnect.LoadingIndicatorView android:id="@id/msglib_reconnect_loading_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ad_item_spacing_2" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/msglib_reconnect_see_next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_reconnect_see_next" style="@style/ArtDeco.Button.1.Secondary" />
+            <Button android:id="@id/msglib_reconnect_tell_me_more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:text="@string/messenger_reconnect_tell_me_more" android:layout_marginStart="@dimen/ad_item_spacing_2" style="@style/ArtDeco.Button.1.Primary" />
+            <Button android:id="@id/msglib_reconnect_message_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:text="@string/messenger_reconnect_message" android:layout_marginStart="@dimen/ad_item_spacing_2" style="@style/ArtDeco.Button.1.Primary" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

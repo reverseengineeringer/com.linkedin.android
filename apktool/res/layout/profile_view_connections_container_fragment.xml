@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/profile_view_connections_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Page"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.linkedin.android.infra.ui.slidingtab.TabLayout android:id="@id/profile_view_connections_tab_layout" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/ad_blue_6" app:tabTextColor="@color/black_55" app:tabSelectedTextColor="@color/ad_blue_6" style="@style/DefaultElevationStyle" />
+    <com.linkedin.android.infra.ui.ViewPager android:id="@id/profile_view_connections_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

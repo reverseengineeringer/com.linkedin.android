@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/entities_item_rank_root" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/entities_item_rank_rank" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginEnd="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Display2" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:gravity="start" android:id="@id/entities_item_rank_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="start" android:id="@id/entities_item_rank_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </LinearLayout>
+</LinearLayout>

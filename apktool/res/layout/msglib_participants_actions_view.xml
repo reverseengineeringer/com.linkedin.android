@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/participant_detail_notification_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="start" android:id="@id/participant_detail_notification_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/messenger_participant_notifications_on" android:layout_weight="1.0" style="@style/MsgLib.ParticipantDetailsActionText.Primary" />
+            <Switch android:layout_gravity="center" android:id="@id/mute_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" />
+        </LinearLayout>
+        <include layout="@layout/msglib_participant_details_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/participant_detail_email_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/participant_detail_email_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_participant_email" style="@style/MsgLib.ParticipantDetailsActionText.Primary" />
+            <TextView android:textColorLink="@color/ad_black_70" android:autoLink="all" android:id="@id/participant_detail_email_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/MsgLib.ParticipantDetailsActionText.Secondary" />
+        </LinearLayout>
+        <include layout="@layout/msglib_participant_details_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/participant_detail_clear_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_participant_clear_history" style="@style/MsgLib.ParticipantDetailsActionText.Primary" />
+        <include layout="@layout/msglib_participant_details_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/participant_detail_report_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_participant_report_user" style="@style/MsgLib.ParticipantDetailsActionText.Primary" />
+    </LinearLayout>
+</merge>

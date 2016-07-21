@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_viewer_root_layout" android:background="@color/ad_black_solid" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.cropphotoview.PhotoView android:id="@id/image_viewer_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/feed_cd_image_viewer_image" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/infra_modal_toolbar" />
+        <com.linkedin.android.feed.endor.ui.FeedComponentsView android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/image_viewer_bottom_container" android:background="@color/ad_black_55" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

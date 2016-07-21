@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/entity_top_card" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/entities_top_card_cover" android:layout_width="fill_parent" android:layout_height="@dimen/entities_cover_image_height" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/entities_content_description_cover" />
+    <LinearLayout android:orientation="vertical" android:id="@id/entities_top_card_cover_gradient_container" android:layout_width="fill_parent" android:layout_height="@dimen/entities_cover_image_height">
+        <ImageView android:id="@id/entities_top_card_cover_top_gradient" android:background="@drawable/entities_top_card_cover_top_gradient" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.75" />
+        <ImageView android:id="@id/entities_top_card_cover_bottom_gradient" android:background="@drawable/entities_top_card_cover_bottom_gradient" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.25" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/entities_top_card_overlay_container" android:layout_width="fill_parent" android:layout_height="@dimen/entities_overlay_height" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/entities_overlay_margin" android:layout_marginRight="@dimen/ad_item_spacing_2">
+        <View android:id="@id/entities_top_card_overlay_back" android:background="@drawable/entities_top_card_overlay_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/entities_top_card_overlay_front" android:background="@drawable/entities_top_card_overlay_front" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/entities_overlay_border_width" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/entities_top_card_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="@dimen/ad_entity_photo_5" android:layout_height="@dimen/ad_entity_photo_5" android:layout_marginTop="@dimen/ad_item_spacing_8" app:cardCornerRadius="@dimen/ad_button_corner_radius" app:cardElevation="@dimen/ad_button_stroke_2">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/entities_top_card_icon" android:background="@drawable/entities_top_card_logo_stroke" android:padding="@dimen/ad_button_stroke_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/entities_content_description_icon" style="@style/ArtDeco.EntityPhoto.5.Square" />
+        </android.support.v7.widget.CardView>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/entities_top_card_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_6" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_6" android:layout_marginBottom="@dimen/ad_item_spacing_2">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/entities_top_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/entities_top_card_subtitle_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1" android:maxLines="2" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/entities_top_card_subtitle_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="none" android:id="@id/entities_top_card_cta_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:maxLines="1" style="@style/ArtDeco.Button.2.Primary" />
+            <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="none" android:id="@id/entities_top_card_cta_clicked_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:maxLines="1" style="@style/ArtDeco.Button.2.Secondary" />
+        </LinearLayout>
+        <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</FrameLayout>

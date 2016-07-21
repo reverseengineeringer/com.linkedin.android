@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_item_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_view_certification_entry_authority_image" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:layout_alignParentLeft="true" android:contentDescription="@string/identity_profile_background_certification_authorization_image_description" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/large_item_spacing" android:layout_toRightOf="@id/profile_view_certification_entry_authority_image">
+        <TextView android:textAppearance="@style/Title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Subhead" android:textColor="@color/color_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/Subhead" android:textColor="@color/color_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/Subhead" android:textColor="@color/gray_9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/Subhead" android:textColor="@color/gray_9" android:id="@id/profile_edit_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit" android:layout_alignParentRight="true" />
+</RelativeLayout>

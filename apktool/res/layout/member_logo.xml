@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/member_pic_container" android:layout_width="80.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/member_pic" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" />
+</RelativeLayout>

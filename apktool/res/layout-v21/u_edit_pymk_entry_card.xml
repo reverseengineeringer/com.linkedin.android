@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/u_edit_pymk_entry_card" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/cardview_default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_button_stroke_1" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingTop="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:paddingBottom="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_5" android:paddingEnd="@dimen/ad_item_spacing_5">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/u_edit_pymk_left_border" android:background="@drawable/ad_divider_vertical" android:layout_width="@dimen/ad_button_stroke_1" android:layout_height="fill_parent" />
+            <include android:layout_gravity="center_horizontal" android:id="@id/guided_edit_entry_card" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/guided_edit_entry_card" />
+            <View android:id="@id/u_edit_pymk_right_border" android:background="@drawable/ad_divider_vertical" android:layout_width="@dimen/ad_button_stroke_1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/profile_view_guided_edit_entry_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_button_stroke_1" />
+    </LinearLayout>
+    <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_button_stroke_1" />
+</LinearLayout>

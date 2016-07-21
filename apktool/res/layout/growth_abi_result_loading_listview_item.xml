@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/growth_abi_m2g_item_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/growth_abi_result_loading_circle" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_3" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/growth_abi_result_loading_rectangle" android:layout_width="@dimen/growth_abi_result_loading_item_title_width" android:layout_height="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_marginBottom="@dimen/ad_item_spacing_3" />
+        <View android:background="@drawable/growth_abi_result_loading_rectangle" android:layout_width="@dimen/growth_abi_result_loading_item_desc_width" android:layout_height="@dimen/ad_item_spacing_2" android:layout_marginBottom="@dimen/ad_item_spacing_5" />
+        <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

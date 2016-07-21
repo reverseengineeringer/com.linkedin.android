@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="start" android:id="@id/feed_component_basic_text_content" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/feed_cd_component_basic_text"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

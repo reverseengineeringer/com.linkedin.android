@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Color.Inverse" android:gravity="center" android:id="@id/insight_bubble_popup_text" android:background="@drawable/onboarding_bubble" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingRight="@dimen/ad_item_spacing_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/messenger_conversation_insights_popup_title_conversation_starter"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

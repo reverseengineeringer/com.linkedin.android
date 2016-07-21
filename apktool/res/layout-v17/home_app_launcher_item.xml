@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_app_launcher_root" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_4" android:paddingEnd="@dimen/ad_item_spacing_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/home_app_launcher_item_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/ad_item_spacing_3" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/ad_item_spacing_3" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:gravity="start" android:id="@id/home_app_launcher_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="start" android:id="@id/home_app_launcher_item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </LinearLayout>
+</LinearLayout>

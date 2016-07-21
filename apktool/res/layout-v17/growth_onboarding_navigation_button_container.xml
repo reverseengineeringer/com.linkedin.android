@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/growth_onboarding_navigation_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.TintableButton android:enabled="false" android:gravity="center" android:id="@id/growth_onboarding_navigation_top_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/growth_onboarding_continue" android:textAlignment="center" style="@style/ArtDeco.Button.4.Primary" />
+    <Button android:gravity="center" android:id="@id/growth_onboarding_navigation_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:minHeight="@dimen/ad_min_height" android:text="@string/growth_onboarding_skip" android:textAlignment="center" style="@style/ArtDeco.FullButton.1.Tertiary.Muted" />
+</LinearLayout>

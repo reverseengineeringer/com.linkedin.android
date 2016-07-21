@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ad_black_solid" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.touch.TouchImageView android:id="@id/attachment_viewer_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/attachment_viewer_overlay_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/attachment_viewer_download_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/stat_sys_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Inverse" android:id="@id/attachment_viewer_file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attachment_viewer_download_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/attachment_viewer_download_button" android:layout_alignParentStart="true" />
+        <TextView android:id="@id/attachment_viewer_file_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attachment_viewer_download_button" android:layout_below="@id/attachment_viewer_file_name" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/attachment_viewer_download_button" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

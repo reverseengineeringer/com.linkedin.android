@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/identity_me_social_activity_card_border" />
+    <item android:drawable="?selectableItemBackground" />
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding android:left="@dimen/large_item_spacing" android:top="@dimen/small_item_spacing" android:right="@dimen/large_item_spacing" android:bottom="@dimen/small_item_spacing" />
+    <solid android:color="@color/accent_blue" />
+</shape>

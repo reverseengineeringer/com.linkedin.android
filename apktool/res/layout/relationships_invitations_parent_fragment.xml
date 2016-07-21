@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/relationships_invitations_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/relationships_invitation_list_overlay" android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/relationships_invitations_list_overlay_description" />
+    <com.linkedin.android.relationships.widgets.FakeListView android:orientation="vertical" android:id="@id/relationships_invitation_list_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

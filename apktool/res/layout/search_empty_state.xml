@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_empty_state_root" android:paddingLeft="@dimen/ad_item_spacing_6" android:paddingTop="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/search_empty_state_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/search_empty_state_image" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2" android:gravity="center" android:id="@id/search_empty_state_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="center" android:id="@id/search_empty_state_subtitle" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

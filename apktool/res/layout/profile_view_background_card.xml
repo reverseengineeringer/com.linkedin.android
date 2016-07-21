@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/profile_view_background_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_sections" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:layout_gravity="end|center|top" android:id="@id/profile_view_background_card_edit_experience_btn" android:background="?selectableItemBackground" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:src="@drawable/ic_pencil_24dp" android:tint="@color/link_color" android:contentDescription="@string/identity_profile_background_edit" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_experience_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+                        <TextView android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/identity_profile_background_experience_header" style="@style/TextAppearance.ArtDeco.Body2" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_experience_entries" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" />
+                        <include android:id="@id/profile_view_background_experience_more_link" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/infra_new_page_expandable_button" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:layout_gravity="end|center|top" android:id="@id/profile_view_background_card_edit_education_btn" android:background="?selectableItemBackground" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:src="@drawable/ic_pencil_24dp" android:tint="@color/link_color" android:contentDescription="@string/identity_profile_background_edit" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_education_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+                        <TextView android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/identity_profile_background_education_header" style="@style/TextAppearance.ArtDeco.Body2" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_education_entries" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" />
+                        <include android:id="@id/profile_view_background_education_more_link" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/infra_new_page_expandable_button" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:layout_gravity="end|center|top" android:id="@id/profile_view_background_card_edit_cause_btn" android:background="?selectableItemBackground" android:layout_width="@dimen/normal_icon_size" android:layout_height="@dimen/normal_icon_size" android:src="@drawable/ic_pencil_24dp" android:tint="@color/link_color" android:contentDescription="@string/identity_profile_background_edit" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_cause_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+                        <TextView android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:text="@string/identity_profile_background_cause_header" style="@style/TextAppearance.ArtDeco.Body2" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/profile_view_background_cause_entries" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" />
+                        <include android:id="@id/profile_view_background_cause_more_link" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/infra_new_page_expandable_button" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/profile_view_background_basic_entry_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ad_item_spacing_4" />
+            <include android:id="@id/profile_view_full_background_link" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/infra_new_page_expandable_button" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

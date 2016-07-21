@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/ad_yellow_5" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="@dimen/ad_item_spacing_1" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="96.0dip" android:layout_height="12.0dip" android:src="@drawable/img_premium_type_96x12dp" android:scaleType="fitCenter" android:contentDescription="@string/identity_profile_edit_premium_settings" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_premium_settings_open_profile_title" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:textColor="@color/ad_black_55" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_premium_settings_open_profile_description" />
+        </LinearLayout>
+        <android.support.v7.widget.SwitchCompat android:theme="@style/IdentityProfileEditControlCompatStyle" android:id="@id/identity_profile_edit_premium_settings_open_profile_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_premium_settings_profile_badge_title" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:textColor="@color/black_55" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_premium_settings_profile_badge_description" />
+        </LinearLayout>
+        <android.support.v7.widget.SwitchCompat android:theme="@style/IdentityProfileEditControlCompatStyle" android:id="@id/identity_profile_edit_premium_settings_profile_badge_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/msglib_reconnect_insights_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/insight_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:text="@string/messenger_compose_insight_title" style="@style/TextAppearance.ArtDeco.Headline1.Bold" />
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messenger_compose_insight_body" style="@style/TextAppearance.ArtDeco.Body1" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ad_white_solid" />
+    <stroke android:width="@dimen/msglib_message_list_bubble_border_width" android:color="@color/ad_gray_2" />
+    <corners android:radius="@dimen/msglib_shared_preview_border_radius" />
+    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+</shape>

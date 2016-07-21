@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BasePaddingEditTextStyle" parent="@style/BaseEditTextStyle">
+        <item name="android:paddingStart">@dimen/sharing_compose_editor_left_padding</item>
+        <item name="android:layout_marginEnd">@dimen/ad_item_spacing_4</item>
+    </style>
+    <style name="ButtonStyle.CompatPadding4" parent="@style/ArtDeco.Button.2.Secondary">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_4</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_4</item>
+    </style>
+    <style name="GeneralCompatPadding4">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_4</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_4</item>
+    </style>
+    <style name="MsgLib.MessageList.Subject.CompatSpinMailSubjectPadding" parent="@style/MsgLib.MessageList.Subject">
+        <item name="android:paddingLeft">@dimen/msglib_spinmail_subject_left_padding</item>
+        <item name="android:paddingStart">@dimen/msglib_spinmail_subject_left_padding</item>
+    </style>
+    <style name="MsgLib.SpInMail.Body.CompatSpinMailBodyPadding" parent="@style/MsgLib.SpInMail.Body">
+        <item name="android:paddingLeft">@dimen/msglib_spinmail_body_left_padding</item>
+        <item name="android:paddingStart">@dimen/msglib_spinmail_body_left_padding</item>
+    </style>
+    <style name="MsgLib.SpInMailSponsoredTag.CompatSpinMailBodyPadding" parent="@style/MsgLib.SpInMailSponsoredTag">
+        <item name="android:paddingLeft">@dimen/msglib_spinmail_body_left_padding</item>
+        <item name="android:paddingStart">@dimen/msglib_spinmail_body_left_padding</item>
+    </style>
+    <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="@style/Base.DialogWindowTitle.AppCompat">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="@android:style/Widget">
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:paddingEnd">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.DialogTitle.Icon" parent="@android:style/Widget">
+        <item name="android:layout_marginEnd">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="@android:style/Widget">
+        <item name="android:paddingEnd">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Text" parent="@android:style/Widget">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown" parent="@android:style/Widget">
+        <item name="android:paddingStart">@dimen/abc_dropdownitem_text_padding_left</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1" parent="@android:style/Widget">
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2" parent="@android:style/Widget">
+        <item name="android:layout_toStartOf">@id/edit_query</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Query" parent="@android:style/Widget">
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Text" parent="@style/Base.Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:layout_toStartOf">@android:id/icon2</item>
+        <item name="android:layout_toEndOf">@android:id/icon1</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">@dimen/abc_dropdownitem_text_padding_left</item>
+    </style>
+    <style name="RtlUnderlay.Widget.AppCompat.ActionButton" parent="@android:style/Widget">
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">12.0dip</item>
+    </style>
+    <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="@style/Base.Widget.AppCompat.ActionButton">
+        <item name="android:paddingStart">@dimen/abc_action_bar_overflow_padding_start_material</item>
+        <item name="android:paddingEnd">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="SharingComposeHeaderDividerStyle">
+        <item name="android:layout_marginStart">@dimen/sharing_compose_editor_left_padding</item>
+        <item name="android:layout_marginEnd">@dimen/ad_item_spacing_4</item>
+    </style>
+    <style name="TextViewStyle.CompatPadding0" parent="@style/TextViewStyle">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingStart">0.0dip</item>
+    </style>
+    <style name="TextViewStyle.CompatPadding1" parent="@style/TextViewStyle">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_1</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_1</item>
+    </style>
+    <style name="TextViewStyle.CompatPadding2" parent="@style/TextViewStyle">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_2</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_2</item>
+    </style>
+    <style name="TextViewStyle.CompatPadding3" parent="@style/TextViewStyle">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_3</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_3</item>
+    </style>
+    <style name="TextViewStyle.CompatPadding4" parent="@style/TextViewStyle">
+        <item name="android:paddingLeft">@dimen/ad_item_spacing_4</item>
+        <item name="android:paddingStart">@dimen/ad_item_spacing_4</item>
+    </style>
+    <style name="li_media_seekbar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:progressDrawable">@drawable/li_scrubber_progress</item>
+        <item name="android:thumb">@drawable/li_scrubber_control</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="li_media_time_txt">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">4.0dip</item>
+    </style>
+</resources>

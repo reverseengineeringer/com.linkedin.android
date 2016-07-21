@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/promo6_container" android:background="@color/promo_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/promo6_header_height">
+        <LinearLayout android:orientation="vertical" android:id="@id/promo6_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true">
+            <TextView android:id="@id/promo6_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/promo6_title" />
+            <TextView android:id="@id/promo6_detail_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/promo6_detail" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/image_rollup" />
+</LinearLayout>

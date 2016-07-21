@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relationships_prop_action_like_button_layout" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/ad_min_width">
+        <com.linkedin.android.feed.shared.LikeButton android:layout_gravity="center_vertical" android:id="@id/relationships_prop_action_like_button" android:layout_width="@dimen/ad_icon_2" android:layout_height="@dimen/ad_icon_2" android:src="@drawable/ic_like_24dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/relationships_prop_action_comment_button_layout" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <View android:layout_gravity="start" android:background="@drawable/ad_divider_vertical" android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/relationships_props_action_comment" android:textAllCaps="false" style="@style/TextAppearance.ArtDeco.ButtonText.1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/relationships_prop_action_message_button_layout" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <View android:layout_gravity="start" android:background="@drawable/ad_divider_vertical" android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/relationships_props_action_message" android:textAllCaps="false" style="@style/TextAppearance.ArtDeco.ButtonText.1" />
+    </LinearLayout>
+</LinearLayout>

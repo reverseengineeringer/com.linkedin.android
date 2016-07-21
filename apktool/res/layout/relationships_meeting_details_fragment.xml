@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relationships_meeting_details_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/infra_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:minHeight="@dimen/tab_bar_height" style="@style/ToolbarStyle.Modal.CompatPadding" />
+    <ScrollView android:id="@id/relationships_meeting_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:padding="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/relationships_meeting_details_attendees_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Caption1" />
+            <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true">
+                <com.linkedin.android.relationships.widgets.FakeListView android:orientation="vertical" android:id="@id/relationships_meeting_details_attendees_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:padding="@dimen/ad_item_spacing_2" android:layout_width="@dimen/ad_icon_button_2" android:layout_height="@dimen/ad_icon_button_2" style="?android:attr/progressBarStyleLarge" />
+</LinearLayout>

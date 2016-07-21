@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner android:id="@id/growth_onboarding_location_fragment_country_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" app:isDropDown="true">
+        <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_location_fragment_country_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_location_country_input_hint" android:inputType="textCapWords" />
+        <TextView android:id="@id/growth_onboarding_location_fragment_country_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_location_country_input_hint" />
+        <Spinner android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner>
+    <com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner android:id="@id/growth_onboarding_location_fragment_state_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" app:isDropDown="true">
+        <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_location_fragment_state_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_location_state_input_hint" android:inputType="textCapWords" />
+        <TextView android:id="@id/growth_onboarding_location_fragment_state_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_location_state_input_hint" />
+        <Spinner android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner>
+    <com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner android:id="@id/growth_onboarding_location_fragment_city_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" app:isDropDown="true">
+        <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_location_fragment_city_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_location_city_input_hint" android:inputType="textCapWords" />
+        <TextView android:id="@id/growth_onboarding_location_fragment_city_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_location_city_input_hint" />
+        <Spinner android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayoutSpinner>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_onboarding_location_fragment_postal_code_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+        <EditText android:layout_gravity="start" android:id="@id/growth_onboarding_location_fragment_postal_code_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:hint="@string/growth_onboarding_location_postal_code_input_hint" android:inputType="number" />
+        <TextView android:id="@id/growth_onboarding_location_fragment_postal_code_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/growth_onboarding_location_postal_code_input_hint" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+</LinearLayout>

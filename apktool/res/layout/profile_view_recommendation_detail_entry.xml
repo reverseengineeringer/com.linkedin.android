@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Display1" android:id="@id/profile_view_recommendation_card_quote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_recommendations_quote" />
+        <com.linkedin.android.infra.ui.ExpandableTextView android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:gravity="start" android:id="@id/profile_view_recommendation_detail_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:layout_toRightOf="@id/profile_view_recommendation_card_quote" app:ellipsisText="@string/identity_profile_ellipsis_text" app:ellipsisTextColor="@color/ad_black_70" app:maxLinesWhenCollapsed="5" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4">
+        <View android:background="@drawable/ad_divider_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/identity_profile_recommendation_card_divider_weight" />
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/ad_button_stroke_1" android:layout_weight="@integer/identity_profile_recommendation_card_blank_space_weight" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/profile_view_recommendation_card_recommender_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/profile_view_recommendation_card_recommender_image" android:layout_width="@dimen/ad_entity_photo_2" android:layout_height="@dimen/ad_entity_photo_2" android:scaleType="centerCrop" app:riv_oval="true" style="@style/ArtDeco.EntityPhoto.2.Circle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_toRightOf="@id/profile_view_recommendation_card_recommender_image">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead.Bold" android:gravity="start" android:id="@id/profile_view_recommendation_card_recommender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start" android:id="@id/profile_view_recommendation_card_recommender_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1.Italic" android:gravity="start" android:id="@id/profile_view_recommendation_card_recommender_relationship" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/identity_profile_featured_skills_pill_spacing_4" android:topLeftRadius="@dimen/identity_profile_featured_skills_pill_spacing_3" android:topRightRadius="@dimen/identity_profile_featured_skills_pill_spacing_3" android:bottomLeftRadius="@dimen/identity_profile_featured_skills_pill_spacing_3" android:bottomRightRadius="@dimen/identity_profile_featured_skills_pill_spacing_3" />
+    <solid android:color="@color/gray_1" />
+    <padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+    <size android:height="@dimen/identity_profile_featured_skills_pill_spacing_2" android:width="@dimen/identity_profile_featured_skills_pill_spacing_1" />
+</shape>

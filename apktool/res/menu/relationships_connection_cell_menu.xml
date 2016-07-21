@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/relationships_connection_send_message" android:title="@string/relationships_connections_send_message" app:showAsAction="always" />
+    <item android:id="@id/relationships_connection_remove_item" android:title="@string/relationships_connections_remove_overflow_text" app:showAsAction="always" />
+</menu>

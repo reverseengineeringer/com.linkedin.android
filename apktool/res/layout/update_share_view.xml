@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_preview" android:background="@drawable/msglib_share_background" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/ad_blue_5" android:ellipsize="end" android:id="@id/share_preview_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/TextAppearance.ArtDeco.Body1" />
+    <TextView android:id="@id/share_preview_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linkedin" style="@style/TextAppearance.ArtDeco.Caption2" />
+</LinearLayout>

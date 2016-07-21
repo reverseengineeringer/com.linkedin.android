@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/infra_cookie_viewholder_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/infra_cookie_viewholder_value" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/infra_cookie_viewholder_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/infra_cookie_viewholder_max_age" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

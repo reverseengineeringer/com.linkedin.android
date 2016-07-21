@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/relationships_fast_scroller_section_indicator_text_size" android:textColor="@color/ad_white_solid" android:gravity="center" android:id="@id/relationships_fast_scroller_section_indicator" android:background="@drawable/relationships_fast_scroller_section_indicator" android:layout_width="@dimen/relationships_fast_scroller_section_indicator_size" android:layout_height="@dimen/relationships_fast_scroller_section_indicator_size" />
+    <FrameLayout android:id="@id/relationships_fast_scroller_bar_container" android:layout_width="@dimen/relationships_fast_scroller_bar_touch_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/relationships_fast_scroller_bar_top_bottom_padding" android:layout_marginBottom="@dimen/relationships_fast_scroller_bar_top_bottom_padding">
+        <View android:layout_gravity="center_horizontal" android:id="@id/relationships_fast_scroller_bar" android:background="@color/ad_gray_light" android:layout_width="@dimen/relationships_fast_scroller_bar_width" android:layout_height="fill_parent" />
+        <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center_horizontal" android:id="@id/relationships_fast_scroller_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/relationships_fast_scroller_handle" />
+    </FrameLayout>
+</merge>

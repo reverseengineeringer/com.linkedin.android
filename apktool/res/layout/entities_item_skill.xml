@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/entities_item_skill_root" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:ellipsize="end" android:id="@id/entities_item_skill_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <ImageView android:id="@id/entities_item_skill_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_24dp" android:tint="@color/ad_green_7" />
+</LinearLayout>

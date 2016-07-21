@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/profile_edit_add_section_parent_drawer" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/ad_white_solid" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/profile_edit_add_section_parent_drawer_arrow" android:layout_width="@dimen/ad_icon_1" android:layout_height="@dimen/ad_icon_1" android:layout_marginRight="@dimen/ad_item_spacing_2" android:src="@drawable/ic_chevron_down_24dp" android:tint="@color/ad_gray_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/identity_profile_background_edit" android:layout_marginEnd="@dimen/ad_item_spacing_2" android:layout_alignParentEnd="true" style="@style/ArtDeco.Icon.1" />
+        <TextView android:gravity="start|center" android:id="@id/profile_edit_add_section_parent_drawer_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_toLeftOf="@id/profile_edit_add_section_parent_drawer_arrow" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/ad_item_spacing_4" android:layout_toStartOf="@id/profile_edit_add_section_parent_drawer_arrow" style="@style/TextAppearance.ArtDeco.Headline1" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

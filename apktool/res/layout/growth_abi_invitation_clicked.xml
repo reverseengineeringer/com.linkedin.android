@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton android:layout_gravity="center" android:id="@id/growth_abi_invite_action_international_clicked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_24dp" android:minWidth="@dimen/small_button_size" android:minHeight="@dimen/small_button_size" android:contentDescription="@string/growth_abi_invitation_clicked_description" style="@style/ArtDeco.IconButton.3.Primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

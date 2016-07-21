@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/me_wvmp_premium_upsell_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" card_view:cardUseCompatPadding="false" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/me_wvmp_premium_upsell_card_layout" android:background="?selectableItemBackground" android:paddingTop="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_blurfaces" android:contentDescription="@string/face_pile_image_content_description" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2.Color" android:textColor="@color/ad_blue_5" android:gravity="center" android:id="@id/me_wvmp_premium_upsell_extra_profile_viewers" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:gravity="center" android:id="@id/me_wvmp_premium_upsell_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_3" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:gravity="center" android:id="@id/me_wvmp_premium_upsell_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" />
+        <Button android:id="@id/me_wvmp_premium_upsell_try_premium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_5" android:contentDescription="@string/try_premium_button_content_description" style="@style/ArtDeco.Button.3.Primary" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

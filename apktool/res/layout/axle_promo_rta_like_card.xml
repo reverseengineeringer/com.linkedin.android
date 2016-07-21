@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xpromo_rta_like_card_layout" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" android:src="@drawable/axle_rta_top_border" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4">
+        <FrameLayout android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_4">
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/xpromo_rta_like_card_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/star1" android:scaleType="fitCenter" />
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/xpromo_rta_like_card_icon_left_star" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/star2left" android:scaleType="fitCenter" />
+            <com.linkedin.android.imageloader.LiImageView android:id="@id/xpromo_rta_like_card_icon_right_star" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/star2right" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/xpromo_rta_like_card_text_and_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Bold" android:gravity="start" android:id="@id/xpromo_rta_like_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/axle_rta_like_card_question" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3">
+                <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="end" android:id="@id/xpromo_rta_like_card_button_dismiss" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_2" android:text="@string/axle_rta_like_card_dismiss" android:maxLines="1" android:layout_weight="1.0" style="@style/ArtDeco.Button.2.Secondary" />
+                <com.linkedin.android.entities.shared.AutofitTextButton android:ellipsize="end" android:id="@id/xpromo_rta_like_card_button_send" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/axle_rta_like_card_primary_action" android:maxLines="1" android:layout_weight="1.0" style="@style/ArtDeco.Button.2.Primary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

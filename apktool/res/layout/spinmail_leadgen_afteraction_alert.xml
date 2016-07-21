@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/ad_blue_6" android:gravity="center" android:id="@id/sinmail_leadgen_after_action_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/msglib_spinmail_layout_margin_leadgen_option" android:text="@string/sinmail_leadgen_thank_you" style="@style/MsgLib.Title" />
+    <View android:background="@color/ad_blue_6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:gravity="center" android:id="@id/sinmail_leadgen_after_action_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/msglib_spinmail_layout_margin_leadgen_option" />
+    <View android:id="@id/sinmail_leadgen_after_action_divider" android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@color/ad_blue_6" android:gravity="center" android:id="@id/sinmail_leadgen_after_action_okay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/msglib_spinmail_layout_margin_leadgen_option" android:text="@string/sinmail_okay" />
+</LinearLayout>

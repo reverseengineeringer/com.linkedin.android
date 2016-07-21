@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/relationships_main_prop_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/relationships_prop_card_stroke" android:layout_width="fill_parent" android:layout_height="@dimen/relationships_prop_height">
+        <ImageView android:id="@id/break_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5_negative" android:layout_marginBottom="@dimen/ad_item_spacing_6_negative" android:src="@drawable/img_success_check_230dp" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/break_card_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relationships_breakcard_description" android:layout_below="@id/break_card_image" android:layout_centerHorizontal="true" style="@style/TextAppearance.ArtDeco.Body2" />
+        <Button android:id="@id/break_card_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="@color/accent_blue" android:text="@string/relationships_breakcard_dismiss" android:singleLine="true" android:layout_alignParentBottom="true" style="@style/ArtDeco.Button.3.Tertiary" />
+        <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_above="@id/break_card_button" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

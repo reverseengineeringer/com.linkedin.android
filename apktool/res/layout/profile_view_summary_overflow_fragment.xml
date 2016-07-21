@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linkedin.android.infra.ui.lightbox.LightboxLayout android:orientation="vertical" android:id="@id/profile_summary_fragment_view" android:background="@color/cardview_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/infra_page_toolbar" />
+        <include layout="@layout/profile_view_summary_overflow_view" />
+    </com.linkedin.android.infra.ui.lightbox.LightboxLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/sharing_share_toolbar" android:background="?colorPrimary" android:paddingRight="@dimen/ad_min_width" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:minHeight="@dimen/tab_bar_height" style="@style/ToolbarStyle.Modal.CompatPadding">
+        <com.linkedin.android.infra.ui.slidingtab.TabLayout android:id="@id/sharing_share_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <com.linkedin.android.infra.ui.ViewPager android:id="@id/sharing_share_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

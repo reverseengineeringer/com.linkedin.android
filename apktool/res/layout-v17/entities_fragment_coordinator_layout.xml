@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/entities_app_bar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/entities_collapsing_toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:collapsedTitleTextAppearance="@style/ToolbarStyle.Page" app:contentScrim="?colorPrimary" app:statusBarScrim="?colorPrimaryDark" app:toolbarId="@id/infra_toolbar">
+                <LinearLayout android:orientation="vertical" android:id="@id/entities_header_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <android.support.v7.widget.Toolbar android:id="@id/infra_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin" style="@style/ToolbarStyle.Page">
+                    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ad_item_spacing_2" android:layout_marginEnd="@dimen/ad_item_spacing_2" layout="@layout/search_open_bar" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.linkedin.android.infra.ui.slidingtab.TabLayout android:theme="@style/EntitiesTabLayoutTheme" android:id="@id/entities_infra_tab_layout" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" app:tabIndicatorColor="@color/ad_blue_6" app:tabTextColor="@color/black_55" app:tabSelectedTextColor="@color/ad_blue_6" style="@style/DefaultElevationStyle"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <include android:gravity="center_horizontal" android:id="@id/entities_main_loading_spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/loading_item" />
+            <com.linkedin.android.infra.ui.ViewPager android:id="@id/entities_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/error_toolbar" layout="@layout/infra_page_toolbar" />
+        <ViewStub android:layout_gravity="center" android:id="@id/error_screen" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.linkedin.android.axle.PortraitOnlyRelativeLayout android:id="@id/xpromo_splash_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

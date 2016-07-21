@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/identity_profile_view_temp_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/normal_item_spacing" android:layout_marginRight="@dimen/normal_item_spacing" card_view:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityProfileCardStyle">
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_view_publication" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Title" android:textColor="@color/gray_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_publication_header" />
+            <Button android:id="@id/identity_profile_add_publication_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/normal_item_spacing" android:layout_marginBottom="@dimen/normal_item_spacing" android:text="@string/identity_profile_add_publication" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_view_project" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Title" android:textColor="@color/gray_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_project_header" />
+            <Button android:id="@id/identity_profile_add_project_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/normal_item_spacing" android:layout_marginBottom="@dimen/normal_item_spacing" android:text="@string/identity_profile_add_project" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_view_certification" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Title" android:textColor="@color/gray_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_certification_header" />
+            <Button android:id="@id/identity_profile_add_certification_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/normal_item_spacing" android:layout_marginBottom="@dimen/normal_item_spacing" android:text="@string/identity_profile_add_certification" />
+            <include layout="@layout/profile_view_certification_entry" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/treasury_image_viewer_root_layout" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/image_viewer_background_overlay" android:background="@color/ad_black_solid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v4.view.ViewPager android:id="@id/profile_treasury_detail_viewpager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/treasury_loading_indicator" android:layout_width="@dimen/ad_entity_photo_4" android:layout_height="@dimen/ad_entity_photo_4" style="?android:attr/progressBarStyleLarge" />
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/treasury_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_9" style="@style/ToolbarStyle.Modal">
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ad_item_spacing_2">
+                <Button android:id="@id/profile_treasury_detail_view_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_treasury_details_view_button_text" style="@style/ArtDeco.Button.2.Secondary.Inverse" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout android:orientation="horizontal" android:id="@id/treasury_nav_container" android:layout_width="fill_parent" android:layout_height="@dimen/touch_target_minimum_size" android:layout_alignParentBottom="true">
+            <TextView android:gravity="center_vertical" android:id="@id/profile_treasury_details_position_text" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Body1.Color.Inverse" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/profile_treasury_details_previous_button" android:background="@color/ad_transparent" android:paddingLeft="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_left_24dp" android:tint="@color/ad_icon_btn_primary_icon_selector" android:contentDescription="@string/profile_treasury_details_view_previous_button" />
+                <ImageButton android:id="@id/profile_treasury_details_next_button" android:background="@color/ad_transparent" android:paddingLeft="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_right_24dp" android:tint="@color/ad_icon_btn_primary_icon_selector" android:contentDescription="@string/profile_treasury_details_view_next_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

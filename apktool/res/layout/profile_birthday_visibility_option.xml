@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_icon_button_3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/identity_profile_birthday_visibility_option_button" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ArtDeco.FullButton.1.Tertiary" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingTop="@dimen/ad_item_spacing_2" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/identity_profile_birthday_visibility_option_header" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_2" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:textColor="@drawable/profile_birthday_visibility_option_title_text_color_selector" android:layout_gravity="start" android:id="@id/identity_profile_birthday_visibility_option_title" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.linkedin.android.infra.ui.TintableImageView android:id="@id/identity_profile_birthday_visibility_option_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:src="@drawable/ic_check_16dp" android:tint="@color/blue_6" android:contentDescription="@string/identity_profile_edit_contact_info_birthday_visibility_option_check" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:textColor="@color/black_55" android:layout_gravity="start" android:id="@id/identity_profile_birthday_visibility_option_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_5" />
+        <View android:id="@id/identity_profile_birthday_visibility_option_footer" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_2" />
+    </LinearLayout>
+    <TextView android:layout_gravity="start" android:id="@id/identity_profile_birthday_visibility_option_button_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_contact_info_birthday_visibility" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/appwidget_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/appwidget_app_icon" android:layout_width="@dimen/ad_icon_button_3" android:layout_height="@dimen/ad_icon_button_3" android:src="@mipmap/ic_launcher" android:contentDescription="@string/linkedin_logo" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/ad_white_solid" android:layout_gravity="center_horizontal" android:paddingTop="@dimen/ad_item_spacing_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" android:textAlignment="center" />
+</LinearLayout>

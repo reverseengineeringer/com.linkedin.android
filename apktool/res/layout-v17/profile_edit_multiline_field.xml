@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_multiline_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/TextAppearance.ArtDeco.Caption1" app:errorTextAppearance="@style/ArtDeco.Form.Error.1" style="@style/ArtDeco.Form">
+        <EditText android:id="@id/identity_profile_edit_multiline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/identity_profile_edit_position_description" android:maxLines="@integer/identity_profile_description_lines" android:inputType="textMultiLine" style="@style/IdentityProfileEditFieldStyle" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <FrameLayout android:id="@id/identity_profile_multiline_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_6">
+        <TextView android:textColor="@color/ad_red_6" android:layout_gravity="start" android:id="@id/identity_profile_multiline_exceed_limit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:text="@string/identity_profile_edit_exceed_limit" android:textAlignment="viewStart" style="@style/TextAppearance.ArtDeco.Caption1" />
+        <TextView android:layout_gravity="end" android:id="@id/identity_profile_multiline_current_chars" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:textAlignment="viewEnd" style="@style/TextAppearance.ArtDeco.Caption1" />
+    </FrameLayout>
+    <TextView android:layout_gravity="start" android:id="@id/identity_profile_edit_multiline_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_education_description" android:textAlignment="viewStart" android:labelFor="@id/identity_profile_edit_multiline" />
+</LinearLayout>

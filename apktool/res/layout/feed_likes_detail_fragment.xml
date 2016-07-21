@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/feed_likes_detail_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_page_toolbar" />
+    <com.linkedin.android.feed.endor.ui.FeedComponentsView android:orientation="vertical" android:id="@id/feed_likes_detail_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView android:id="@id/feed_likes_detail_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/relationships_fast_scroller_section_indicator_size" android:width="@dimen/relationships_fast_scroller_section_indicator_size" />
+    <solid android:color="@color/gray_9" />
+    <corners android:topLeftRadius="@dimen/relationships_fast_scroller_section_indicator_size_half" android:topRightRadius="@dimen/relationships_fast_scroller_section_indicator_size_half" android:bottomLeftRadius="@dimen/relationships_fast_scroller_section_indicator_size_half" android:bottomRightRadius="0.0dip" />
+</shape>

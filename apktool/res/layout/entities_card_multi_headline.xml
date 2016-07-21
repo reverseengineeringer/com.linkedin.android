@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/entities_card_view_multi_headline_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="false" style="@style/EntitiesContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.infra.ui.expandableview.ExpandableView android:id="@id/entities_card_multi_headline_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>

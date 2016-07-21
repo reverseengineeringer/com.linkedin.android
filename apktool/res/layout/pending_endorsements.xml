@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pending_endorsements_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_page_toolbar" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pending_endorsements_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fragment android:name="com.linkedin.android.identity.guidededit.pendingendorsement.PendingEndorsementsEndorserCardFragment" android:id="@id/pending_endorsements_endorser_card_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" />
+            <fragment android:name="com.linkedin.android.identity.guidededit.pendingendorsement.PendingEndorsedSkillsCardFragment" android:id="@id/pending_endorsed_skills_card_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

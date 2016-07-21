@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="growth_new_to_voyager_intro_transactional_maxline">3</integer>
+</resources>

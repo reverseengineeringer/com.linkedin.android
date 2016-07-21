@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/profile_view_top_card_summary_section_scroll" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/profile_view_top_card_summary_section_card" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_summary_section_text" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:gravity="center" android:layout_gravity="start" android:id="@id/profile_view_top_card_summary_section_header" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:gravity="start" android:layout_gravity="start" android:id="@id/profile_view_top_card_summary_section_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/profile_view_treasury_carousel_section" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/profile_summary_section_text" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

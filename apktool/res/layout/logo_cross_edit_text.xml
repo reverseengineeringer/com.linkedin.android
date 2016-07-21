@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="false" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_item_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.imageloader.LiImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/profile_contributor_edit_logo" android:focusable="false" android:saveEnabled="false" android:layout_width="@dimen/ad_entity_photo_1" android:layout_height="@dimen/ad_entity_photo_1" android:scaleType="centerCrop" android:contentDescription="@string/identity_profile_edit_publication_author_picture" app:riv_oval="true" />
+        <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/profile_contributor_edit_text" android:background="@color/ad_transparent" android:paddingLeft="@dimen/activity_horizontal_margin" android:focusable="false" android:saveEnabled="false" android:layout_width="0.0px" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:maxLines="1" android:layout_weight="1.0" style="@style/IdentityProfileEditFieldStyle" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/profile_contributor_edit_delete_cross_layout" android:visibility="gone" android:layout_width="@dimen/large_icon_size" android:layout_height="@dimen/normal_icon_size" android:minHeight="@dimen/normal_icon_size">
+            <ImageView android:id="@id/profile_contributor_edit_delete_cross" android:padding="@dimen/small_item_spacing" android:visibility="visible" android:saveEnabled="false" android:layout_width="@dimen/smaller_icon_size" android:layout_height="@dimen/smaller_icon_size" android:src="@drawable/ic_cancel_24dp" android:scaleType="fitEnd" android:tint="@color/ad_gray_7" android:layout_alignParentRight="true" android:contentDescription="@string/identity_profile_delete" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/ad_black_55" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@id/identity_profile_delete_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_delete" />
+</LinearLayout>

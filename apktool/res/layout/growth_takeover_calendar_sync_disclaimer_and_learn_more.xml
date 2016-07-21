@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/calendar_sync_disclaimer_and_learn_more_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/calendar_sync_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_takeover_calendar_sync_legal_text" style="@style/TextAppearance.ArtDeco.Caption1.Color.Inverse" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/calendar_sync_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_1" android:minHeight="@dimen/ad_icon_button_3" android:text="@string/growth_calendar_sync_learn_more" style="@style/TextAppearance.ArtDeco.Caption2.Color.Inverse.Bold" />
+</LinearLayout>

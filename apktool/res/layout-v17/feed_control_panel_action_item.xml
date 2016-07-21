@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/control_panel_container" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ad_item_spacing_2" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingRight="@dimen/ad_item_spacing_7" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ad_item_spacing_2" android:paddingEnd="@dimen/ad_item_spacing_7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/image_container" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4">
+        <com.linkedin.android.infra.ui.TintableImageView android:id="@id/action_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerInParent="true" app:tint="@color/ad_black_70" app:tintMode="src_in" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/action_item_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1.Bold" android:id="@id/action_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:id="@id/action_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

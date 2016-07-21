@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.EfficientCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/ad_black_55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linkedin.android.infra.ui.lightbox.LightboxLayout android:orientation="vertical" android:id="@id/profile_background_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/infra_page_toolbar" />
+        <android.support.v7.widget.RecyclerView android:id="@id/profile_background_cards" android:background="@color/ad_gray_light" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.linkedin.android.infra.ui.lightbox.LightboxLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/profile_background_floating_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_4" android:src="@drawable/ic_plus_24dp" android:scaleType="center" android:tint="@color/ad_white_solid" android:contentDescription="@string/identity_profile_add_new_sections" app:elevation="5.0sp" app:layout_anchor="@id/profile_background_cards" app:layout_anchorGravity="end|bottom|center" app:fabSize="normal" app:backgroundTint="@color/ad_blue_6" />
+</android.support.design.widget.EfficientCoordinatorLayout>

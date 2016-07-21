@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.ArtDeco.ButtonText.2" android:textColor="@drawable/ad_btn_blue_text_selector1" android:ellipsize="end" android:gravity="start" android:id="@id/profile_promotion_button" android:background="@drawable/ad_btn_full_bg_tertiary" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

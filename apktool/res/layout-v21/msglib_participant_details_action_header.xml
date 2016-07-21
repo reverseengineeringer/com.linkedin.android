@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.messengerlib.ui.participantdetails.ParticipantDetailsActionView android:orientation="vertical" android:id="@id/participant_details_actions" android:background="@drawable/rounded_card_top" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginTop="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_3" android:elevation="@dimen/msglib_details_card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

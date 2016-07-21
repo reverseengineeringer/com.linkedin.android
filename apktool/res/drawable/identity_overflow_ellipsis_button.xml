@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/ad_transparent" />
+            <stroke android:width="@dimen/ad_button_stroke_2" android:color="@color/ad_black_15" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="@dimen/ad_item_spacing_3" android:top="@dimen/ad_item_spacing_3" android:right="@dimen/ad_item_spacing_3" android:bottom="@dimen/ad_item_spacing_3" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_ellipsis_horizontal_16dp" />
+</layer-list>

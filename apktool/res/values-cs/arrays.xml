@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="month_array">
+        <item>leden</item>
+        <item>únor</item>
+        <item>březen</item>
+        <item>duben</item>
+        <item>květen</item>
+        <item>červen</item>
+        <item>červenec</item>
+        <item>srpen</item>
+        <item>září</item>
+        <item>říjen</item>
+        <item>listopad</item>
+        <item>prosinec</item>
+    </string-array>
+</resources>

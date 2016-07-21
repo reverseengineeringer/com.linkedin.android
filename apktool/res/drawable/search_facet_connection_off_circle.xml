@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/ad_white_solid" />
+        </shape>
+    </item>
+    <item android:left="@dimen/search_facet_bg_connection_circle_padding" android:top="@dimen/search_facet_bg_connection_circle_padding" android:right="@dimen/search_facet_bg_connection_circle_padding" android:bottom="@dimen/search_facet_bg_connection_circle_padding">
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/search_facet_bg_circle_stroke_width" android:color="@color/ad_black_40" />
+            <solid android:color="@color/ad_transparent" />
+        </shape>
+    </item>
+</layer-list>

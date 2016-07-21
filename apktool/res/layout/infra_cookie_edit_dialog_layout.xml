@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/content_area_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_cookie_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/infra_cookie_edit_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/cookie_name" android:inputType="textNoSuggestions" />
+        <TextView android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/cookie_name" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_cookie_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/infra_cookie_edit_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cookie_value" android:inputType="textNoSuggestions" />
+        <TextView android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/cookie_value" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_cookie_domain_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/infra_cookie_edit_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cookie_domain" android:inputType="textUri" />
+        <TextView android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/cookie_domain" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_cookie_max_age_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/infra_cookie_edit_max_age" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cookie_max_age" android:inputType="number" />
+        <TextView android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/cookie_max_age" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/infra_cookie_action_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cookie_action_update" />
+        <Button android:id="@id/infra_cookie_action_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cookie_action_delete" />
+    </LinearLayout>
+</LinearLayout>

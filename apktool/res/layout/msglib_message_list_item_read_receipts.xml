@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_1" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_2" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_3" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_4" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_5" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_6" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <com.linkedin.android.imageloader.LiImageView android:id="@id/read_receipt_image_7" app:riv_oval="true" style="@style/MsgLib.MessageList.ReadReceiptImage" />
+    <ImageView android:id="@id/read_receipts_overflow" android:src="@drawable/ic_ellipsis_horizontal_24dp" style="@style/MsgLib.MessageList.ReadReceiptEntry" />
+</LinearLayout>

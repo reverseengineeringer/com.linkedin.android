@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/ad_blue_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height">
+            <Button android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Color.Inverse.Bold" android:id="@id/search_facet_reset" android:background="@color/ad_transparent" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" android:text="@string/search_reset" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+            <Button android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Color.Inverse.Bold" android:id="@id/search_facet_done" android:background="@color/ad_transparent" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ad_min_width" android:minHeight="@dimen/ad_min_height" android:text="@string/search_done" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline2.Inverse.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_filter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include android:id="@id/search_facet_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/search_facet_cells_container" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

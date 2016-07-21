@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_join_fragment_full_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:theme="@style/TextInput.Theme.Inverse">
+        <EditText android:layout_gravity="start" android:id="@id/growth_join_fragment_full_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="@string/full_name" android:inputType="textPersonName|textCapWords" style="@style/ArtDeco.Form.Filled.2.Inverse" />
+        <TextView android:id="@id/growth_join_fragment_full_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/full_name" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_join_fragment_first_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:theme="@style/TextInput.Theme.Inverse">
+        <EditText android:layout_gravity="start" android:id="@id/growth_join_fragment_first_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="@string/first_name" android:inputType="textPersonName|textCapWords" style="@style/ArtDeco.Form.Filled.2.Inverse" />
+        <TextView android:id="@id/growth_join_fragment_first_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/first_name" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/growth_join_fragment_last_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:theme="@style/TextInput.Theme.Inverse">
+        <EditText android:layout_gravity="start" android:id="@id/growth_join_fragment_last_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="@string/last_name" android:inputType="textPersonName|textCapWords" style="@style/ArtDeco.Form.Filled.2.Inverse" />
+        <TextView android:id="@id/growth_join_fragment_last_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/last_name" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+</LinearLayout>

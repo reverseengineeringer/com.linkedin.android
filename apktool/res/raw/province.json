@@ -1,0 +1,130 @@
+[
+  {
+    "value": "", 
+    "label": "Select Province"
+  }, 
+  {
+    "value": "14", 
+    "label": "Beijing"
+  }, 
+  {
+    "value": "30", 
+    "label": "Shanghai"
+  }, 
+  {
+    "value": "11", 
+    "label": "Anhui"
+  }, 
+  {
+    "value": "23", 
+    "label": "Chongqing"
+  }, 
+  {
+    "value": "24", 
+    "label": "Fujian"
+  }, 
+  {
+    "value": "1", 
+    "label": "Gansu"
+  }, 
+  {
+    "value": "18", 
+    "label": "Guangdong"
+  }, 
+  {
+    "value": "10", 
+    "label": "Guangxi"
+  }, 
+  {
+    "value": "8", 
+    "label": "Guizhou"
+  }, 
+  {
+    "value": "28", 
+    "label": "Hainan"
+  }, 
+  {
+    "value": "5", 
+    "label": "Hebei"
+  }, 
+  {
+    "value": "12", 
+    "label": "Heilongjiang"
+  }, 
+  {
+    "value": "15", 
+    "label": "Henan"
+  }, 
+  {
+    "value": "29", 
+    "label": "Hubei"
+  }, 
+  {
+    "value": "3", 
+    "label": "Hunan"
+  }, 
+  {
+    "value": "6", 
+    "label": "Inner Mongolia"
+  }, 
+  {
+    "value": "21", 
+    "label": "Jiangsu"
+  }, 
+  {
+    "value": "17", 
+    "label": "Jiangxi"
+  }, 
+  {
+    "value": "26", 
+    "label": "Jilin"
+  }, 
+  {
+    "value": "19", 
+    "label": "Liaoning"
+  }, 
+  {
+    "value": "31", 
+    "label": "Ningxia"
+  }, 
+  {
+    "value": "25", 
+    "label": "Qinghai"
+  }, 
+  {
+    "value": "9", 
+    "label": "Shaanxi"
+  }, 
+  {
+    "value": "20", 
+    "label": "Shandong"
+  }, 
+  {
+    "value": "13", 
+    "label": "Shanxi"
+  }, 
+  {
+    "value": "4", 
+    "label": "Sichuan"
+  }, 
+  {
+    "value": "22", 
+    "label": "Tianjin"
+  }, 
+  {
+    "value": "16", 
+    "label": "Tibet"
+  }, 
+  {
+    "value": "7", 
+    "label": "Xinjiang"
+  }, 
+  {
+    "value": "2", 
+    "label": "Yunnan"
+  }, 
+  {
+    "value": "27", 
+    "label": "Zhejiang"
+  }
+]

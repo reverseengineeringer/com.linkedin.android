@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/identity_guided_edit_position_title_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@id/identity_guided_edit_position_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1_negative" android:layout_marginRight="@dimen/ad_item_spacing_1_negative" android:minHeight="@dimen/ad_min_height" android:hint="@string/identity_profile_edit_position_title_typeahead_hint" android:layout_marginStart="@dimen/ad_item_spacing_1_negative" android:layout_marginEnd="@dimen/ad_item_spacing_1_negative" style="@style/Body3" />
+    <TextView android:textAppearance="@style/ArtDeco.Form.Error.1" android:id="@id/identity_guided_edit_position_title_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

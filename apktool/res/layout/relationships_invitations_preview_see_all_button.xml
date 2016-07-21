@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ad_white_solid" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/ad_gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <Button android:id="@id/relationships_invitations_preview_see_all_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/relationships_invitations_preview_see_all_button_with_pending_invite_count" android:textAllCaps="false" style="@style/ArtDeco.FullButton.2.Tertiary" />
+</LinearLayout>

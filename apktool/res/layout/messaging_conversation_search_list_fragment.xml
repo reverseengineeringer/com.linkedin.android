@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/messaging_conversation_search_list_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:navigationContentDescription="@string/infra_toolbar_back_content_description" style="@style/ToolbarStyle">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textColorHint="@color/ad_white_25" android:id="@id/messaging_conversation_search_list_toolbar_edit_text" android:background="@color/ad_transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/messaging_search_messages" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@null" />
+                <ImageButton android:id="@id/messaging_conversation_search_list_toolbar_clear_button" android:background="@color/ad_transparent" android:padding="@dimen/ad_item_spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/infra_close_icon" android:tint="@color/ad_white_solid" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <include layout="@layout/msglib_conversation_filter_info_bar" />
+        <FrameLayout android:id="@id/messaging_conversation_search_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

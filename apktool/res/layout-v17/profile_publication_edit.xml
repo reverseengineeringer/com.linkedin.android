@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/infra_modal_toolbar" />
+    <ScrollView android:id="@id/identity_profile_edit_publication_scroll_view" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_profile_edit_publication_layout" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_publication_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing">
+                <EditText android:id="@id/identity_profile_edit_publication_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_publication_title" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_publication_publisher_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing">
+                <EditText android:id="@id/identity_profile_edit_publication_publisher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_publication_publisher" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing" style="@style/IdentityProfileEditTitleStyle">
+                <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_publication_date_select_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:id="@id/identity_profile_publication_date_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/identity_profile_edit_publication_date" style="@style/IdentityProfileEditTypeaheadFieldStyle" />
+                </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_add_author" />
+            <com.linkedin.android.identity.shared.ui.ContributorsEditLayout android:orientation="vertical" android:id="@id/identity_profile_edit_publication_authors" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" style="@style/IdentityProfileEditFieldStyle" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/identity_profile_edit_publication_authors_count_label" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="@dimen/normal_item_spacing" android:layout_weight="1.0" android:layout_marginEnd="@dimen/normal_item_spacing" style="@style/TextAppearance.ArtDeco.Caption1" />
+                <Button android:layout_gravity="end" android:id="@id/identity_profile_edit_publication_add_coauthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_add_author_button" style="@style/ArtDeco.FullButton.1.Tertiary" />
+            </LinearLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_publication_url_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xlarge_item_spacing">
+                <EditText android:id="@id/identity_profile_edit_publication_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_publication_url" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/identity_profile_edit_publication_description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:gravity="top" android:id="@id/identity_profile_edit_publication_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/normal_icon_size" android:hint="@string/identity_profile_edit_publication_description" style="@style/IdentityProfileEditFieldStyle" />
+            </com.linkedin.android.infra.ui.CustomTextInputLayout>
+            <include layout="@layout/profile_edit_text_limit" />
+            <Button android:gravity="end|center" android:layout_gravity="end" android:id="@id/identity_profile_delete_publication" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_delete_publication" style="@style/ArtDeco.FullButton.2.Tertiary" />
+            <TextView android:id="@id/identity_profile_edit_publication_name_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_title" android:labelFor="@id/identity_profile_edit_publication_title" />
+            <TextView android:id="@id/identity_profile_edit_publication_url_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_url" android:labelFor="@id/identity_profile_edit_publication_url" />
+            <TextView android:id="@id/identity_profile_edit_publication_authors_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_authors" android:labelFor="@id/identity_profile_edit_publication_authors" />
+            <TextView android:id="@id/identity_profile_publication_date_select_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_date" android:labelFor="@id/identity_profile_publication_date_select" />
+            <TextView android:id="@id/identity_profile_edit_publication_publisher_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_publisher" android:labelFor="@id/identity_profile_edit_publication_publisher" />
+            <TextView android:id="@id/identity_profile_edit_publication_description_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_publication_description" android:labelFor="@id/identity_profile_edit_publication_description" />
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_screen_id" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

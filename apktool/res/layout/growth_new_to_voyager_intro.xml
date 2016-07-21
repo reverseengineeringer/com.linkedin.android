@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_new_to_voyager_intro_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="end" android:id="@id/growth_new_to_voyager_intro_organic_skip_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_new_to_voyager_intro_skip" style="@style/ArtDeco.FullButton.1.Tertiary.Inverse" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_5" android:paddingRight="@dimen/ad_item_spacing_5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/growth_new_to_voyager_intro_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" style="@style/TextAppearance.ArtDeco.Display2.Color.Inverse" />
+        <TextView android:gravity="center" android:id="@id/growth_new_to_voyager_intro_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:text="@string/growth_new_to_voyager_intro_subtitle" style="@style/TextAppearance.ArtDeco.Headline1.Color.Inverse" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_8" android:src="@drawable/growth_new_to_voyager_intro_box" android:contentDescription="@string/growth_new_to_voyager_intro_box_description" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/growth_new_to_voyager_intro_direction_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_7">
+        <ImageView android:id="@id/growth_new_to_voyager_intro_left_arrow" android:background="@color/ad_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_left_24dp" android:tint="@color/ad_white_solid" android:contentDescription="@string/growth_new_to_voyager_intro_swipe_to_see_icon_description" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_new_to_voyager_intro_swipe_to_see" style="@style/TextAppearance.ArtDeco.Title2.Color.Inverse" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/lix_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/lix_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/lix_add_floating_action_button" android:layout_width="@dimen/ad_icon_4" android:layout_height="@dimen/ad_icon_4" android:layout_margin="@dimen/ad_item_spacing_4" android:src="@drawable/ic_plus_24dp" android:scaleType="center" android:tint="@color/ad_white_solid" app:elevation="5.0sp" app:layout_behavior="" app:layout_anchor="@id/lix_recycler_view" app:layout_anchorGravity="end|bottom|center" app:fabSize="mini" app:backgroundTint="@color/ad_blue_6" />
+</android.support.design.widget.CoordinatorLayout>

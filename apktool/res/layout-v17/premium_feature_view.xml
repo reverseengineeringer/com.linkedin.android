@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/premium_feature_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body3" android:gravity="center" android:id="@id/premium_feature_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:textAlignment="center" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="center" android:id="@id/premium_feature_view_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" />
+</LinearLayout>

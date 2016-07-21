@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/home_settings_build_info" android:key="@string/home_settings_build_info" />
+    <Preference android:title="@string/home_settings_release_notes" android:key="@string/home_settings_release_notes" />
+    <Preference android:title="@string/home_settings_header_configure_server" android:key="@string/home_settings_header_configure_server" />
+    <Preference android:title="@string/home_settings_enable_call_tree" android:key="@string/home_settings_enable_call_tree" />
+    <Preference android:title="@string/home_settings_toggle_feature_logs" android:key="@string/home_settings_toggle_feature_logs" />
+    <Preference android:title="@string/home_settings_toggle_tracking_overlay" android:key="@string/home_settings_toggle_tracking_overlay" />
+    <Preference android:title="@string/home_settings_header_shared_prefs" android:key="@string/home_settings_header_shared_prefs" />
+    <Preference android:title="@string/home_settings_header_lix" android:key="@string/home_settings_header_lix" />
+    <Preference android:title="@string/home_settings_header_cookies" android:key="@string/home_settings_header_cookies" />
+    <Preference android:title="@string/home_settings_host_override" android:key="@string/home_settings_host_override" />
+    <Preference android:title="@string/home_settings_crasher" android:key="@string/home_settings_crasher" />
+    <Preference android:title="@string/home_settings_country_code_override" android:key="@string/home_settings_country_code_override" />
+    <Preference android:title="@string/home_settings_consistency_manager_mode" android:key="@string/home_settings_consistency_manager_mode" />
+    <Preference android:title="@string/home_settings_feed_order" android:key="@string/home_settings_feed_order" />
+    <Preference android:title="@string/guided_edit" android:key="@string/guided_edit" />
+    <Preference android:title="@string/identity_pending_endorsements" android:key="@string/identity_pending_endorsements" />
+    <Preference android:title="@string/company" android:key="@string/company" />
+    <Preference android:title="@string/school" android:key="@string/school" />
+    <Preference android:title="@string/job" android:key="@string/job" />
+    <Preference android:title="@string/jymbii" android:key="@string/jymbii" />
+    <Preference android:title="@string/showcase" android:key="@string/showcase" />
+    <Preference android:title="@string/group" android:key="@string/group" />
+    <Preference android:title="@string/profile" android:key="@string/profile" />
+    <Preference android:title="@string/chooser_demo" android:key="@string/chooser_demo" />
+    <Preference android:title="@string/onboarding" android:key="@string/onboarding" />
+    <Preference android:title="@string/abi" android:key="@string/abi" />
+    <Preference android:title="@string/abi_toast" android:key="@string/abi_toast" />
+    <Preference android:title="@string/phone_collection" android:key="@string/phone_collection" />
+    <Preference android:title="@string/sms_reminder_consent" android:key="@string/sms_reminder_consent" />
+    <Preference android:title="@string/rebuild_feed_demo" android:key="@string/rebuild_feed_demo" />
+    <Preference android:title="@string/follow_hub_demo" android:key="@string/follow_hub_demo" />
+    <Preference android:title="@string/new_to_voyager_intro_demo" android:key="@string/new_to_voyager_intro_demo" />
+    <Preference android:title="@string/toggle_shaky" android:key="@string/toggle_shaky" />
+    <Preference android:title="@string/send_feedback" android:key="@string/send_feedback" />
+</PreferenceScreen>

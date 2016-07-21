@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/growth_abi_results_loading_layout" android:background="@color/ad_gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/growth_abi_results_loading_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/infra_action_bar_default_height" style="@style/ToolbarStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textStyle="bold" android:layout_gravity="center" android:id="@id/abi_results_loading_toolbar_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/growth_abi_generic_loading_banner" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Title2.Inverse" />
+    </android.support.v7.widget.Toolbar>
+    <ProgressBar android:id="@id/growth_abi_results_loading_progress_spinner_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/growth_abi_progress_bar_height" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/growth_abi_progress_bar" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <include layout="@layout/growth_abi_results_inviter_top_card" />
+    <include layout="@layout/growth_abi_result_loading_listview" />
+</LinearLayout>

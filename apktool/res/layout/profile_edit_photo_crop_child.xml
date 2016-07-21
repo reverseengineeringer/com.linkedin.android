@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ad_gray_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/infra_photo_crop_fragment" />
+    <TextView android:gravity="center_horizontal" android:id="@id/profile_edit_photo_crop_porch_photo" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_7" android:layout_marginRight="@dimen/ad_item_spacing_7" android:layout_marginBottom="@dimen/ad_item_spacing_6" android:text="@string/identity_profile_picture_zoom_instruction" android:layout_alignParentBottom="true" style="@style/TextAppearance.ArtDeco.Body2.Inverse" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/resource_list_recycler_view" android:background="@color/search_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tiny_item_spacing"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</FrameLayout>

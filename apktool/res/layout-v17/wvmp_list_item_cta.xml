@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/wvmp_list_item_cta" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" style="@style/ArtDeco.Button.1.Secondary" />
+    <Button android:gravity="center" android:id="@id/wvmp_list_item_cta_disabled" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" style="@style/ArtDeco.Button.1.Secondary.Muted" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/ad_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:textColor="@color/ad_black_70" android:textColorHint="@color/ad_gray_2" android:ellipsize="end" android:gravity="start|center" android:id="@id/search_bar_text" android:background="@color/ad_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/ad_min_height" android:hint="@string/search_hint" android:maxLines="1" android:layout_toLeftOf="@id/clearable_cross" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textFilter" />
+    <ImageView android:id="@id/clearable_cross" android:visibility="gone" android:layout_width="@dimen/ad_min_width" android:layout_height="@dimen/ad_min_height" android:src="@drawable/ic_cancel_24dp" android:scaleType="center" android:tint="@color/ad_gray_7" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/clear_text" />
+</RelativeLayout>

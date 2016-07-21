@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sinmail_leadgen_dialog_custom_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sinmail_leadgen_terms_conditions" style="@style/LeadgenOptionsTitle" />
+    <View android:background="#ff00a0dc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/sinmail_option_share_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sinmail_leadgen_share_email" style="@style/LeadgenDialogOption" />
+            <View android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:id="@id/sinmail_option_interested" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sinmail_leadgen_interested" style="@style/LeadgenDialogOption" />
+            <View android:background="@color/ad_black_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

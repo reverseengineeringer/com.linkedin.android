@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/growth_new_to_voyager_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_5">
+                <TextView android:gravity="center" android:id="@id/growth_boost_splash_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boost_splash_message_heading" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Display2.Color.Inverse" />
+                <TextView android:gravity="center" android:id="@id/growth_boost_splash_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_6" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Headline2.Color.Inverse.Medium" />
+                <TextView android:gravity="center" android:id="@id/growth_boost_splash_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_8" android:textAlignment="center" style="@style/TextAppearance.ArtDeco.Body2.Color.Inverse" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button android:id="@id/boost_splash_continue_button" android:background="@drawable/common_rectangle_border_white" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ad_item_spacing_5" android:text="@string/boost_continue_button" style="@style/ArtDeco.Button.4.Primary" />
+</LinearLayout>

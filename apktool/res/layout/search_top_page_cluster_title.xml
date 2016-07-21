@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/search_top_page_cluster_title_see_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/search_more" style="@style/ArtDeco.FullButton.2.Tertiary" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2.Bold" android:ellipsize="end" android:id="@id/search_top_page_cluster_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_4" android:maxLines="1" android:layout_toLeftOf="@id/search_top_page_cluster_title_see_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

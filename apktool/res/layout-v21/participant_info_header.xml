@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_card_top" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_marginRight="@dimen/ad_item_spacing_3" android:elevation="@dimen/msglib_details_card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/participant_info_header_text" style="@style/Base.TextAppearance.AppCompat.Body1" />
+    <TextView android:id="@id/participant_info_header_participant_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.Title" />
+</LinearLayout>

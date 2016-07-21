@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title1" android:gravity="start|center" android:id="@id/identity_profile_edit_media_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:text="@string/identity_profile_edit_media_label" />
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start|center" android:id="@id/identity_profile_edit_media_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:text="@string/identity_profile_edit_media_description" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2">
+        <com.linkedin.android.entities.shared.AutofitTextButton android:gravity="center" android:layout_gravity="start" android:id="@id/identity_profile_upload_treasury" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ad_item_spacing_4" android:text="@string/identity_profile_edit_upload_treasury" android:layout_weight="1.0" style="@style/ArtDeco.Button.2.Primary" />
+        <com.linkedin.android.entities.shared.AutofitTextButton android:gravity="center" android:layout_gravity="end" android:id="@id/identity_profile_link_treasury" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/identity_profile_edit_link_treasury" android:layout_weight="1.0" style="@style/ArtDeco.Button.2.Secondary" />
+    </LinearLayout>
+</LinearLayout>

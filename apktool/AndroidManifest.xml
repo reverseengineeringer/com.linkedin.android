@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.linkedin.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.linkedin.android.infra.app.FlagshipApplication" android:supportsRtl="true" android:theme="@style/VoyagerAppTheme">
+        <activity android:name="com.linkedin.android.infra.app.BaseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.entities.company.controllers.CompanyActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.home.HomeActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.newtovoyager.organic.NewToVoyagerIntroActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.shared.imageviewer.ImageViewerActivity" android:noHistory="true" android:theme="@style/VoyagerAppTheme.ModalTheme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.shared.videoviewer.VideoViewerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.profile.ProfileViewActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.profile.view.recentactivity.detail.ProfileRecentActivityHostActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.profile.view.treasury.detail.TreasuryViewerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.edit.ProfileSkillsEditHostActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.guidededit.pendingendorsement.PendingEndorsementActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.guidededit.GuidedEditActivity" android:theme="@style/IdentityTheme.GuidedEdit.Opaque"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.search.resourcelist.ResourceListActivity" android:theme="@style/IdentityTheme.GuidedEdit.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.entities.job.controllers.JobActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.entities.group.controllers.GroupActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.infra.settings.ui.SettingsActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:name="com.linkedin.android.authenticator.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.linkedin.android.auth.thirdpartylogin"/>
+                <action android:name="com.linkedin.android.auth.AUTHORIZE_APP_LOGIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.login.LoginActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.onboarding.OnboardingActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.boost.BoostActivity"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.abi.AbiActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.smsreminderconsent.SmsReminderConsentActivity" android:theme="@style/Growth.ModalTheme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.SendInviteActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.growth.heathrow.HeathrowRoutingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.growth.onboarding.rbmf.RebuildMyFeedActivity"/>
+        <activity android:name="com.linkedin.android.infra.debug.ui.DeveloperSettingsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.infra.webviewer.WebViewerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:name="com.linkedin.android.publishing.reader.ArticleActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:name="com.linkedin.android.infra.webviewer.WebRouterActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.entities.school.controllers.SchoolActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.search.SearchActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.linkedin.android.premium.PremiumActivity" android:theme="@style/VoyagerAppTheme.PageTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.relationships.RelationshipsSecondaryActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.detail.FeedUpdateDetailActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.aggregate.AggregateActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.channel.ChannelActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:name="com.linkedin.android.feed.updates.common.likes.detail.LikesDetailActivity" android:theme="@style/VoyagerAppTheme.PageTheme.WhiteBackground"/>
+        <activity android:name="com.linkedin.android.feed.actorlist.FeedActorListActivity" android:theme="@style/VoyagerAppTheme.PageTheme.WhiteBackground"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.followhub.FollowHubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.publishing.sharing.ShareActivity" android:theme="@style/VoyagerAppTheme.ModalTheme.WhiteBackground"/>
+        <activity android:name="com.linkedin.android.publishing.sharing.linkpicker.LinkPickerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme.WhiteBackground" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.linkedin.android.publishing.sharing.mentionpicker.MentionPickerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme.WhiteBackground" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.me.shared.actorlist.MeActorListActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.me.wvmp.MeWvmpActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:name="com.linkedin.android.identity.me.notifications.cards.MeCardClickIntentListener$IntentProxyActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.me.wvmp.privatemode.MeWvmpPrivateModeActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.me.shared.profilehost.MeProfileHostActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.identity.me.contentanalytics.ContentAnalyticsActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.messagelist.MessageListActivity" android:theme="@style/VoyagerAppTheme.PageTheme.WhiteBackground" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.reconnect.ReconnectActivity" android:theme="@style/VoyagerAppTheme.PageTheme.WhiteBackground"/>
+        <activity android:name="com.linkedin.android.messaging.participantdetails.ParticipantDetailsActivity" android:theme="@style/VoyagerAppTheme.ModalTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.participantdetails.AddParticipantActivity" android:theme="@style/VoyagerAppTheme.ModalTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.compose.ComposeActivity" android:theme="@style/VoyagerAppTheme.ModalTheme.WhiteBackground" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.compose.InmailComposeActivity" android:theme="@style/VoyagerAppTheme.ModalTheme.WhiteBackground" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.messagelist.AttachmentViewerActivity" android:theme="@style/VoyagerAppTheme.ModalTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.stickers.StickerStoreActivity" android:theme="@style/VoyagerAppTheme.PageTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.messaging.conversationlist.ConversationSearchListActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.entities.jymbii.JymbiiActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.growth.seo.samename.SameNameDirectoryActivity" android:theme="@style/VoyagerAppTheme.PageTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.feed.promptresponselist.FeedPromptResponseListActivity" android:theme="@style/VoyagerAppTheme.PageTheme.BlackBackground"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.l2m.deeplink.DeepLinkHelperActivity" android:noHistory="true" android:theme="@style/TransparentStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="you" android:scheme="linkedin"/>
+                <data android:host="profile" android:scheme="linkedin"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.linkedin.android.profile"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.linkedin.com" android:scheme="http"/>
+                <data android:host="af.linkedin.com" android:scheme="http"/>
+                <data android:host="al.linkedin.com" android:scheme="http"/>
+                <data android:host="dz.linkedin.com" android:scheme="http"/>
+                <data android:host="ar.linkedin.com" android:scheme="http"/>
+                <data android:host="au.linkedin.com" android:scheme="http"/>
+                <data android:host="at.linkedin.com" android:scheme="http"/>
+                <data android:host="bh.linkedin.com" android:scheme="http"/>
+                <data android:host="bd.linkedin.com" android:scheme="http"/>
+                <data android:host="be.linkedin.com" android:scheme="http"/>
+                <data android:host="bo.linkedin.com" android:scheme="http"/>
+                <data android:host="ba.linkedin.com" android:scheme="http"/>
+                <data android:host="br.linkedin.com" android:scheme="http"/>
+                <data android:host="bg.linkedin.com" android:scheme="http"/>
+                <data android:host="ca.linkedin.com" android:scheme="http"/>
+                <data android:host="cl.linkedin.com" android:scheme="http"/>
+                <data android:host="cn.linkedin.com" android:scheme="http"/>
+                <data android:host="co.linkedin.com" android:scheme="http"/>
+                <data android:host="cr.linkedin.com" android:scheme="http"/>
+                <data android:host="hr.linkedin.com" android:scheme="http"/>
+                <data android:host="cy.linkedin.com" android:scheme="http"/>
+                <data android:host="cz.linkedin.com" android:scheme="http"/>
+                <data android:host="dk.linkedin.com" android:scheme="http"/>
+                <data android:host="do.linkedin.com" android:scheme="http"/>
+                <data android:host="ec.linkedin.com" android:scheme="http"/>
+                <data android:host="eg.linkedin.com" android:scheme="http"/>
+                <data android:host="sv.linkedin.com" android:scheme="http"/>
+                <data android:host="ee.linkedin.com" android:scheme="http"/>
+                <data android:host="fi.linkedin.com" android:scheme="http"/>
+                <data android:host="fr.linkedin.com" android:scheme="http"/>
+                <data android:host="de.linkedin.com" android:scheme="http"/>
+                <data android:host="gh.linkedin.com" android:scheme="http"/>
+                <data android:host="gr.linkedin.com" android:scheme="http"/>
+                <data android:host="gt.linkedin.com" android:scheme="http"/>
+                <data android:host="hk.linkedin.com" android:scheme="http"/>
+                <data android:host="hu.linkedin.com" android:scheme="http"/>
+                <data android:host="is.linkedin.com" android:scheme="http"/>
+                <data android:host="in.linkedin.com" android:scheme="http"/>
+                <data android:host="id.linkedin.com" android:scheme="http"/>
+                <data android:host="ir.linkedin.com" android:scheme="http"/>
+                <data android:host="ie.linkedin.com" android:scheme="http"/>
+                <data android:host="il.linkedin.com" android:scheme="http"/>
+                <data android:host="it.linkedin.com" android:scheme="http"/>
+                <data android:host="jm.linkedin.com" android:scheme="http"/>
+                <data android:host="jp.linkedin.com" android:scheme="http"/>
+                <data android:host="jo.linkedin.com" android:scheme="http"/>
+                <data android:host="kz.linkedin.com" android:scheme="http"/>
+                <data android:host="ke.linkedin.com" android:scheme="http"/>
+                <data android:host="kr.linkedin.com" android:scheme="http"/>
+                <data android:host="kw.linkedin.com" android:scheme="http"/>
+                <data android:host="lv.linkedin.com" android:scheme="http"/>
+                <data android:host="lb.linkedin.com" android:scheme="http"/>
+                <data android:host="lt.linkedin.com" android:scheme="http"/>
+                <data android:host="lu.linkedin.com" android:scheme="http"/>
+                <data android:host="mk.linkedin.com" android:scheme="http"/>
+                <data android:host="my.linkedin.com" android:scheme="http"/>
+                <data android:host="mt.linkedin.com" android:scheme="http"/>
+                <data android:host="mu.linkedin.com" android:scheme="http"/>
+                <data android:host="mx.linkedin.com" android:scheme="http"/>
+                <data android:host="me.linkedin.com" android:scheme="http"/>
+                <data android:host="ma.linkedin.com" android:scheme="http"/>
+                <data android:host="np.linkedin.com" android:scheme="http"/>
+                <data android:host="nl.linkedin.com" android:scheme="http"/>
+                <data android:host="nz.linkedin.com" android:scheme="http"/>
+                <data android:host="ng.linkedin.com" android:scheme="http"/>
+                <data android:host="no.linkedin.com" android:scheme="http"/>
+                <data android:host="pk.linkedin.com" android:scheme="http"/>
+                <data android:host="pa.linkedin.com" android:scheme="http"/>
+                <data android:host="pe.linkedin.com" android:scheme="http"/>
+                <data android:host="ph.linkedin.com" android:scheme="http"/>
+                <data android:host="pl.linkedin.com" android:scheme="http"/>
+                <data android:host="pt.linkedin.com" android:scheme="http"/>
+                <data android:host="pr.linkedin.com" android:scheme="http"/>
+                <data android:host="qa.linkedin.com" android:scheme="http"/>
+                <data android:host="ro.linkedin.com" android:scheme="http"/>
+                <data android:host="ru.linkedin.com" android:scheme="http"/>
+                <data android:host="sa.linkedin.com" android:scheme="http"/>
+                <data android:host="rs.linkedin.com" android:scheme="http"/>
+                <data android:host="sg.linkedin.com" android:scheme="http"/>
+                <data android:host="sk.linkedin.com" android:scheme="http"/>
+                <data android:host="si.linkedin.com" android:scheme="http"/>
+                <data android:host="za.linkedin.com" android:scheme="http"/>
+                <data android:host="es.linkedin.com" android:scheme="http"/>
+                <data android:host="lk.linkedin.com" android:scheme="http"/>
+                <data android:host="om.linkedin.com" android:scheme="http"/>
+                <data android:host="se.linkedin.com" android:scheme="http"/>
+                <data android:host="ch.linkedin.com" android:scheme="http"/>
+                <data android:host="tw.linkedin.com" android:scheme="http"/>
+                <data android:host="tz.linkedin.com" android:scheme="http"/>
+                <data android:host="th.linkedin.com" android:scheme="http"/>
+                <data android:host="tt.linkedin.com" android:scheme="http"/>
+                <data android:host="tn.linkedin.com" android:scheme="http"/>
+                <data android:host="tr.linkedin.com" android:scheme="http"/>
+                <data android:host="ug.linkedin.com" android:scheme="http"/>
+                <data android:host="ua.linkedin.com" android:scheme="http"/>
+                <data android:host="ae.linkedin.com" android:scheme="http"/>
+                <data android:host="uk.linkedin.com" android:scheme="http"/>
+                <data android:host="uy.linkedin.com" android:scheme="http"/>
+                <data android:host="ve.linkedin.com" android:scheme="http"/>
+                <data android:host="vn.linkedin.com" android:scheme="http"/>
+                <data android:host="zw.linkedin.com" android:scheme="http"/>
+                <data android:host="www.linkedin.com" android:scheme="https"/>
+                <data android:host="af.linkedin.com" android:scheme="https"/>
+                <data android:host="al.linkedin.com" android:scheme="https"/>
+                <data android:host="dz.linkedin.com" android:scheme="https"/>
+                <data android:host="ar.linkedin.com" android:scheme="https"/>
+                <data android:host="au.linkedin.com" android:scheme="https"/>
+                <data android:host="at.linkedin.com" android:scheme="https"/>
+                <data android:host="bh.linkedin.com" android:scheme="https"/>
+                <data android:host="bd.linkedin.com" android:scheme="https"/>
+                <data android:host="be.linkedin.com" android:scheme="https"/>
+                <data android:host="bo.linkedin.com" android:scheme="https"/>
+                <data android:host="ba.linkedin.com" android:scheme="https"/>
+                <data android:host="br.linkedin.com" android:scheme="https"/>
+                <data android:host="bg.linkedin.com" android:scheme="https"/>
+                <data android:host="ca.linkedin.com" android:scheme="https"/>
+                <data android:host="cl.linkedin.com" android:scheme="https"/>
+                <data android:host="cn.linkedin.com" android:scheme="https"/>
+                <data android:host="co.linkedin.com" android:scheme="https"/>
+                <data android:host="cr.linkedin.com" android:scheme="https"/>
+                <data android:host="hr.linkedin.com" android:scheme="https"/>
+                <data android:host="cy.linkedin.com" android:scheme="https"/>
+                <data android:host="cz.linkedin.com" android:scheme="https"/>
+                <data android:host="dk.linkedin.com" android:scheme="https"/>
+                <data android:host="do.linkedin.com" android:scheme="https"/>
+                <data android:host="ec.linkedin.com" android:scheme="https"/>
+                <data android:host="eg.linkedin.com" android:scheme="https"/>
+                <data android:host="sv.linkedin.com" android:scheme="https"/>
+                <data android:host="ee.linkedin.com" android:scheme="https"/>
+                <data android:host="fi.linkedin.com" android:scheme="https"/>
+                <data android:host="fr.linkedin.com" android:scheme="https"/>
+                <data android:host="de.linkedin.com" android:scheme="https"/>
+                <data android:host="gh.linkedin.com" android:scheme="https"/>
+                <data android:host="gr.linkedin.com" android:scheme="https"/>
+                <data android:host="gt.linkedin.com" android:scheme="https"/>
+                <data android:host="hk.linkedin.com" android:scheme="https"/>
+                <data android:host="hu.linkedin.com" android:scheme="https"/>
+                <data android:host="is.linkedin.com" android:scheme="https"/>
+                <data android:host="in.linkedin.com" android:scheme="https"/>
+                <data android:host="id.linkedin.com" android:scheme="https"/>
+                <data android:host="ir.linkedin.com" android:scheme="https"/>
+                <data android:host="ie.linkedin.com" android:scheme="https"/>
+                <data android:host="il.linkedin.com" android:scheme="https"/>
+                <data android:host="it.linkedin.com" android:scheme="https"/>
+                <data android:host="jm.linkedin.com" android:scheme="https"/>
+                <data android:host="jp.linkedin.com" android:scheme="https"/>
+                <data android:host="jo.linkedin.com" android:scheme="https"/>
+                <data android:host="kz.linkedin.com" android:scheme="https"/>
+                <data android:host="ke.linkedin.com" android:scheme="https"/>
+                <data android:host="kr.linkedin.com" android:scheme="https"/>
+                <data android:host="kw.linkedin.com" android:scheme="https"/>
+                <data android:host="lv.linkedin.com" android:scheme="https"/>
+                <data android:host="lb.linkedin.com" android:scheme="https"/>
+                <data android:host="lt.linkedin.com" android:scheme="https"/>
+                <data android:host="lu.linkedin.com" android:scheme="https"/>
+                <data android:host="mk.linkedin.com" android:scheme="https"/>
+                <data android:host="my.linkedin.com" android:scheme="https"/>
+                <data android:host="mt.linkedin.com" android:scheme="https"/>
+                <data android:host="mu.linkedin.com" android:scheme="https"/>
+                <data android:host="mx.linkedin.com" android:scheme="https"/>
+                <data android:host="me.linkedin.com" android:scheme="https"/>
+                <data android:host="ma.linkedin.com" android:scheme="https"/>
+                <data android:host="np.linkedin.com" android:scheme="https"/>
+                <data android:host="nl.linkedin.com" android:scheme="https"/>
+                <data android:host="nz.linkedin.com" android:scheme="https"/>
+                <data android:host="ng.linkedin.com" android:scheme="https"/>
+                <data android:host="no.linkedin.com" android:scheme="https"/>
+                <data android:host="pk.linkedin.com" android:scheme="https"/>
+                <data android:host="pa.linkedin.com" android:scheme="https"/>
+                <data android:host="pe.linkedin.com" android:scheme="https"/>
+                <data android:host="ph.linkedin.com" android:scheme="https"/>
+                <data android:host="pl.linkedin.com" android:scheme="https"/>
+                <data android:host="pt.linkedin.com" android:scheme="https"/>
+                <data android:host="pr.linkedin.com" android:scheme="https"/>
+                <data android:host="qa.linkedin.com" android:scheme="https"/>
+                <data android:host="ro.linkedin.com" android:scheme="https"/>
+                <data android:host="ru.linkedin.com" android:scheme="https"/>
+                <data android:host="sa.linkedin.com" android:scheme="https"/>
+                <data android:host="rs.linkedin.com" android:scheme="https"/>
+                <data android:host="sg.linkedin.com" android:scheme="https"/>
+                <data android:host="sk.linkedin.com" android:scheme="https"/>
+                <data android:host="si.linkedin.com" android:scheme="https"/>
+                <data android:host="za.linkedin.com" android:scheme="https"/>
+                <data android:host="es.linkedin.com" android:scheme="https"/>
+                <data android:host="lk.linkedin.com" android:scheme="https"/>
+                <data android:host="om.linkedin.com" android:scheme="https"/>
+                <data android:host="se.linkedin.com" android:scheme="https"/>
+                <data android:host="ch.linkedin.com" android:scheme="https"/>
+                <data android:host="tw.linkedin.com" android:scheme="https"/>
+                <data android:host="tz.linkedin.com" android:scheme="https"/>
+                <data android:host="th.linkedin.com" android:scheme="https"/>
+                <data android:host="tt.linkedin.com" android:scheme="https"/>
+                <data android:host="tn.linkedin.com" android:scheme="https"/>
+                <data android:host="tr.linkedin.com" android:scheme="https"/>
+                <data android:host="ug.linkedin.com" android:scheme="https"/>
+                <data android:host="ua.linkedin.com" android:scheme="https"/>
+                <data android:host="ae.linkedin.com" android:scheme="https"/>
+                <data android:host="uk.linkedin.com" android:scheme="https"/>
+                <data android:host="uy.linkedin.com" android:scheme="https"/>
+                <data android:host="ve.linkedin.com" android:scheme="https"/>
+                <data android:host="vn.linkedin.com" android:scheme="https"/>
+                <data android:host="zw.linkedin.com" android:scheme="https"/>
+                <data android:path="/m"/>
+                <data android:path="/m/"/>
+                <data android:path="/login"/>
+                <data android:path="/m/profile/guided"/>
+                <data android:path="/m/profile/guided/add-current-position"/>
+                <data android:path="/m/profile/guided/add-education"/>
+                <data android:path="/m/profile/guided/add-suggested-skills"/>
+                <data android:pathPattern="/m/profile/.*"/>
+                <data android:pathPattern="/comm/profile/.*"/>
+                <data android:pathPattern="/in/.*"/>
+                <data android:pathPattern="/comm/in/.*"/>
+                <data android:pathPattern="/pub/dir/.*"/>
+                <data android:pathPattern="/m/company/.*"/>
+                <data android:pathPattern="/company/.*"/>
+                <data android:pathPattern="/m/school/.*"/>
+                <data android:pathPattern="/m/job/.*"/>
+                <data android:pathPattern="/jobs2/view/.*"/>
+                <data android:pathPattern="/jobs/view/.*"/>
+                <data android:pathPattern="/comm/jobs2/view/.*"/>
+                <data android:pathPattern="/comm/jobs/view/.*"/>
+                <data android:pathPattern="/jobs/.*-jobs.*"/>
+                <data android:pathPattern="/jobs/.*-.*-jobs.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-jobs.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-jobs.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-jobs.*"/>
+                <data android:pathPattern="/jobs/jobs-in-.*"/>
+                <data android:pathPattern="/jobs/.*-emplois.*"/>
+                <data android:pathPattern="/jobs/.*-.*-emplois.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-emplois.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-emplois.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-emplois.*"/>
+                <data android:pathPattern="/jobs/emplois-dans-.*"/>
+                <data android:pathPattern="/jobs/.*-stellen.*"/>
+                <data android:pathPattern="/jobs/.*-.*-stellen.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-stellen.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-stellen.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-stellen.*"/>
+                <data android:pathPattern="/jobs/stellen-in-.*"/>
+                <data android:pathPattern="/jobs/.*-empleos.*"/>
+                <data android:pathPattern="/jobs/.*-.*-empleos.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-empleos.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-empleos.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-empleos.*"/>
+                <data android:pathPattern="/jobs/empleos-en-.*"/>
+                <data android:pathPattern="/jobs/.*-offerte-di-lavoro.*"/>
+                <data android:pathPattern="/jobs/.*-.*-offerte-di-lavoro.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-offerte-di-lavoro.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-offerte-di-lavoro.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-offerte-di-lavoro.*"/>
+                <data android:pathPattern="/jobs/offerte-di-lavoro-qui-.*"/>
+                <data android:pathPattern="/jobs/.*-vagas.*"/>
+                <data android:pathPattern="/jobs/.*-.*-vagas.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-vagas.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-vagas.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-vagas.*"/>
+                <data android:pathPattern="/jobs/vagas-em-.*"/>
+                <data android:pathPattern="/jobs/.*-%e8%81%8c%e4%bd%8d.*"/>
+                <data android:pathPattern="/jobs/.*-.*-%e8%81%8c%e4%bd%8d.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-%e8%81%8c%e4%bd%8d.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-%e8%81%8c%e4%bd%8d.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-%e8%81%8c%e4%bd%8d.*"/>
+                <data android:pathPattern="/jobs/%e8%81%8c%e4%bd%8d-%e5%9c%a8-.*"/>
+                <data android:pathPattern="/jobs/.*-%E8%81%8C%E4%BD%8D.*"/>
+                <data android:pathPattern="/jobs/.*-.*-%E8%81%8C%E4%BD%8D.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-%E8%81%8C%E4%BD%8D.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-%E8%81%8C%E4%BD%8D.*"/>
+                <data android:pathPattern="/jobs/.*-.*-.*-.*-.*-%E8%81%8C%E4%BD%8D.*"/>
+                <data android:pathPattern="/jobs/%E8%81%8C%E4%BD%8D-%E5%9C%A8-.*"/>
+                <data android:pathPattern="/m/job/home"/>
+                <data android:pathPattern="/job/home"/>
+                <data android:pathPattern="/comm/job/home"/>
+                <data android:pathPattern="/m/group/.*"/>
+                <data android:pathPattern="/m/groups/.*"/>
+                <data android:pathPattern="/groups/.*"/>
+                <data android:pathPattern="/comm/groups/.*"/>
+                <data android:path="/psettings/email/confirm"/>
+                <data android:path="/comm/psettings/email/confirm"/>
+                <data android:path="/start/"/>
+                <data android:path="/start/welcome"/>
+                <data android:path="/start/boost-promo"/>
+                <data android:path="/hp"/>
+                <data android:path="/comm/hp"/>
+                <data android:pathPattern="/hp/.*"/>
+                <data android:pathPattern="/comm/hp/.*"/>
+                <data android:path="/nhome"/>
+                <data android:path="/comm/nhome"/>
+                <data android:pathPattern="/nhome/.*"/>
+                <data android:pathPattern="/comm/nhome/.*"/>
+                <data android:pathPattern="/m/update/.*"/>
+                <data android:path="/m/share"/>
+                <data android:path="/m/rbmf"/>
+                <data android:path="/m/mynetwork"/>
+                <data android:path="/m/mynetwork/invite-connect/invitations"/>
+                <data android:path="/m/mynetwork/invite-connect/invitations/pending"/>
+                <data android:path="/m/mynetwork/invite-connect/connections"/>
+                <data android:pathPattern="/m/mynetwork/invite-accept/invitationId/.*/sharedKey/.*"/>
+                <data android:pathPattern="/mynetwork/invite-accepted/actorId/.*"/>
+                <data android:path="/m/mynetwork/add-connections"/>
+                <data android:path="/comm/people/invite-accept"/>
+                <data android:path="/people/send-invite"/>
+                <data android:path="/comm/people/send-invite"/>
+                <data android:pathPattern="/e/v2/pulse*"/>
+                <data android:pathPattern="/e/v2/newsle*"/>
+                <data android:pathPattern="/pulse/.*"/>
+                <data android:pathPattern="/lite/external-redirect*"/>
+                <data android:pathPattern="/comm/lite/external-redirect*"/>
+                <data android:path="/reg/enter-flow"/>
+                <data android:path="/fetch/enter-flow"/>
+                <data android:path="/m/me"/>
+                <data android:path="/m/me/profile-views"/>
+                <data android:path="/m/wvmx/profile"/>
+                <data android:path="/comm/wvmx/profile"/>
+                <data android:path="/m/messaging"/>
+                <data android:pathPattern="/m/messaging/thread/.*"/>
+                <data android:path="/m/messaging/compose"/>
+                <data android:pathPattern="/m/messaging/compose/.*"/>
+                <data android:pathPattern="/m/messaging/compose/.*/body/.*"/>
+                <data android:pathPattern="/messaging/thread/.*"/>
+                <data android:path="/messaging/compose"/>
+                <data android:pathPattern="/messaging/compose/.*"/>
+                <data android:pathPattern="/messaging/compose/.*/body/.*"/>
+                <data android:pathPattern="/comm/messaging/thread/.*"/>
+                <data android:path="/comm/messaging/compose"/>
+                <data android:pathPattern="/comm/messaging/compose/.*"/>
+                <data android:pathPattern="/comm/messaging/compose/.*/body/.*"/>
+                <data android:path="/m/settings"/>
+                <data android:path="/m/settings/privacy"/>
+                <data android:path="/m/settings/messages"/>
+                <data android:path="/premium/products"/>
+                <data android:path="/comm/people/pymk"/>
+                <data android:path="/comm/people/pymk/hub"/>
+                <data android:path="/comm/pymk/pcard"/>
+                <data android:path="/m/launcher/xpromo_launcher_flagship"/>
+                <data android:pathPattern="/profinder/projects-notification/.*"/>
+                <data android:pathPattern="/profinder/projects-notification/.*/.*"/>
+                <data android:pathPattern="/comm/profinder/projects-notification/.*"/>
+                <data android:pathPattern="/comm/profinder/projects-notification/.*/.*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linkedin.android.liauthlib.thirdparty.LiThirdPartyAuthorizeActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.linkedin.android.auth.thirdparty.authorize"/>
+                <action android:name="com.linkedin.android.auth.AUTHORIZE_APP"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="com.linkedin.android.auth.thirdparty.authorize"/>
+                <action android:name="com.linkedin.android.auth.AUTHORIZE_APP"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.linkedin.android.liauthlib.thirdparty.LiThirdPartyViewUrlActivity"/>
+        <provider android:authorities="com.linkedin.android.messenger.provider" android:exported="false" android:name="com.linkedin.messengerlib.database.MessengerProvider" android:syncable="false"/>
+        <provider android:authorities="com.linkedin.android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <receiver android:enabled="false" android:name="com.linkedin.android.authenticator.AccountChangeReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.linkedin.android.axle.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.linkedin.android.infra.LocaleChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="com.linkedin.android.messaging.MessagingNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.linkedin.messengerlib.SYNC_INTENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="com.linkedin.android.l2m.notification.DismissNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.linkedin.android.Flagship.notifications.DISMISS_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.linkedin.android.litrackinglib.network.MetricQueueIntentService"/>
+        <service android:name="com.linkedin.android.growth.calendar.CalendarUploadService"/>
+        <receiver android:enabled="false" android:exported="false" android:name="com.linkedin.android.growth.calendar.CalendarUploadReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.linkedin.android.Flagship.tasks.START"/>
+                <action android:name="com.linkedin.android.Flagship.tasks.WAKE_UP"/>
+                <action android:name="com.linkedin.android.Flagship.tasks.CANCEL"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.linkedin.android.growth.contactsync.ContactSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/contacts_sync_adapter"/>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts"/>
+        </service>
+        <service android:exported="true" android:name="com.linkedin.android.growth.contactsync.AuthenticatorService" android:permission="android.permission.ACCOUNT_MANAGER">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <receiver android:exported="true" android:name="com.linkedin.android.l2m.notification.FlagshipGcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.linkedin.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:name="com.linkedin.android.l2m.notification.PackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.linkedin.android.l2m.notification.NotificationListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.linkedin.android.l2m.notification.TokenRefreshListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.linkedin.android.l2m.notification.RegistrationIntentService"/>
+        <service android:exported="false" android:name="com.linkedin.android.messaging.service.ReplyIntentService"/>
+        <service android:name="com.linkedin.android.infra.TrackingOverlayService"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="ab5008962458269935263eb69579bcaa749a47d5"/>
+        <receiver android:label="@string/appwidget_notifications_name" android:name="com.linkedin.android.appwidget.ResponsiveWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_notifications_info"/>
+        </receiver>
+        <receiver android:enabled="false" android:name="com.linkedin.android.appwidget.ResponsiveWidget$ActiveUserListener">
+            <intent-filter android:enabled="true" android:exported="false">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.linkedin.android.developer.OAuthService">
+            <intent-filter>
+                <category android:name="com.linkedin.android.developer.category.SSO"/>
+                <action android:name="com.linkedin.android.developer.action.GET_TOKEN"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linkedin.android.developer.OAuthTokenHelperActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.linkedin.android.growth.samsung.SamsungSyncConsentActivity" android:theme="@style/TransparentStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="contactsyncconsent" android:scheme="linkedin"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.linkedin.android.growth.takeover.TakeoverActivity"/>
+        <activity android:name="com.linkedin.android.shaky.FeedbackActivity"/>
+        <activity android:label="@string/view_tos" android:name="com.linkedin.android.tos.ui.ToSWebviewActivity"/>
+        <activity android:name="com.linkedin.android.webrouter.webviewer.WebViewerActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:exported="true" android:name="com.linkedin.android.webrouter.customtabs.impl.KeepAliveService"/>
+        <service android:exported="false" android:name="com.linkedin.android.perftimer.EKGLeakUploadService"/>
+        <activity android:name="com.linkedin.android.liauthlib.common.DummyFragmentActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linkedin.android.liauthlib.LiAuthWebActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linkedin.android.liauthlib.registration.ChallengeWebViewActivity"/>
+        <service android:exported="true" android:name="com.linkedin.android.liauthlib.sso.LiSSOService">
+            <intent-filter>
+                <category android:name="com.linkedin.android.auth.SSO"/>
+                <action android:name="com.linkedin.android.auth.GET_ACCOUNTS"/>
+                <action android:name="com.linkedin.android.auth.GET_TOKENS"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.linkedin.android.liauthlib.test.thirdparty.InstrumentedThirdPartyAuthorizeActivity">
+            <intent-filter>
+                <category android:name="com.linkedin.android.liauthlib.test.thirdparty.authorize"/>
+                <action android:name="com.linkedin.android.liauthlib.test.AUTHORIZE_APP"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.linkedin.android.liauthlib.test.thirdparty.TestableLiThirdPartyViewUrlActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.linkedin.CrossPromoLib.TestActivity"/>
+        <service android:exported="true" android:name="com.linkedin.android.deeplink.services.DeferredDeeplinkingService">
+            <intent-filter>
+                <category android:name="com.linkedin.android.deeplink.DEFERRED_DEEPLINK_CATEGORY"/>
+                <action android:name="com.linkedin.android.deeplink.DEFERRED_DEEPLINK_ACTION"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <provider android:authorities="com.linkedin.android.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

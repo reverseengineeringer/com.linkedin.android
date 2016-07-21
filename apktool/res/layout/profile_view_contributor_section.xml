@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/identity_profile_view_contributors_section" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ad_divider_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:layout_weight="@integer/identity_profile_recommendation_card_divider_weight" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:layout_weight="@integer/identity_profile_recommendation_card_blank_space_weight" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/Body3" android:id="@id/identity_profile_view_project_contributors_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_3" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/identity_profile_view_project_contributor_images" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

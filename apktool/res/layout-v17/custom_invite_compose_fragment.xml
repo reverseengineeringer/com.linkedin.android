@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/profile_custom_invite_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/ToolbarStyle.Page"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ad_item_spacing_2" android:weightSum="1.0" android:layout_marginEnd="@dimen/ad_item_spacing_2">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/profile_custom_invite_send_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/custom_invite_save_button" android:maxLines="1" android:layout_weight="1.0" style="@style/TextAppearance.ArtDeco.Headline1.Inverse.Bold" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/custom_invite_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ad_item_spacing_4">
+        <EditText android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="start" android:id="@id/profile_custom_invite_message" android:background="@color/ad_white_solid" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/custom_invite_hint_text" android:lines="3" android:singleLine="false" android:maxLength="300" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="end" android:id="@id/profile_custom_invite_message_length" android:background="@color/ad_white_solid" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/custom_invite_max_message_length" android:layout_below="@id/profile_custom_invite_message" android:paddingEnd="@dimen/ad_item_spacing_4" />
+    </RelativeLayout>
+</LinearLayout>

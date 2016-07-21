@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_engine_always_visible_cta_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.TintableImageView android:id="@id/search_engine_always_visible_cta_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/ad_min_width" android:layout_height="@dimen/ad_min_height" android:scaleType="center" android:tint="@color/ad_blue_6" android:tintMode="src_in" style="@style/ArtDeco.Icon.2" />
+    <TextView android:textColor="@color/ad_green_7" android:gravity="center_vertical" android:id="@id/search_engine_always_visible_cta_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_4" android:layout_marginRight="@dimen/ad_item_spacing_2" android:text="@string/search_card_invited" android:layout_marginEnd="@dimen/ad_item_spacing_2" style="@style/TextAppearance.ArtDeco.Caption1" />
+</FrameLayout>

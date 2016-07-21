@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/wvmp_notifications_cta" android:padding="0.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ad_item_spacing_7" android:contentDescription="@string/infra_cd_expandable_button" style="@style/ArtDeco.FullButton.2.Tertiary" />
+</LinearLayout>

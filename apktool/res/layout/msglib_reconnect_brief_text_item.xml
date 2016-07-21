@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msglib_reconnect_brief_item_container" android:paddingLeft="@dimen/msglib_message_list_horizontal_margin" android:paddingTop="@dimen/msglib_message_list_top_margin" android:paddingRight="@dimen/msglib_message_list_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linkedin.android.imageloader.LiImageView android:id="@id/msglib_reconnect_brief_balloon" android:layout_width="@dimen/ad_entity_photo_1" android:layout_height="@dimen/ad_entity_photo_1" android:layout_marginRight="@dimen/msglib_message_list_image_bubble_margin" android:scaleType="centerCrop" app:riv_oval="false" style="@style/MsgLib.Image" />
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/msglib_reconnect_brief_balloon">
+            <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/msglib_reconnect_brief_body" android:background="@drawable/msglib_incoming_message_bubble" android:paddingLeft="@dimen/msglib_message_list_bubble_horizontal_padding" android:paddingTop="@dimen/msglib_message_list_bubble_top_padding" android:paddingRight="@dimen/msglib_message_list_bubble_horizontal_padding" android:paddingBottom="@dimen/msglib_message_list_bubble_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="start" android:id="@id/msglib_reconnect_brief_text_body" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MsgLib.MessageList.Body" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

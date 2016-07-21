@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/growth_onboarding_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/growth_login_fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginTop="@dimen/ad_item_spacing_5" android:layout_marginRight="@dimen/ad_item_spacing_5">
+        <include layout="@layout/growth_login_join_email_password_container" />
+        <Button android:id="@id/growth_login_fragment_sign_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_5" android:text="@string/sign_in" style="@style/ArtDeco.Button.4.Secondary.Inverse" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_5">
+            <Button android:gravity="start|center" android:layout_gravity="start" android:id="@id/growth_login_fragment_forgot_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:text="@string/growth_login_forgot_password" android:layout_centerVertical="true" android:textAlignment="viewStart" style="@style/ArtDeco.FullButton.1.Tertiary.Inverse" />
+            <Button android:gravity="end|center" android:layout_gravity="end" android:id="@id/growth_login_fragment_join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ad_min_height" android:text="@string/join_now" android:layout_toRightOf="@id/growth_login_fragment_forgot_password" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAlignment="viewEnd" android:layout_toEndOf="@id/growth_login_fragment_forgot_password" android:layout_alignParentEnd="true" style="@style/ArtDeco.FullButton.1.Tertiary.Inverse" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

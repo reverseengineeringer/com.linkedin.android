@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start|center" android:id="@id/identity_profile_edit_select_occupation_label" android:paddingLeft="@dimen/ad_item_spacing_1" android:paddingRight="@dimen/ad_item_spacing_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" android:text="@string/identity_profile_edit_course_occupation" />
+    <com.linkedin.android.identity.shared.multilistenerwidget.MultiListenerSpinner android:gravity="center_vertical" android:id="@id/identity_profile_edit_select_occupation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ad_item_spacing_6" android:contentDescription="@string/identity_profile_edit_select_occupation" style="@style/IdentityProfileSpinnerStyle" />
+</LinearLayout>

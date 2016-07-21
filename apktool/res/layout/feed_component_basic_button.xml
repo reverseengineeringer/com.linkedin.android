@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/feed_component_basic_button_container" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/feed_component_basic_button_top_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:id="@id/feed_component_basic_button_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/ArtDeco.FullButton.2.Tertiary" />
+</LinearLayout>

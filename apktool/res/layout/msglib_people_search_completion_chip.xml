@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead" android:id="@id/msglib_people_search_chip_name" android:background="@drawable/msglib_chip_background" android:paddingLeft="@dimen/ad_item_spacing_3" android:paddingTop="@dimen/ad_item_spacing_1" android:paddingRight="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

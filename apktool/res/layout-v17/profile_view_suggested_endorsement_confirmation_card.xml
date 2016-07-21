@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/profile_view_suggested_endorsements_confirmation_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard">
+        <View android:id="@id/profile_view_guided_edit_entry_accent" android:background="@color/ad_accent_blue" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_3" android:layout_marginTop="@dimen/ad_item_spacing_3" android:layout_marginBottom="@dimen/ad_item_spacing_3" android:layout_toLeftOf="@id/profile_view_suggested_endorsement_confirmation_close_button" android:layout_marginStart="@dimen/ad_item_spacing_3" android:layout_toStartOf="@id/profile_view_suggested_endorsement_confirmation_close_button">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1.Bold" android:ellipsize="end" android:gravity="start" android:id="@id/profile_view_suggested_endorsement_thanks_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:gravity="start" android:id="@id/profile_view_suggested_endorsement_education_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.linkedin.android.infra.ui.TintableImageButton android:layout_gravity="end" android:id="@id/profile_view_suggested_endorsement_confirmation_close_button" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_16dp" android:tint="@color/ad_gray_4" android:layout_alignParentRight="true" android:contentDescription="@string/identity_guided_edit_entry_dismiss_hint" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter android:accountType="@string/variant_application_id" android:contentAuthority="com.android.contacts" android:supportsUploading="false" android:allowParallelSyncs="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

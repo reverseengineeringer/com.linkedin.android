@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/me_job_update_activity_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" app:cardUseCompatPadding="false" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/me_card_layout" android:background="?selectableItemBackground" android:padding="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/me_card_heading" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ad_item_spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_entity_photo_3" android:layout_marginRight="@dimen/ad_item_spacing_6">
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:ellipsize="end" android:gravity="start" android:id="@id/me_job_update_activity_card_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3" android:maxLines="2" />
+            <RelativeLayout android:background="@drawable/identity_me_social_activity_card_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_3">
+                <com.linkedin.android.imageloader.LiImageView android:id="@id/me_job_update_activity_card_image" android:layout_width="@dimen/ad_entity_photo_2" android:layout_height="@dimen/ad_entity_photo_2" android:layout_margin="@dimen/ad_item_spacing_1" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@string/identity_me_job_update_image_description" app:riv_oval="true" style="@style/ArtDeco.EntityPhoto.2.Circle" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Subhead.Bold" android:gravity="start" android:id="@id/me_job_update_activity_card_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_toRightOf="@id/me_job_update_activity_card_image" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption1" android:gravity="start" android:id="@id/me_job_update_activity_card_social_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_item_spacing_2" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

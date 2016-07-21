@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="boost_splash_message_footer">With compliments from {0,text} &amp; LinkedIn</string>
+</resources>

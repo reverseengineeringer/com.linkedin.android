@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/relationships_fast_scroller_handle_height" android:width="@dimen/relationships_fast_scroller_handle_width" />
+    <solid android:color="@color/color_primary" />
+    <corners android:radius="@dimen/relationships_fast_scroller_handle_corner_radius" />
+</shape>

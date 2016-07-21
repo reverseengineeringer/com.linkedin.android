@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/premium_chooser_page_view" android:paddingLeft="@dimen/smaller_item_spacing" android:paddingRight="@dimen/smaller_item_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/chooser_border" android:padding="@dimen/ad_button_stroke_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/premium_chooser_page_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/premium_chooser_page_view_header" android:padding="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body3" android:id="@id/premium_chooser_page_view_header_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Display1" android:id="@id/premium_chooser_page_view_header_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/premium_chooser_page_view_header_divider" android:layout_width="fill_parent" android:layout_height="@dimen/ad_item_spacing_1" android:layout_below="@id/premium_chooser_page_view_header" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/premium_chooser_page_view_features" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/premium_chooser_page_view_header" />
+            <Button android:textAppearance="@style/TextAppearance.ArtDeco.Body2" android:textColor="@color/ad_link_color_bold" android:gravity="bottom|center" android:id="@id/premium_chooser_page_view_small_to_large" android:background="@color/ad_transparent" android:paddingTop="@dimen/zero" android:paddingBottom="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chooser_tell_me_more" android:layout_above="@id/premium_chooser_page_view_actions" android:textAllCaps="false" style="@style/ArtDeco.Button" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/premium_chooser_page_view_actions" android:paddingLeft="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

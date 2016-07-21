@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/pending_endorsements_endorser_card_title" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingRight="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pending_endorsements_endorser_card_title" style="@style/TextViewStyle.CompatPadding4" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linkedin.android.imageloader.LiImageView android:layout_gravity="center_vertical" android:id="@id/pending_endorsements_endorser_photo" android:layout_width="@dimen/ad_entity_photo_3" android:layout_height="@dimen/ad_entity_photo_3" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:scaleType="centerCrop" android:contentDescription="@string/entities_content_description_profile_image" app:riv_border_width="1.0dip" app:riv_border_color="@color/solid_white" app:riv_oval="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/pending_endorsements_endorser_endorsed_skills" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_2" android:layout_toRightOf="@id/pending_endorsements_endorser_photo">
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:id="@id/pending_endorsements_endorser_old_endorsed_skills_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pending_endorsements_endorser_old_endorsed_skills_heading" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:id="@id/pending_endorsements_endorser_old_endorsed_skills" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_3" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:id="@id/pending_endorsements_endorser_new_endorsed_skills_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pending_endorsements_endorser_new_endorsed_skills_heading" />
+                <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:id="@id/pending_endorsements_endorser_new_endorsed_skills" android:paddingBottom="@dimen/ad_item_spacing_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pending_endorsements_endorser_see_all_skills_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/infra_expandable_button_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_divider_horizontal" />
+        <Button android:layout_gravity="center" android:id="@id/pending_endorsements_endorser_see_all_skills_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pending_endorsements_see_all_skills_and_endorsement_button" style="@style/ArtDeco.FullButton.2.Tertiary" />
+    </LinearLayout>
+</LinearLayout>

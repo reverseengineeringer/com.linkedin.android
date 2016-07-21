@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_lix_key_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:layout_gravity="start" android:id="@id/infra_lix_key" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="Key" />
+        <TextView android:id="@id/infra_lix_key_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Key" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <com.linkedin.android.infra.ui.CustomTextInputLayout android:id="@id/infra_lix_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:layout_gravity="start" android:id="@id/infra_lix_value" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/ad_min_height" android:hint="Value" android:inputType="textEmailAddress" android:textAlignment="viewStart" />
+        <TextView android:id="@id/infra_lix_value_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Value" />
+    </com.linkedin.android.infra.ui.CustomTextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/infra_lix_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable" />
+        <Button android:id="@id/infra_lix_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+        <Button android:id="@id/infra_lix_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

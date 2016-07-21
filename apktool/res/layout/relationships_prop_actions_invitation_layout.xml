@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ad_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linkedin.android.infra.ui.TintableImageButton android:id="@id/relationships_prop_action_decline_invite_button" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_24dp" android:tint="@color/accent_blue" android:layout_weight="1.0" android:contentDescription="@string/relationships_props_action_decline_invite" style="@style/ArtDeco.IconButton.3.Tertiary" />
+    <View android:background="@drawable/ad_divider_vertical" android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" />
+    <com.linkedin.android.infra.ui.TintableImageButton android:id="@id/relationships_prop_action_accept_invite_button" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_check_24dp" android:tint="@color/accent_blue" android:layout_weight="1.0" android:contentDescription="@string/relationships_props_action_accept_invite" style="@style/ArtDeco.IconButton.3.Tertiary" />
+</LinearLayout>

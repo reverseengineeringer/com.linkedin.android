@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/identity_content_analytics_reach_circle_max" android:width="@dimen/identity_content_analytics_reach_circle_max" />
+    <stroke android:width="1.0dip" android:color="@color/ad_blue_6" android:dashWidth="1.0dip" android:dashGap="1.0dip" />
+    <solid android:color="@color/ad_blue_1" />
+</shape>

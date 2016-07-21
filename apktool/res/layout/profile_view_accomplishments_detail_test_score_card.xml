@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardUseCompatPadding="true" style="@style/ArtDeco.ContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ad_item_spacing_4">
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Headline1" android:id="@id/identity_profile_view_accomplishment_test_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" />
+        <com.linkedin.android.infra.ui.ExpandableTextView android:textAppearance="@style/TextAppearance.ArtDeco.Body1" android:id="@id/identity_profile_view_accomplishment_test_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" android:maxLines="5" card_view:ellipsisText="@string/identity_profile_ellipsis_text" card_view:ellipsisTextColor="@color/ad_black_70" card_view:initialState="collapsed" card_view:isCollapsible="true" card_view:isExpandable="true" card_view:toggleStateOnClick="true" card_view:animateEllipsisTextClick="true" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:id="@id/identity_profile_view_accomplishment_test_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" />
+        <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Caption2" android:id="@id/identity_profile_view_accomplishment_test_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

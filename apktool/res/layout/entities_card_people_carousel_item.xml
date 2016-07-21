@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkedin.android.imageloader.LiImageView android:layout_gravity="center_vertical" android:id="@id/entities_card_people_carousel_profile_image" android:layout_width="@dimen/entities_people_carousel_image_size" android:layout_height="@dimen/entities_people_carousel_image_size" android:layout_margin="@dimen/normal_item_spacing" android:contentDescription="@string/entities_content_description_profile_image" app:riv_border_width="@dimen/tiny_item_spacing" app:riv_border_color="@color/light_gray" app:riv_oval="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

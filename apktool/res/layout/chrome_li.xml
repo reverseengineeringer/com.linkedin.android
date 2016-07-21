@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:id="@id/status_bar" android:background="@drawable/li_media_seekbar_top_bg" style="@style/li_media_bar" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/navBar" android:background="@drawable/li_media_seekbar_bottom_bg" android:layout_alignParentBottom="true" style="@style/li_media_bar">
+        <ImageButton android:id="@id/pause" android:src="@drawable/li_media_pause" android:contentDescription="@string/lockscreen_transport_pause_description" style="@style/li_media_imgbtn" />
+        <ImageButton android:id="@id/restart" android:src="@drawable/ic_to_start_24dp" android:contentDescription="@string/lockscreen_transport_restart_description" style="@style/li_media_imgbtn" />
+        <TextView android:id="@id/time_current" style="@style/li_media_time_txt" />
+        <SeekBar android:id="@id/mediacontroller_progress" style="@style/li_media_seekbar" />
+        <TextView android:id="@id/time" style="@style/li_media_time_txt" />
+    </LinearLayout>
+    <ImageView android:id="@id/warning" android:src="@drawable/li_media_warning" android:contentDescription="@string/warning_content_description" style="@style/li_media_sign" />
+</RelativeLayout>

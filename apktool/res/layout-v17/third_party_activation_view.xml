@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="right" android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/bar">
+        <ImageView android:id="@id/logo" android:paddingTop="14.0dip" android:paddingRight="10.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/linkedin_logo_dark" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/text_container" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_bar" android:layout_below="@id/action_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="30.0dip">
+            <ViewStub android:id="@id/member_info_viewstub" android:layout="@layout/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/centerSpace" />
+            <View android:id="@id/centerSpace" android:background="@color/divider" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/company_info_viewstub" android:layout="@layout/company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/centerSpace" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/textUsageColor" android:id="@id/authorize_app_name_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ListView android:id="@id/authorize_perm_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="3.0dip" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_weight="1.0" android:smoothScrollbar="true" android:fadeScrollbars="false" android:overScrollMode="never" />
+        <TextView android:id="@id/dummy_title_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/permListItemTitle" />
+        <ViewStub android:id="@id/extra_policy_viewstub" android:layout="@layout/extra_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/learn_more_viewstub" android:layout="@layout/learn_more" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/privacyColor" android:gravity="center_horizontal" android:id="@id/authorize_privacy_textview" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/privacy_policy" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/AuthButtonBar">
+        <Button android:id="@id/authorize_cancel_button" android:text="@string/cancel" style="@style/AuthButton.Cancel" />
+        <Button android:id="@id/authorize_ok_button" android:text="@string/authorize" style="@style/AuthButton.Authorize" />
+    </LinearLayout>
+</RelativeLayout>

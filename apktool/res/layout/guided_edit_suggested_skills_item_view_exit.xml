@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ArtDeco.Title2" android:gravity="center" android:id="@id/identity_guided_edit_suggested_skills_skill_name" android:paddingTop="@dimen/ad_item_spacing_3" android:paddingBottom="@dimen/ad_item_spacing_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/identity_guided_edit_suggested_skills_exit_item_divider" android:background="@drawable/ad_divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/divider_height" android:layout_marginBottom="@dimen/divider_height" />
+</LinearLayout>

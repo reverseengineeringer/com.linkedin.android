@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/infra_web_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/infra_web_viewer_toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tab_bar_height" android:layout_alignParentTop="true">
+        <android.support.v7.widget.Toolbar android:id="@id/infra_web_viewer_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetStart="0.0dip">
+            <include android:id="@id/infra_web_viewer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tab_bar_height" layout="@layout/infra_web_viewer_header" />
+        </android.support.v7.widget.Toolbar>
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/infra_web_viewer_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/infra_web_viewer_progress_height" android:indeterminate="false" android:progressDrawable="@drawable/infra_web_viewer_progress" style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <include android:id="@id/infra_web_viewer_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/infra_web_viewer_footer" />
+    <FrameLayout android:id="@id/infra_web_viewer_webview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/infra_web_viewer_footer" android:layout_below="@id/infra_web_viewer_toolbar_container">
+        <ViewStub android:layout_gravity="center" android:id="@id/infra_web_viewer_error_container" android:layout="@layout/infra_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/xpromo_toast_webview_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_1" android:layout_marginRight="@dimen/ad_item_spacing_1" android:layout_marginBottom="@dimen/ad_item_spacing_2" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/xpromo_splash_webview_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+</RelativeLayout>

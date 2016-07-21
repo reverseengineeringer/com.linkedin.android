@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/compose_message_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MsgLib.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="bottom" android:id="@id/message_camera_button" android:background="@color/ad_transparent" android:layout_width="50.0dip" android:layout_height="@dimen/msglib_message_list_compose_message_bar_button_height" android:tint="@color/msglib_sticker_and_camera_enabled" />
+    <View android:id="@id/message_input_spacer" android:visibility="gone" android:layout_width="@dimen/ad_item_spacing_4" android:layout_height="1.0dip" />
+    <com.linkedin.android.spyglass.ui.MentionsEditText android:textAppearance="@style/TextAppearance.ArtDeco.Body3" android:gravity="start" android:layout_gravity="center" android:id="@id/message_input" android:background="@color/ad_transparent" android:paddingTop="@dimen/ad_item_spacing_4" android:paddingBottom="@dimen/ad_item_spacing_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/write_your_message" android:maxLines="4" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/message_sticker_icon" android:background="@color/ad_transparent" android:layout_width="50.0dip" android:layout_height="@dimen/msglib_message_list_compose_message_bar_button_height" android:src="@drawable/ic_stickers_24dp" android:tint="@color/msglib_sticker_and_camera_enabled" />
+        <ImageButton android:id="@id/message_send" android:background="@color/ad_transparent" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="@dimen/msglib_message_list_compose_message_bar_button_height" android:src="@drawable/ic_send_android_24dp" android:tint="@color/ad_blue_6" android:contentDescription="@string/messenger_action_send" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/boost_promo_container" android:background="@drawable/growth_boost_promo_bg_rounded_corners" android:padding="@dimen/ad_item_spacing_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ad_item_spacing_5" android:layout_marginTop="@dimen/ad_item_spacing_2" android:layout_marginRight="@dimen/ad_item_spacing_5" android:layout_marginBottom="@dimen/ad_item_spacing_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/growth_prereg_boost_offer_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_4" style="@style/TextAppearance.ArtDeco.Headline2.Bold" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/growth_prereg_boost_join_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ad_item_spacing_3" style="@style/TextAppearance.ArtDeco.Body2" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/growth_prereg_boost_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/growth_prereg_boost_terms_v2" style="@style/TextAppearance.ArtDeco.Caption2" />
+</LinearLayout>
